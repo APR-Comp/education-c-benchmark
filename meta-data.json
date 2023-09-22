@@ -7,11 +7,12 @@
         "reference_file": "Main.c",
         "line_numbers": [],
         "failing_test": [
+            "2"
+        ],
+        "passing_test": [
             "1",
-            "2",
             "3"
         ],
-        "passing_test": "",
         "count_neg": "3",
         "count_pos": "0",
         "binary_path": "",
@@ -36,15 +37,14 @@
         "reference_file": "Main.c",
         "line_numbers": [],
         "failing_test": [
-            "1",
             "2",
             "3",
             "4",
             "5"
         ],
-        "passing_test": "",
-        "count_neg": "5",
-        "count_pos": "0",
+        "passing_test": ["1"],
+        "count_neg": "4",
+        "count_pos": "1",
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
