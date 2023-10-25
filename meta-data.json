@@ -13,8 +13,8 @@
             "1",
             "3"
         ],
-        "count_neg": "3",
-        "count_pos": "0",
+        "count_neg": 1,
+        "count_pos": 2,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -37,14 +37,15 @@
         "reference_file": "Main.c",
         "line_numbers": [],
         "failing_test": [
+            "1",
             "2",
             "3",
             "4",
             "5"
         ],
-        "passing_test": ["1"],
-        "count_neg": "4",
-        "count_pos": "1",
+        "passing_test": [],
+        "count_neg": 5,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -75,9 +76,9 @@
             "4",
             "5"
         ],
-        "passing_test": "",
-        "count_neg": "5",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 5,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -106,15 +107,16 @@
             "2",
             "3",
             "4",
-            "5",
-            "6",
             "7",
             "8",
             "9"
         ],
-        "passing_test": "",
-        "count_neg": "9",
-        "count_pos": "0",
+        "passing_test": [
+            "5",
+            "6"
+        ],
+        "count_neg": 7,
+        "count_pos": 2,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -143,19 +145,20 @@
         "reference_file": "Main.c",
         "line_numbers": [],
         "failing_test": [
+            "5",
+            "6"
+        ],
+        "passing_test": [
             "1",
             "2",
             "3",
             "4",
-            "5",
-            "6",
             "7",
             "8",
             "9"
         ],
-        "passing_test": "",
-        "count_neg": "9",
-        "count_pos": "0",
+        "count_neg": 2,
+        "count_pos": 7,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -185,18 +188,19 @@
         "line_numbers": [],
         "failing_test": [
             "1",
-            "2",
             "3",
             "4",
+            "7",
+            "8"
+        ],
+        "passing_test": [
+            "2",
             "5",
             "6",
-            "7",
-            "8",
             "9"
         ],
-        "passing_test": "",
-        "count_neg": "9",
-        "count_pos": "0",
+        "count_neg": 5,
+        "count_pos": 4,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -225,18 +229,19 @@
         "reference_file": "Main.c",
         "line_numbers": [],
         "failing_test": [
-            "1",
-            "2",
             "3",
             "4",
             "5",
             "6",
-            "7",
             "8"
         ],
-        "passing_test": "",
-        "count_neg": "8",
-        "count_pos": "0",
+        "passing_test": [
+            "1",
+            "2",
+            "7"
+        ],
+        "count_neg": 5,
+        "count_pos": 3,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -270,12 +275,13 @@
             "4",
             "5",
             "6",
-            "7",
             "8"
         ],
-        "passing_test": "",
-        "count_neg": "8",
-        "count_pos": "0",
+        "passing_test": [
+            "7"
+        ],
+        "count_neg": 7,
+        "count_pos": 1,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -312,9 +318,9 @@
             "7",
             "8"
         ],
-        "passing_test": "",
-        "count_neg": "8",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 8,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -344,13 +350,14 @@
         "failing_test": [
             "1",
             "2",
-            "3",
-            "4",
             "5"
         ],
-        "passing_test": "",
-        "count_neg": "5",
-        "count_pos": "0",
+        "passing_test": [
+            "3",
+            "4"
+        ],
+        "count_neg": 3,
+        "count_pos": 2,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -382,9 +389,9 @@
             "5",
             "6"
         ],
-        "passing_test": "",
-        "count_neg": "6",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 6,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -417,9 +424,9 @@
             "5",
             "6"
         ],
-        "passing_test": "",
-        "count_neg": "6",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 6,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -452,9 +459,9 @@
             "5",
             "6"
         ],
-        "passing_test": "",
-        "count_neg": "6",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 6,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -487,9 +494,9 @@
             "5",
             "6"
         ],
-        "passing_test": "",
-        "count_neg": "6",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 6,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -515,15 +522,16 @@
         "reference_file": "Main.c",
         "line_numbers": [],
         "failing_test": [
+            "2"
+        ],
+        "passing_test": [
             "1",
-            "2",
             "3",
             "4",
             "5"
         ],
-        "passing_test": "",
-        "count_neg": "5",
-        "count_pos": "0",
+        "count_neg": 1,
+        "count_pos": 4,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -554,9 +562,9 @@
             "4",
             "5"
         ],
-        "passing_test": "",
-        "count_neg": "5",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 5,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -587,9 +595,9 @@
             "4",
             "5"
         ],
-        "passing_test": "",
-        "count_neg": "5",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 5,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -620,9 +628,9 @@
             "4",
             "5"
         ],
-        "passing_test": "",
-        "count_neg": "5",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 5,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -653,9 +661,9 @@
             "4",
             "5"
         ],
-        "passing_test": "",
-        "count_neg": "5",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 5,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -688,9 +696,9 @@
             "6",
             "7"
         ],
-        "passing_test": "",
-        "count_neg": "7",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 7,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -727,9 +735,9 @@
             "8",
             "9"
         ],
-        "passing_test": "",
-        "count_neg": "9",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 9,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -768,9 +776,9 @@
             "8",
             "9"
         ],
-        "passing_test": "",
-        "count_neg": "9",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 9,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -809,9 +817,9 @@
             "8",
             "9"
         ],
-        "passing_test": "",
-        "count_neg": "9",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 9,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -850,9 +858,9 @@
             "8",
             "9"
         ],
-        "passing_test": "",
-        "count_neg": "9",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 9,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -889,9 +897,9 @@
             "6",
             "7"
         ],
-        "passing_test": "",
-        "count_neg": "7",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 7,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -926,9 +934,9 @@
             "6",
             "7"
         ],
-        "passing_test": "",
-        "count_neg": "7",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 7,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -963,9 +971,9 @@
             "6",
             "7"
         ],
-        "passing_test": "",
-        "count_neg": "7",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 7,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -1000,9 +1008,9 @@
             "6",
             "7"
         ],
-        "passing_test": "",
-        "count_neg": "7",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 7,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -1037,9 +1045,9 @@
             "6",
             "7"
         ],
-        "passing_test": "",
-        "count_neg": "7",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 7,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -1074,9 +1082,9 @@
             "6",
             "7"
         ],
-        "passing_test": "",
-        "count_neg": "7",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 7,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -1108,9 +1116,9 @@
             "3",
             "4"
         ],
-        "passing_test": "",
-        "count_neg": "4",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 4,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -1139,9 +1147,9 @@
             "3",
             "4"
         ],
-        "passing_test": "",
-        "count_neg": "4",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 4,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -1170,9 +1178,9 @@
             "3",
             "4"
         ],
-        "passing_test": "",
-        "count_neg": "4",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 4,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -1201,9 +1209,9 @@
             "3",
             "4"
         ],
-        "passing_test": "",
-        "count_neg": "4",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 4,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -1232,9 +1240,9 @@
             "3",
             "4"
         ],
-        "passing_test": "",
-        "count_neg": "4",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 4,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -1265,9 +1273,9 @@
             "5",
             "6"
         ],
-        "passing_test": "",
-        "count_neg": "6",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 6,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -1300,9 +1308,9 @@
             "5",
             "6"
         ],
-        "passing_test": "",
-        "count_neg": "6",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 6,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -1335,9 +1343,9 @@
             "5",
             "6"
         ],
-        "passing_test": "",
-        "count_neg": "6",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 6,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -1370,9 +1378,9 @@
             "5",
             "6"
         ],
-        "passing_test": "",
-        "count_neg": "6",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 6,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -1398,17 +1406,18 @@
         "reference_file": "Main.c",
         "line_numbers": [],
         "failing_test": [
+            "3",
+            "6"
+        ],
+        "passing_test": [
             "1",
             "2",
-            "3",
             "4",
             "5",
-            "6",
             "7"
         ],
-        "passing_test": "",
-        "count_neg": "7",
-        "count_pos": "0",
+        "count_neg": 2,
+        "count_pos": 5,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -1435,18 +1444,19 @@
         "reference_file": "Main.c",
         "line_numbers": [],
         "failing_test": [
+            "5",
+            "6",
+            "7"
+        ],
+        "passing_test": [
             "1",
             "2",
             "3",
             "4",
-            "5",
-            "6",
-            "7",
             "8"
         ],
-        "passing_test": "",
-        "count_neg": "8",
-        "count_pos": "0",
+        "count_neg": 3,
+        "count_pos": 5,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -1474,18 +1484,19 @@
         "reference_file": "Main.c",
         "line_numbers": [],
         "failing_test": [
+            "5",
+            "6",
+            "7"
+        ],
+        "passing_test": [
             "1",
             "2",
             "3",
             "4",
-            "5",
-            "6",
-            "7",
             "8"
         ],
-        "passing_test": "",
-        "count_neg": "8",
-        "count_pos": "0",
+        "count_neg": 3,
+        "count_pos": 5,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -1514,17 +1525,18 @@
         "line_numbers": [],
         "failing_test": [
             "1",
+            "3"
+        ],
+        "passing_test": [
             "2",
-            "3",
             "4",
             "5",
             "6",
             "7",
             "8"
         ],
-        "passing_test": "",
-        "count_neg": "8",
-        "count_pos": "0",
+        "count_neg": 2,
+        "count_pos": 6,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -1552,18 +1564,19 @@
         "reference_file": "Main.c",
         "line_numbers": [],
         "failing_test": [
+            "5",
+            "6",
+            "7"
+        ],
+        "passing_test": [
             "1",
             "2",
             "3",
             "4",
-            "5",
-            "6",
-            "7",
             "8"
         ],
-        "passing_test": "",
-        "count_neg": "8",
-        "count_pos": "0",
+        "count_neg": 3,
+        "count_pos": 5,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -1591,18 +1604,19 @@
         "reference_file": "Main.c",
         "line_numbers": [],
         "failing_test": [
+            "5",
+            "6",
+            "7"
+        ],
+        "passing_test": [
             "1",
             "2",
             "3",
             "4",
-            "5",
-            "6",
-            "7",
             "8"
         ],
-        "passing_test": "",
-        "count_neg": "8",
-        "count_pos": "0",
+        "count_neg": 3,
+        "count_pos": 5,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -1630,17 +1644,18 @@
         "reference_file": "Main.c",
         "line_numbers": [],
         "failing_test": [
-            "1",
-            "2",
             "3",
             "4",
             "5",
-            "6",
+            "6"
+        ],
+        "passing_test": [
+            "1",
+            "2",
             "7"
         ],
-        "passing_test": "",
-        "count_neg": "7",
-        "count_pos": "0",
+        "count_neg": 4,
+        "count_pos": 3,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -1669,15 +1684,16 @@
         "failing_test": [
             "1",
             "2",
+            "7"
+        ],
+        "passing_test": [
             "3",
             "4",
             "5",
-            "6",
-            "7"
+            "6"
         ],
-        "passing_test": "",
-        "count_neg": "7",
-        "count_pos": "0",
+        "count_neg": 3,
+        "count_pos": 4,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -1704,17 +1720,18 @@
         "reference_file": "Main.c",
         "line_numbers": [],
         "failing_test": [
+            "4",
+            "5"
+        ],
+        "passing_test": [
             "1",
             "2",
             "3",
-            "4",
-            "5",
             "6",
             "7"
         ],
-        "passing_test": "",
-        "count_neg": "7",
-        "count_pos": "0",
+        "count_neg": 2,
+        "count_pos": 5,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -1749,9 +1766,9 @@
             "6",
             "7"
         ],
-        "passing_test": "",
-        "count_neg": "7",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 7,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -1786,9 +1803,9 @@
             "6",
             "7"
         ],
-        "passing_test": "",
-        "count_neg": "7",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 7,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -1815,15 +1832,16 @@
         "reference_file": "Main.c",
         "line_numbers": [],
         "failing_test": [
+            "3"
+        ],
+        "passing_test": [
             "1",
             "2",
-            "3",
             "4",
             "5"
         ],
-        "passing_test": "",
-        "count_neg": "5",
-        "count_pos": "0",
+        "count_neg": 1,
+        "count_pos": 4,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -1848,15 +1866,16 @@
         "reference_file": "Main.c",
         "line_numbers": [],
         "failing_test": [
+            "3"
+        ],
+        "passing_test": [
             "1",
             "2",
-            "3",
             "4",
             "5"
         ],
-        "passing_test": "",
-        "count_neg": "5",
-        "count_pos": "0",
+        "count_neg": 1,
+        "count_pos": 4,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -1887,9 +1906,9 @@
             "4",
             "5"
         ],
-        "passing_test": "",
-        "count_neg": "5",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 5,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -1914,15 +1933,16 @@
         "reference_file": "Main.c",
         "line_numbers": [],
         "failing_test": [
+            "3"
+        ],
+        "passing_test": [
             "1",
             "2",
-            "3",
             "4",
             "5"
         ],
-        "passing_test": "",
-        "count_neg": "5",
-        "count_pos": "0",
+        "count_neg": 1,
+        "count_pos": 4,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -1953,9 +1973,9 @@
             "4",
             "5"
         ],
-        "passing_test": "",
-        "count_neg": "5",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 5,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -1986,9 +2006,9 @@
             "4",
             "5"
         ],
-        "passing_test": "",
-        "count_neg": "5",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 5,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -2019,9 +2039,9 @@
             "4",
             "5"
         ],
-        "passing_test": "",
-        "count_neg": "5",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 5,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -2052,9 +2072,9 @@
             "4",
             "5"
         ],
-        "passing_test": "",
-        "count_neg": "5",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 5,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -2089,9 +2109,9 @@
             "8",
             "9"
         ],
-        "passing_test": "",
-        "count_neg": "9",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 9,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -2130,9 +2150,9 @@
             "8",
             "9"
         ],
-        "passing_test": "",
-        "count_neg": "9",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 9,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -2169,9 +2189,9 @@
             "6",
             "7"
         ],
-        "passing_test": "",
-        "count_neg": "7",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 7,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -2206,9 +2226,9 @@
             "6",
             "7"
         ],
-        "passing_test": "",
-        "count_neg": "7",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 7,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -2243,9 +2263,9 @@
             "6",
             "7"
         ],
-        "passing_test": "",
-        "count_neg": "7",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 7,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -2280,9 +2300,9 @@
             "6",
             "7"
         ],
-        "passing_test": "",
-        "count_neg": "7",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 7,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -2315,9 +2335,9 @@
             "4",
             "5"
         ],
-        "passing_test": "",
-        "count_neg": "5",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 5,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -2343,14 +2363,15 @@
         "line_numbers": [],
         "failing_test": [
             "1",
-            "2",
-            "3",
-            "4",
             "5"
         ],
-        "passing_test": "",
-        "count_neg": "5",
-        "count_pos": "0",
+        "passing_test": [
+            "2",
+            "3",
+            "4"
+        ],
+        "count_neg": 2,
+        "count_pos": 3,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -2381,9 +2402,9 @@
             "4",
             "5"
         ],
-        "passing_test": "",
-        "count_neg": "5",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 5,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -2414,9 +2435,9 @@
             "4",
             "5"
         ],
-        "passing_test": "",
-        "count_neg": "5",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 5,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -2447,9 +2468,9 @@
             "4",
             "5"
         ],
-        "passing_test": "",
-        "count_neg": "5",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 5,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -2479,9 +2500,9 @@
             "3",
             "4"
         ],
-        "passing_test": "",
-        "count_neg": "4",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 4,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -2505,19 +2526,20 @@
         "reference_file": "Main.c",
         "line_numbers": [],
         "failing_test": [
+            "7"
+        ],
+        "passing_test": [
             "1",
             "2",
             "3",
             "4",
             "5",
             "6",
-            "7",
             "8",
             "9"
         ],
-        "passing_test": "",
-        "count_neg": "9",
-        "count_pos": "0",
+        "count_neg": 1,
+        "count_pos": 8,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -2546,19 +2568,20 @@
         "reference_file": "Main.c",
         "line_numbers": [],
         "failing_test": [
+            "7"
+        ],
+        "passing_test": [
             "1",
             "2",
             "3",
             "4",
             "5",
             "6",
-            "7",
             "8",
             "9"
         ],
-        "passing_test": "",
-        "count_neg": "9",
-        "count_pos": "0",
+        "count_neg": 1,
+        "count_pos": 8,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -2587,19 +2610,20 @@
         "reference_file": "Main.c",
         "line_numbers": [],
         "failing_test": [
+            "7"
+        ],
+        "passing_test": [
             "1",
             "2",
             "3",
             "4",
             "5",
             "6",
-            "7",
             "8",
             "9"
         ],
-        "passing_test": "",
-        "count_neg": "9",
-        "count_pos": "0",
+        "count_neg": 1,
+        "count_pos": 8,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -2638,9 +2662,9 @@
             "8",
             "9"
         ],
-        "passing_test": "",
-        "count_neg": "9",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 9,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -2676,12 +2700,13 @@
             "5",
             "6",
             "7",
-            "8",
+            "8"
+        ],
+        "passing_test": [
             "9"
         ],
-        "passing_test": "",
-        "count_neg": "9",
-        "count_pos": "0",
+        "count_neg": 8,
+        "count_pos": 1,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -2710,19 +2735,20 @@
         "reference_file": "Main.c",
         "line_numbers": [],
         "failing_test": [
-            "1",
             "2",
             "3",
-            "4",
             "5",
-            "6",
             "7",
-            "8",
+            "8"
+        ],
+        "passing_test": [
+            "1",
+            "4",
+            "6",
             "9"
         ],
-        "passing_test": "",
-        "count_neg": "9",
-        "count_pos": "0",
+        "count_neg": 5,
+        "count_pos": 4,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -2751,19 +2777,20 @@
         "reference_file": "Main.c",
         "line_numbers": [],
         "failing_test": [
-            "1",
             "2",
             "3",
-            "4",
             "5",
-            "6",
             "7",
-            "8",
+            "8"
+        ],
+        "passing_test": [
+            "1",
+            "4",
+            "6",
             "9"
         ],
-        "passing_test": "",
-        "count_neg": "9",
-        "count_pos": "0",
+        "count_neg": 5,
+        "count_pos": 4,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -2801,9 +2828,9 @@
             "7",
             "8"
         ],
-        "passing_test": "",
-        "count_neg": "8",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 8,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -2831,18 +2858,19 @@
         "reference_file": "Main.c",
         "line_numbers": [],
         "failing_test": [
-            "1",
             "2",
             "3",
+            "6"
+        ],
+        "passing_test": [
+            "1",
             "4",
             "5",
-            "6",
             "7",
             "8"
         ],
-        "passing_test": "",
-        "count_neg": "8",
-        "count_pos": "0",
+        "count_neg": 3,
+        "count_pos": 5,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -2872,16 +2900,17 @@
         "failing_test": [
             "1",
             "2",
-            "3",
             "4",
             "5",
             "6",
-            "7",
+            "7"
+        ],
+        "passing_test": [
+            "3",
             "8"
         ],
-        "passing_test": "",
-        "count_neg": "8",
-        "count_pos": "0",
+        "count_neg": 6,
+        "count_pos": 2,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -2918,9 +2947,9 @@
             "7",
             "8"
         ],
-        "passing_test": "",
-        "count_neg": "8",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 8,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -2957,9 +2986,9 @@
             "7",
             "8"
         ],
-        "passing_test": "",
-        "count_neg": "8",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 8,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -2993,9 +3022,9 @@
             "4",
             "5"
         ],
-        "passing_test": "",
-        "count_neg": "5",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 5,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -3026,9 +3055,9 @@
             "4",
             "5"
         ],
-        "passing_test": "",
-        "count_neg": "5",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 5,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -3059,9 +3088,9 @@
             "4",
             "5"
         ],
-        "passing_test": "",
-        "count_neg": "5",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 5,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -3094,9 +3123,9 @@
             "6",
             "7"
         ],
-        "passing_test": "",
-        "count_neg": "7",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 7,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -3128,9 +3157,9 @@
             "3",
             "4"
         ],
-        "passing_test": "",
-        "count_neg": "4",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 4,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -3159,9 +3188,9 @@
             "3",
             "4"
         ],
-        "passing_test": "",
-        "count_neg": "4",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 4,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -3190,9 +3219,9 @@
             "3",
             "4"
         ],
-        "passing_test": "",
-        "count_neg": "4",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 4,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -3221,9 +3250,9 @@
             "3",
             "4"
         ],
-        "passing_test": "",
-        "count_neg": "4",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 4,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -3252,9 +3281,9 @@
             "3",
             "4"
         ],
-        "passing_test": "",
-        "count_neg": "4",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 4,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -3283,9 +3312,9 @@
             "3",
             "4"
         ],
-        "passing_test": "",
-        "count_neg": "4",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 4,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -3314,9 +3343,9 @@
             "3",
             "4"
         ],
-        "passing_test": "",
-        "count_neg": "4",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 4,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -3345,9 +3374,9 @@
             "3",
             "4"
         ],
-        "passing_test": "",
-        "count_neg": "4",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 4,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -3376,9 +3405,9 @@
             "3",
             "4"
         ],
-        "passing_test": "",
-        "count_neg": "4",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 4,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -3407,9 +3436,9 @@
             "3",
             "4"
         ],
-        "passing_test": "",
-        "count_neg": "4",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 4,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -3433,8 +3462,10 @@
         "reference_file": "Main.c",
         "line_numbers": [],
         "failing_test": [
+            "2"
+        ],
+        "passing_test": [
             "1",
-            "2",
             "3",
             "4",
             "5",
@@ -3443,9 +3474,8 @@
             "8",
             "9"
         ],
-        "passing_test": "",
-        "count_neg": "9",
-        "count_pos": "0",
+        "count_neg": 1,
+        "count_pos": 8,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -3474,8 +3504,10 @@
         "reference_file": "Main.c",
         "line_numbers": [],
         "failing_test": [
+            "2"
+        ],
+        "passing_test": [
             "1",
-            "2",
             "3",
             "4",
             "5",
@@ -3484,9 +3516,8 @@
             "8",
             "9"
         ],
-        "passing_test": "",
-        "count_neg": "9",
-        "count_pos": "0",
+        "count_neg": 1,
+        "count_pos": 8,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -3515,19 +3546,20 @@
         "reference_file": "Main.c",
         "line_numbers": [],
         "failing_test": [
-            "1",
             "2",
             "3",
             "4",
-            "5",
             "6",
+            "8"
+        ],
+        "passing_test": [
+            "1",
+            "5",
             "7",
-            "8",
             "9"
         ],
-        "passing_test": "",
-        "count_neg": "9",
-        "count_pos": "0",
+        "count_neg": 5,
+        "count_pos": 4,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
@@ -3551,8 +3583,8 @@
     {
         "id": 100,
         "subject": "Lab-9",
-        "bug_id": "3108-300755",
-        "source_file": "300755_buggy.c",
+        "bug_id": "3108-300772",
+        "source_file": "300772_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
         "failing_test": [
@@ -3564,9 +3596,9 @@
             "6",
             "7"
         ],
-        "passing_test": "",
-        "count_neg": "7",
-        "count_pos": "0",
+        "passing_test": [],
+        "count_neg": 7,
+        "count_pos": 0,
         "binary_path": "",
         "crash_input": "",
         "exploit_file_list": [
