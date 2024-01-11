@@ -1,0 +1,120 @@
+--- Lab-9/3106-300294//300294_buggy.c	2023-11-27 20:53:21.295794370 +0200
++++ Lab-9/3106-300294//Main.c	2023-11-27 20:53:21.295794370 +0200
+@@ -1,76 +1,46 @@
++/*
++Up to 20% marks will be allotted for good programming practice. These include
++ - Comments: for nontrivial code
++ - Indentation: align your code properly
++ - Function use and modular programming
++ - Do not include anything in the header other than what is already given in the
++template.
++
++- You have to solve this problem using recursion
++- Some marks are reserved for writing correct base case and recursive step
++-------------------------------------------------------------------------------------------
++
++Write a C program, using recursion, to check if the given string is a palindrome
++or not. A palindrome is a word, phrase or sentence that reads the same backward
++or forward. The string would only contain lower case letters.
++
++Input: liril
++Output: Yes
++
++Input: oolaleloo
++Output: No
++*/
+ #include <stdio.h>
+-#include <stdlib.h>
+ #include <string.h>
+ 
+-int var__0 = 0;
+-int check_palindrome(char var__1[], int var__2, int var__3) {
+-  ;
+-  if (0) {
+-  } else {
+-    if (!(*(&(var__2))) > var__3) {
+-    } else {
+-      if (0) {
+-      } else {
+-        { return 0; }
+-      }
+-    }
+-  }
+-  if (1) {
+-    if (!(*(&((*(&((*(&(var__1)))))))))[(*(&(var__2)))] ==
+-        (*(&((*(&(var__1))))))[(*(&(var__3))) - 1]) {
+-      if (1) {
+-        (*(&((*(&(var__0)))))) = 0;
+-      }
+-    } else {
+-      if (0) {
+-      } else {
+-        {
+-          if (0) {
+-          } else {
+-            (*(&((*(&(var__0)))))) = (*(&((*(&(var__0)))))) + 1;
+-          }
+-        }
+-      }
+-    }
+-  }
+-  if (0) {
+-  } else {
+-    (*(&((*(&((*(&(check_palindrome)))))))))((*(&((*(&(var__1)))))), var__2 + 1,
+-                                             var__3 - 1);
+-  }
+-  return (*(&((*(&(var__0))))));
+-}
++void check(char[], int);
++
+ int main() {
+-  char var__1[100];
+-  if (0) {
+-  } else {
+-    scanf("%s", (*(&(var__1))));
+-  }
+-  int var__2 = 0;
+-  int var__3 = (*(&((*(&((*(&(strlen)))))))))((*(&((*(&((*(&(var__1))))))))));
+-  int var__4 =
+-      check_palindrome((*(&(var__1))), (*(&((*(&((*(&(var__2))))))))), var__3);
+-  if (1) {
+-    (*(&((*(&((*(&(printf)))))))))("%d", var__4);
+-  }
+-  if (0) {
+-  } else {
+-    if (!(*(&(var__4))) == (*(&(var__3))) / 2 + (*(&((*(&(var__3)))))) % 2) {
+-      if (1) {
+-        (*(&(printf)))("No");
+-      }
+-    } else {
+-      if (0) {
+-      } else {
+-        {
+-          if (1) {
+-            (*(&((*(&((*(&(printf)))))))))("Yes");
+-          }
+-        }
+-      }
++  char word[20];
++  scanf("%s", word);
++  check(word, 0);
++  return 0;
++}
++
++void check(char word[], int index) {
++  int len = strlen(word) - (index + 1);
++  if (word[index] == word[len]) {
++    if (index + 1 == len || index == len) {
++      printf("Yes\n");
++      return;
+     }
++    check(word, index + 1);
++  } else {
++    printf("No\n");
+   }
+-  if (1) {
+-    return 0;
+-  }
+-}
++}
+\ No newline at end of file

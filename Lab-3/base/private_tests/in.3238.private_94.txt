@@ -1,0 +1,3 @@
+16 hello,hello,howareyou?
+3 are
+5 were

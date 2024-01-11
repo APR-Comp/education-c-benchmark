@@ -1,0 +1,10 @@
+1 
+8 Business
+10 persuasion
+11 intelligent
+9 bussiness
+8 business
+203032122733 persuation
+10 inteligent
+18446744073709551615 
+-1

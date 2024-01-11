@@ -1,27 +1,29 @@
-/*numPass=4, numTotal=7
-Verdict:WRONG_ANSWER, Visibility:1, Input:"1.2 2.3 2.7 5.3 7.6", ExpOutput:"Point is outside the Circle.", Output:"Point is on the Circle."
-Verdict:WRONG_ANSWER, Visibility:1, Input:"0.0 0.0 5.0 3.0 7.0", ExpOutput:"Point is outside the Circle.", Output:"Point is on the Circle."
-Verdict:ACCEPTED, Visibility:1, Input:"3.0 4.0 5.0 7.0 7.0", ExpOutput:"Point is on the Circle.", Output:"Point is on the Circle."
-Verdict:ACCEPTED, Visibility:1, Input:"3.0 4.0 5.0 5.6 6.2", ExpOutput:"Point is inside the Circle.", Output:"Point is inside the Circle."
-Verdict:ACCEPTED, Visibility:0, Input:"-1.0 -2.0 5.0 1.5 2.0", ExpOutput:"Point is inside the Circle.", Output:"Point is inside the Circle."
-Verdict:ACCEPTED, Visibility:0, Input:"0.0 0.0 5.0 3.0 4.0", ExpOutput:"Point is on the Circle.", Output:"Point is on the Circle."
-Verdict:WRONG_ANSWER, Visibility:0, Input:"0.0 0.0 5.0 3.0 5.0", ExpOutput:"Point is outside the Circle.", Output:"Point is on the Circle."
-*/
-#include<stdio.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
 
-int main()
-{
-    float x,y,r,x1,y1,l;
-    scanf("%f %f %f %f %f",&x,&y,&r,&x1,&y1);
-    l=(x-x1)*(x-x1)+(y-y1)*(y-y1)-(r*r);
-    if(l<0)
-    {
-      printf("Point is inside the Circle.");}
-      else if(l==0)
-      {
-      printf("Point is on the Circle.");
+int main() {
+  float var__0, var__1, var__2, var__3, var__4, var__5;
+  (*(&(scanf)))("%f%f%f%f%f", &(*(&((*(&((*(&(var__0))))))))), &var__1,
+                &(*(&(var__2))), &var__3, &var__4);
+  if (1) {
+    (*(&((*(&((*(&(var__5))))))))) = (*(&((*(&(sqrtf))))))(
+        (*(&(pow)))((var__3 - (*(&((*(&(var__0))))))), 2) +
+        pow(((*(&((*(&((*(&(var__4))))))))) - (*(&((*(&(var__1))))))), 2));
+  }
+  if ((*(&((*(&(var__5)))))) < (*(&((*(&((*(&(var__2))))))))))
+    if (1) {
+      (*(&((*(&(printf))))))("Point is inside the Circle.");
+    } else if (1) {
+      if ((*(&((*(&(var__5)))))) == (*(&((*(&((*(&(var__2))))))))))
+        if (0) {
+        } else {
+          (*(&((*(&(printf))))))("Point is on the Circle.");
+        }
+      else if (0) {
+      } else {
+        (*(&(printf)))("Point is outside the Circle.");
       }
-    else
-    printf("Point is on the Circle.");
-    return 0;
+    }
+  return 0;
 }

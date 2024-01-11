@@ -1,55 +1,68 @@
-/*numPass=0, numTotal=7
-Verdict:WRONG_ANSWER, Visibility:1, Input:"0 0 4
-1 1 3", ExpOutput:"YES
-", Output:"Yes"
-Verdict:WRONG_ANSWER, Visibility:1, Input:"0 0 4
-10 10 3", ExpOutput:"NO
-", Output:"No"
-Verdict:WRONG_ANSWER, Visibility:1, Input:"-1 -1 5
-6 6 5", ExpOutput:"YES
-", Output:"Yes"
-Verdict:WRONG_ANSWER, Visibility:0, Input:"-1 -1 1
-5 -1 1", ExpOutput:"NO
-", Output:"No"
-Verdict:WRONG_ANSWER, Visibility:0, Input:"2 2 2
-2 2 1", ExpOutput:"YES
-", Output:"Yes"
-Verdict:WRONG_ANSWER, Visibility:0, Input:"3 0 3
--4 0 3", ExpOutput:"NO
-", Output:"No"
-Verdict:WRONG_ANSWER, Visibility:0, Input:"1 0 1
-3 0 3", ExpOutput:"YES
-", Output:"Yes"
-*/
-#include<stdio.h>
-#include<stdlib.h>
-struct circle//defining data structure
-{
-    int x;
-    int y;
-    int r;
+#include <stdio.h>
+#include <stdlib.h>
+
+struct var__0 {
+  int var__1;
+  int var__2;
+  int var__3;
 };
-int main()
-{
-    float p,q,m;
-    struct circle one;//data structure for first circle
-    struct circle two;
-    scanf("%d",&one.x);//scanning x coordinate of circle
-     scanf("%d",&one.y);
-      scanf("%d",&one.r);
-       scanf("%d",&two.x);
-        scanf("%d",&two.y);
-         scanf("%d",&two.r);
-        // m=[((one.x)-(two.x))*((one.x)-(two.x))+((one.y)-(two.y))*((one.y)-(two.y))]
-         
-        // q=[(one.r)+(two.r)]
-         if(((one.x)-(two.x))*((one.x)-(two.x))+((one.y)-(two.y))*((one.y)-(two.y))>(((one.r)+(two.r))*((one.r)+(two.r))))
-         {
-             printf("No");
-             
-         }
-         else
-         {
-             printf("Yes");
-         }
+void setCoordinates(struct var__0 *var__4, int var__1, int var__2, int var__3) {
+  if (0) {
+  } else {
+    var__4->var__1 = (*(&(var__1)));
+  }
+  if (0) {
+  } else {
+    (*(&(var__4)))->var__2 = var__2;
+  }
+  if (0) {
+  } else {
+    (*(&(var__4)))->var__3 = (*(&((*(&(var__3))))));
+  }
+}
+int checkIntersect(struct var__0 var__5, struct var__0 var__6) {
+  int var__7 = (var__5.var__1 - var__6.var__1) *
+                   ((*(&(var__5))).var__1 - var__6.var__1) -
+               (var__5.var__2 - (*(&((*(&((*(&(var__6))))))))).var__2) *
+                   ((*(&((*(&(var__5)))))).var__2 -
+                    (*(&((*(&((*(&(var__6))))))))).var__2);
+  int var__8 =
+      (*(&((*(&((*(&(var__5))))))))).var__3 *
+          (*(&((*(&((*(&(var__5))))))))).var__3 +
+      (*(&(var__6))).var__3 * var__6.var__3 +
+      2 * (*(&((*(&((*(&(var__5))))))))).var__3 * (*(&((*(&(var__6)))))).var__3;
+  if (var__8 >= (*(&((*(&(var__7)))))))
+    if (1) {
+      return 1;
+    } else
+      return 0;
+}
+int main() {
+  int var__1, var__2, var__3;
+  struct var__0 var__5, var__6;
+  if (1) {
+    (*(&((*(&((*(&(scanf)))))))))("%d %d %d", &(*(&((*(&((*(&(var__1))))))))),
+                                  &(*(&(var__2))),
+                                  &(*(&((*(&((*(&(var__3))))))))));
+  }
+  if (1) {
+    setCoordinates(&(*(&((*(&((*(&(var__5))))))))), var__1,
+                   (*(&((*(&((*(&(var__2))))))))), var__3);
+  }
+  (*(&((*(&(scanf))))))("%d %d %d", &(*(&((*(&((*(&(var__1))))))))),
+                        &(*(&(var__2))), &(*(&((*(&((*(&(var__3))))))))));
+  (*(&((*(&((*(&(setCoordinates)))))))))(
+      &var__6, var__1, (*(&((*(&(var__2)))))), (*(&(var__3))));
+  if (checkIntersect(var__5, (*(&(var__6)))))
+    if (0) {
+    } else {
+      (*(&((*(&((*(&(printf)))))))))("YES\n");
+    }
+  else if (1) {
+    printf("NO\n");
+  }
+  if (0) {
+  } else {
+    return 0;
+  }
 }

@@ -1,0 +1,276 @@
+--- Lab-10/3237-303406//303406_buggy.c	2023-11-27 20:53:21.245793869 +0200
++++ Lab-10/3237-303406//Main.c	2023-11-27 20:53:21.245793869 +0200
+@@ -1,5 +1,49 @@
+-/*numPass=2, numTotal=3
+-Verdict:ACCEPTED, Visibility:1, Input:"3
++/*
++Up to 20% marks will be allotted for good programming practice. These include
++ - Comments: for non-trivial code
++ - Indentation: align your code properly
++ - Function use and modular programming
++ - Do not include anything in the header other than what is already given in the
++template.
++ - You are required to allocate memory Dynamically instead of static memory
++allocation otherwise you will get 0 marks. All Strings and Dictionaries, etc
++should be dynamically allocated.
++
++One of our tutors, named A,  is very bad in typing. He tried to type without
++looking at the keyboard and ends up making a lot of mistakes. For example, he
++sometimes ends up with "helli" instead of "hello", "chariman" for "chairman",
++etc.  A is very sad as he can not compose mails, write question papers, etc
++quickly.  Please help A by writing a program which tells him the closest word in
++the dictionary for input words.
++
++Closeness of two word strings s1 and s2 is computed as follows:
++1. If length(s1) = length(s2) then you get 1 additional points of closeness.
++2. For each j such that s1[j] = s2[j], you get 2 additional points.
++3. For each j such that s1[j] != s2[j], you get 0.5 addition points if s1[j]
++exists in s2 and s2[j] exists in s1. In the situations where j >= length(s1) but
++j < length(s2), you only need to check if s2[j] exists in s1 and similarly if j
++< length(s1) and j >= length(s2).
++
++For Example, Closeness between "hello" and "helobo" is 7.0. Closeness between
++"persuasion" and  "perturbation" is 10.5. (The smaller the closeness parameter,
++the closer the strings are!)
++
++INPUT :
++You would be given the size N of the dictionary. This would be followed by N
++lines each of which has a number followed by a string. The number denotes the
++length of this string. These N lines constitute the contents of the dictionary.
++This is followed by string-length and string pairs which are the words to be
++corrected based on their closeness in the dictionary. Input pairs should be
++processed till you see a -1.
++
++OUTPUT :
++Print the closest string in the dictionary corresponding to each length, string
++pair. If there exists multiple words in the dictionary which are equally close
++to the input word then output the one which was added earlier to the dictionary.
++
++EXAMPLE:
++Input :
++3
+ 2 hi
+ 3 hey
+ 4 yoyo
+@@ -8,143 +52,109 @@
+ 4 yoy
+ 1 h
+ -1
+-", ExpOutput:"hi
+-hey
+-yoyo
++
++Output :
+ hi
+-", Output:"hi
+ hey
+ yoyo
+ hi
+-"
+-Verdict:WRONG_ANSWER, Visibility:1, Input:"3
+-8 Business
+-10 persuasion
+-11 intelligent
+-9 bussiness
+-8 business
+-10 persuation
+-10 inteligent
+--1
+-", ExpOutput:"Business
+-Business
+-persuasion
+-intelligent
+-", Output:"Business
+-Business
+-intelligent
+-intelligent
+-"
+-Verdict:ACCEPTED, Visibility:0, Input:"3
+-5 hello
+-4 good
+-7 morning
+-4 helo
+-3 gud
+-6 mrnng
+--1", ExpOutput:"hello
+-good
+-morning
+-", Output:"hello
+-good
+-morning
+-"
++
++NOTE :
++Words like "hi" and "Hi" should be treated as different words in the dictionary.
++You can make your program case insensitive as a practice problems. There are
++many heuristics which are used to correct a mistyped word based on a dictionary.
++The closeness measure defined for this problem is one of them. There may exists
++better heuristics.
+ */
+ #include <stdio.h>
+ #include <stdlib.h>
+ 
+-int N;
+-
+-int strln(char arr[]) {
++int get_len(char s[]) {
+   int i = 0;
+-  while (arr[i] != '\0') {
++  while (*(s + i) != '\0')
+     i++;
+-  }
++
+   return i;
+ }
+ 
+-int min(a, b) {
+-  if (a > b)
+-    return b;
+-  else
+-    return a;
++int exists(char *a, char ch) {
++  int i = 0;
++  while (a[i] != '\0') {
++    if (a[i] == ch)
++      return 1;
++    i++;
++  }
++
++  return 0;
+ }
+ 
+-float get_closeless(char *word1, char *word2) {
+-  int s1, s2, i;
+-  float k = 0;
+-  s1 = strln(word1);
+-  s2 = strln(word2);
+-  if (s1 == s2) {
+-    k++; // additional points for same length
+-  }
+-  for (i = 0; i < (min(s1, s2)); i++) {
+-    if (word1[i] == word2[i]) {
+-      k = k + 2; // if index by index matches
+-    }
+-    if (word1[i] != word2[i]) {
+-      int j;
+-      if (s1 > s2) {
+-        for (j = 0; j < s1; j++) {
+-          if (word2[i] == word1[j]) // if there is char present
+-          {
+-            k = k + 0.5;
+-          }
+-        }
+-      } else {
+-        for (j = 0; j < s2; j++) // checking another way around.
+-        {
+-          if (word2[i] == word1[j]) {
+-            k = k + 0.5;
+-          }
++float get_closeless(char *a, char *b) {
++  float closeness = 0;
++  int i, j;
++
++  int a_len = get_len(a), b_len = get_len(b);
++
++  if (a_len == b_len)
++    closeness += 1;
++
++  for (i = 0; i < a_len || i < b_len; i++)
++    if (i < a_len && i < b_len) {
++      if (a[i] == b[i])
++        closeness += 2;
++      else {
++        if (exists(b, a[i]) && exists(a, b[i]))
++          closeness += 0.5;
++      }
++    } else {
++      if (i < a_len) {
++        if (exists(b, a[i])) {
++          closeness += 0.5;
+         }
++      } else if (exists(a, b[i])) {
++        closeness += 0.5;
+       }
+     }
+-  }
+ 
+-  return k;
++  return closeness;
+ }
+ 
+-int get_closest_word(char *word, char **dictionary) {
+-  float close, close2;
+-  int j, wordindex;
+-  close = get_closeless(word, dictionary[0]); // initializing the closeness
+-  wordindex = 0;                              // initializing the index
+-
+-  for (j = 1; j < N; j++) {
+-    close2 = get_closeless(word, dictionary[j]);
+-
+-    if (close2 > close) // if any other closer word is found
+-    {
+-      wordindex = j; // word index get updated
++int get_closest_word(char *s, char **dict) {
++  int i = 0;
++  int max_closeness = -1;
++  int max_closeness_index = -1;
++  while (dict[i] != NULL) {
++    if (get_closeless(s, dict[i]) > max_closeness) {
++      max_closeness = get_closeless(s, dict[i]);
++      max_closeness_index = i;
+     }
++    i++;
+   }
+-  printf("%s\n", dictionary[wordindex]);
+-  return 0;
++  return max_closeness_index;
+ }
+ 
+ int main() {
+-  int b, i = 0;
+-  char **arr;
+-  char *arr2;
+-  scanf("%d", &N);
+-  arr = (char **)malloc(N * sizeof(char *)); // allocating memory for dictionary
+-
+-  for (i = 0; i < N; i++) // runing loop for scaning the dictionary
+-  {
+-    scanf("%d ", &b);
+-    arr[i] = (char *)malloc((b + 1) * sizeof(char));
+-    scanf("%s \n", arr[i]); // storing dictionary
+-  }
+-  scanf("%d", &b); // initializing size of word
+-  while (b != -1)  // conditioning
+-  {
+-
+-    arr2 = (char *)malloc((b + 1) * sizeof(char)); // allocating size
+-    scanf("%s \n", arr2);                          // scaning the word
+-    get_closest_word(arr2, arr);                   // geting closest word
+-    scanf("%d ", &b);                              // scaning next b;
+-  }
++  int n, n_temp, e_len, i, j;
++  char *error_word = NULL;
++
++  scanf("%d", &n);
+ 
++  char **dict = malloc((n + 1) * sizeof(int *));
++  for (i = 0; i < n; i++) {
++    scanf("%d", &n_temp);
++    dict[i] = malloc((n_temp + 1) * sizeof(int));
++    scanf("%s", dict[i]);
++  }
++  dict[n] = NULL;
++
++  while (1) {
++    scanf("%d", &n_temp);
++    if (n_temp == -1)
++      break;
++
++    free(error_word);
++    error_word = malloc((n_temp + 1) * sizeof(char));
++    scanf("%s", error_word);
++    printf("%s\n", dict[get_closest_word(error_word, dict)]);
++  }
+   return 0;
+ }
+\ No newline at end of file

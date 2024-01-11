@@ -1,83 +1,110 @@
-/*numPass=3, numTotal=5
-Verdict:WRONG_ANSWER, Visibility:1, Input:"4
-34 13 42 14
-2
-13 42", ExpOutput:"YES
-", Output:"NO
-"
-Verdict:ACCEPTED, Visibility:1, Input:"6
-1 2 3 4 5 6
-3
-3 2 1", ExpOutput:"NO
-", Output:"NO
-"
-Verdict:ACCEPTED, Visibility:1, Input:"4
-1 3 6 1
-2
-1 6", ExpOutput:"NO
-", Output:"NO
-"
-Verdict:ACCEPTED, Visibility:0, Input:"5
-1 3 5 7 9
-2
-2 4", ExpOutput:"NO
-", Output:"NO
-"
-Verdict:WRONG_ANSWER, Visibility:0, Input:"5
-9 9 8 9 9
-2
-9 9", ExpOutput:"YES
-", Output:"NO
-"
-*/
 #include <stdio.h>
-int check_arrays(int [],int [],int,int);//function to check contiguos                                            array
+#include <stdlib.h>
+
+int check_arrays(int[], int[], int, int);
 int main() {
-	int s1,s2;
-	int i;
-    scanf("%d",&s1);
-    int A1[s1];
-    for(i=0;i<s1;i++)
-    {
-        scanf("%d",&A1[i]);
-    }
-    scanf("%d",&s2);
-    int A2[s2];
-    for(i=0;i<s2;i++)
-    {
-        scanf("%d",&A2[i]);
-    }
-   int ans=check_arrays(A1,A2,s1,s2);
-   if(ans==1)
-   {
-       printf("YES\n");
-   }
-   else
-   {
-       printf("NO\n");
-   }
-	return 0;
-}
-int check_arrays(int B1[],int B2[],int c1,int c2)
-{
-    int i,c=0;
-    for(i=0;i<c1-c2;i++)
-    {
-        if(B2[0]==B1[i])
-        {
-         c=1;
-         break;
+  int var__1, var__2;
+  int var__3;
+  (*(&((*(&((*(&(scanf)))))))))("%d", &(*(&((*(&((*(&(var__1))))))))));
+  int var__4[(*(&((*(&((*(&(var__1)))))))))];
+  var__3 = 0;
+  while (var__3 < (*(&((*(&(var__1))))))) {
+    if (1) {
+      {
+        if (0) {
+        } else {
+          (*(&((*(&(scanf))))))(
+              "%d", &(*(&((*(&((*(&(var__4)))))))))[(*(&((*(&(var__3))))))]);
         }
-    }
-    if(c==0)
-    return 0;
-    int j=0;
-    while(j<c2)
+      }
+    };
+    (*(&((*(&((*(&(var__3)))))))))++;
+  }
+  if (1) {
+    (*(&((*(&((*(&(scanf)))))))))("%d", &(*(&((*(&(var__2)))))));
+  }
+  int var__5[(*(&(var__2)))];
+  (*(&((*(&(var__3)))))) = 0;
+  while ((*(&((*(&((*(&(var__3))))))))) < (*(&((*(&(var__2))))))) {
     {
-        j++;
-        i++;
-        if((B2[j])!=B1[i])
-        return 0;
+      (*(&((*(&(scanf))))))("%d", &var__5[var__3]);
+    };
+    (*(&((*(&(var__3))))))++;
+  }
+  int var__6 = (*(&((*(&((*(&(check_arrays)))))))))(
+      (*(&(var__4))), (*(&((*(&(var__5)))))), (*(&(var__1))),
+      (*(&((*(&((*(&(var__2))))))))));
+  if (0) {
+  } else {
+    if (!(*(&((*(&((*(&(var__6))))))))) == 1) {
+      {
+        (*(&((*(&((*(&(printf)))))))))("NO\n");
+      }
+    } else {
+      if (1) {
+        {
+          if (0) {
+          } else {
+            (*(&(printf)))("YES\n");
+          }
+        }
+      }
     }
-    return 1;
+  }
+  return 0;
+}
+int check_arrays(int var__7[], int var__8[], int var__9, int var__10) {
+  int var__3, var__11 = 0;
+  (*(&((*(&((*(&(var__3))))))))) = 0;
+  while (var__3 < var__9 - var__10) {
+    if (0) {
+    } else {
+      {
+        if (0) {
+        } else {
+          if (!(*(&((*(&((*(&(var__8)))))))))[0] ==
+              var__7[(*(&((*(&(var__3))))))]) {
+          } else {
+            {
+              if (1) {
+                (*(&((*(&((*(&(var__11))))))))) = 1;
+              }
+              if (1) {
+                break;
+              }
+            }
+          }
+        }
+      }
+    };
+    var__3++;
+  }
+  if (1) {
+    if (!var__11 == 0) {
+    } else {
+      if (0) {
+      } else {
+        return 0;
+      }
+    }
+  }
+  int var__12 = 0;
+  if (1) {
+    if ((*(&((*(&(var__12)))))) < (*(&((*(&(var__10))))))) {
+      do {
+        if (1) {
+          {
+            (*(&((*(&(var__12))))))++;
+            (*(&((*(&((*(&(var__3)))))))))++;
+            if (!((*(&((*(&((*(&(var__8)))))))))[(*(&(var__12)))]) !=
+                var__7[(*(&(var__3)))]) {
+            } else {
+              return 0;
+            }
+          }
+        }
+      } while ((*(&((*(&(var__12)))))) < (*(&((*(&(var__10)))))));
+    }
+  }
+  return 1;
 }

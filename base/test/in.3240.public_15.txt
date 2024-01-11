@@ -1,0 +1,6 @@
+3
+abc
+4
+dbcabc
+4444
+dbca

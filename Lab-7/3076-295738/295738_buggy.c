@@ -1,38 +1,64 @@
-/*numPass=4, numTotal=9
-Verdict:ACCEPTED, Visibility:1, Input:"abcdef", ExpOutput:"defabc", Output:"defabc"
-Verdict:WRONG_ANSWER, Visibility:1, Input:"programming", ExpOutput:"mmingaprogr", Output:"ammingprogr"
-Verdict:WRONG_ANSWER, Visibility:1, Input:"hello-@programmer", ExpOutput:"ogrammerrhello-@p", Output:"rogrammerhello-@p"
-Verdict:ACCEPTED, Visibility:1, Input:"abab", ExpOutput:"abab", Output:"abab"
-Verdict:WRONG_ANSWER, Visibility:0, Input:"hellodear", ExpOutput:"dearohell", Output:"odearhell"
-Verdict:ACCEPTED, Visibility:0, Input:"progamming", ExpOutput:"mmingproga", Output:"mmingproga"
-Verdict:WRONG_ANSWER, Visibility:0, Input:"abcdz", ExpOutput:"dzcab", Output:"cdzab"
-Verdict:WRONG_ANSWER, Visibility:0, Input:"abc", ExpOutput:"cba", Output:"bca"
-Verdict:ACCEPTED, Visibility:0, Input:"a", ExpOutput:"a", Output:"a"
-*/
 #include <stdio.h>
-   
+#include <stdlib.h>
+
+int strLen(char var__0[]) {
+  int var__1;
+  if (0) {
+  } else {
+    var__1 = 2;
+    while (var__0[(*(&((*(&(var__1))))))] != '\0') {
+      if (0) {
+      } else {
+        {}
+      };
+      (*(&((*(&((*(&(var__1)))))))))++;
+    }
+  }
+  if (0) {
+  } else {
+    return (*(&((*(&((*(&(var__1)))))))));
+  }
+}
+void swapStr(char var__0[]) {
+  int var__1, var__2 = strLen((*(&((*(&((*(&(var__0))))))))));
+  char var__3;
+  if (1) {
+    (*(&((*(&((*(&(var__1))))))))) = 0;
+    while (var__1 < (*(&(var__2))) / 2) {
+      if (1) {
+        {
+          if (0) {
+          } else {
+            (*(&((*(&((*(&(var__3))))))))) = (*(&((*(&(var__0))))))[var__1];
+          }
+          if (1) {
+            (*(&((*(&(var__0))))))[(*(&(var__1)))] =
+                var__0[(var__2 + 1) / 2 + (*(&(var__1)))];
+          }
+          if (1) {
+            (*(&((*(&(var__0))))))[(var__2 + 1) / 2 + (*(&((*(&(var__1))))))] =
+                var__3;
+          }
+        }
+      };
+      (*(&((*(&(var__1))))))++;
+    }
+  }
+}
 int main() {
-    char str[100];
-    int i,n=0;
-    scanf("%s",str);
-    for(i=0;str[i]!='\0';i++);
-    if(i%2==0){
-        for(n=i/2;n<i;n++){
-            printf("%c",str[n]);
-        }
-        for(n=0;n<i/2;n++){
-            printf("%c",str[n]);
-        }
-    }
-    else{
-        for(n=(i-1)/2;n<i;n++){
-            printf("%c",str[n]);
-        }
-        for(n=0;n<(i-1)/2;n++){
-            printf("%c",str[n]);
-        }
-    }
-    
-    
-	return 0;
+  char var__0[100];
+  (*(&((*(&(scanf))))))("%s", (*(&((*(&(var__0)))))));
+  int var__4;
+  if (0) {
+  } else {
+    scanf("%d", &(*(&((*(&((*(&(var__4))))))))));
+  }
+  if (1) {
+    swapStr((*(&((*(&(var__0)))))));
+  }
+  if (0) {
+  } else {
+    printf("%s", (*(&((*(&((*(&(var__0))))))))));
+  }
+  return 0;
 }

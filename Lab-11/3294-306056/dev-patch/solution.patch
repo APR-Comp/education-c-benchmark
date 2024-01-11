@@ -1,0 +1,106 @@
+--- Lab-11/3294-306056//306056_buggy.c	2023-11-27 20:53:21.265794070 +0200
++++ Lab-11/3294-306056//Main.c	2023-11-27 20:53:21.265794070 +0200
+@@ -1,63 +1,46 @@
++/*
++--------------------------------------------
++Up to 20% marks will be allotted for good programming practice. These include
++ - Comments: for non-trivial code
++ - Indentation: align your code properly
++ - Function use and modular programming
++ - Do not include anything in the header other than what is already given in the
++template. TAs: Recursive algorithm is required.
++ ---------------------------------------------
++
++Given a positive number n, you need to give as an output the following pattern.
++You need to use recursion. No marks if loops are used.
++
++Example 1
++Input:
++11
++
++Output:
++11 6 1 -4 1 6 11
++
++Example 2
++Input:
++15
++
++Output
++15 10 5 0 5 10 15
++*/
+ #include <stdio.h>
+-#include <stdlib.h>
+ 
+-int var__0;
+-void f(int var__1) {
+-  static int var__2 = 0;
+-  if (0) {
+-  } else {
+-    (*(&((*(&(var__2))))))++;
+-  }
+-  if (0) {
+-  } else {
+-    printf("%d", (*(&((*(&(var__1)))))));
+-  }
+-  if (1) {
+-    if (var__2 == (2 * (*(&((*(&((*(&(var__0))))))))) + 1)) {
+-    } else {
+-      {
+-        if (1) {
+-          return;
+-        }
+-      }
+-    }
+-  }
+-  if (var__2 <= (*(&((*(&(var__0))))))) {
+-    if (1) {
+-      f((*(&((*(&(var__1)))))) - 5);
+-    }
+-  } else {
+-    (*(&((*(&(f))))))(var__1 + 5);
++void pattern(n) {
++  if (n <= 0) {
++    printf("%d ", n);
++    return;
++  } else {
++    printf("%d ", n);
++    pattern(n - 5);
++    printf("%d ", n);
+   }
+ }
++
+ int main() {
+-  int var__3;
+-  if (0) {
+-  } else {
+-    scanf("%d", &(*(&(var__3))));
+-  }
+-  int var__4;
+-  int var__5;
+-  if (1) {
+-    (*(&((*(&((*(&(var__4))))))))) = var__3 / 5;
+-  }
+-  if (0) {
+-  } else {
+-    (*(&((*(&((*(&(var__5))))))))) = (*(&((*(&((*(&(var__3))))))))) % 5;
+-  }
+-  if (1) {
+-    if ((*(&((*(&((*(&(var__5))))))))) > 0) {
+-      if (0) {
+-      } else {
+-        (*(&((*(&((*(&(var__0))))))))) = var__4 + 1;
+-      }
+-    } else if (1) {
+-      (*(&((*(&(var__0)))))) = (*(&((*(&((*(&(var__4)))))))));
+-    }
+-  }
+-  (*(&((*(&((*(&(f)))))))))((*(&((*(&(var__3)))))));
+-  if (0) {
+-  } else {
+-    return 0;
+-  }
++  int n;
++  scanf("%d", &n);
++  pattern(n);
++  return 0;
+ }

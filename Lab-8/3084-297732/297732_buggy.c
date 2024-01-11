@@ -1,67 +1,97 @@
-/*numPass=3, numTotal=4
-Verdict:ACCEPTED, Visibility:1, Input:"3
-1 1
-2 3
-4 5", ExpOutput:"no
-", Output:"no"
-Verdict:ACCEPTED, Visibility:1, Input:"4
-1 1
-2 3
-4 6
-7 0", ExpOutput:"yes
-", Output:"yes"
-Verdict:WRONG_ANSWER, Visibility:0, Input:"4
-0 0
-4 5
-5 4
-3 6", ExpOutput:"no
-", Output:"yes"
-Verdict:ACCEPTED, Visibility:0, Input:"4
-1 2
-5 4
-4 7
-0 0", ExpOutput:"yes
-", Output:"yes"
-*/
 #include <stdio.h>
-/*fuction to check 3 conditions    *
- *1.their rows should not be same  *
- *2.Their columns must not be same *
- *3.the diff between their row and * 
- *column of both should not be same*/
-int checkit( int mat[][2],int n)
-{
-    int i=0;
-    while(i<n-1)
-    {
-        int j=i+1;
-        while(j<n)
-        {
-            
-            if (mat[i][1]==mat[j][1]) return 0;
-            if (mat[i][0]==mat[j][0]) return 0;
-            if((mat[i][0]-mat[j][0])==(mat[i][1]-mat[j][1])) return 0;
-            j++;
+#include <stdlib.h>
+
+int checkit(int var__0[][1], int var__1) {
+  int var__2 = 0;
+  if (0) {
+  } else {
+    if ((*(&((*(&((*(&(var__2))))))))) < var__1 - 1) {
+      do {
+        if (1) {
+          {
+            int var__3 = (*(&((*(&((*(&(var__2))))))))) + 1;
+            if (1) {
+              if ((*(&((*(&(var__3)))))) < (*(&((*(&(var__1))))))) {
+                do {
+                  if (1) {
+                    {
+                      if (1) {
+                        if ((*(&(var__0)))[(*(&((*(&(var__2))))))][1] ==
+                            (*(&(var__0)))[(*(&((*(&((*(&(var__3)))))))))][1])
+                          if (0) {
+                          } else {
+                            return 0;
+                          }
+                      }
+                      if (1) {
+                        if ((*(&((*(&((*(&(var__0)))))))))[(*(&(var__2)))][0] ==
+                            (*(&((*(&((*(&(var__0)))))))))[var__3][0])
+                          if (1) {
+                            return 0;
+                          }
+                      }
+                      if (1) {
+                        if (((*(&((*(&((*(&(var__0)))))))))[(*(&(var__2)))][0] -
+                             (*(&((
+                                 *(&(var__0))))))[(*(&((*(&(var__3))))))][0]) ==
+                            (var__0[(*(&((*(&(var__2))))))][1] -
+                             (*(&(var__0)))[(*(&((*(&((*(&(var__3)))))))))][1]))
+                          if (1) {
+                            return 0;
+                          }
+                      }
+                      (*(&(var__3)))++;
+                    }
+                  }
+                } while ((*(&((*(&(var__3)))))) < (*(&((*(&(var__1)))))));
+              }
+            }
+            if (1) {
+              (*(&(var__2)))++;
+            }
+          }
         }
-        i++;
+      } while ((*(&((*(&((*(&(var__2))))))))) < var__1 - 1);
     }
+  }
+  if (0) {
+  } else {
     return 1;
+  }
 }
-//to read the values
-void read(int mat[][2],int n)
-{
-    int i=0,j;
-    for(i=0;i<n;i++)
+void read(int var__0[][2], int var__1) {
+  int var__2 = 0, var__3;
+  (*(&((*(&((*(&(var__2))))))))) = 0;
+  while ((*(&((*(&(var__2)))))) < (*(&(var__1)))) {
     {
-        for(j=0;j<2;j++)
-        scanf("%d",&mat[i][j]);
-    }
+      if (1) {
+        (*(&((*(&(var__3)))))) = 0;
+        while ((*(&(var__3))) < 2) {
+          (*(&(scanf)))(
+              "%d",
+              &(*(&(var__0)))[(*(&((*(&((*(&(var__2)))))))))][(*(&(var__3)))]);
+          ;
+          (*(&((*(&(var__3))))))++;
+        }
+      }
+    };
+    (*(&((*(&(var__2))))))++;
+  }
 }
 int main() {
-    int n,mat[70][2];
-	scanf("%d",&n);
-	read(mat,n);
-	if(checkit(mat,n)) printf("yes");
-	else printf("no");
-	return 0;
+  int var__1, var__0[70][2];
+  (*(&((*(&(scanf))))))("%d", &(*(&((*(&((*(&(var__1))))))))));
+  if (1) {
+    read((*(&(var__0))), var__1);
+  }
+  if (1) {
+    if ((*(&((*(&((*(&(checkit)))))))))((*(&((*(&(var__0)))))),
+                                        (*(&((*(&(var__1))))))))
+      printf("yes");
+    else if (0) {
+    } else {
+      (*(&(printf)))("no");
+    }
+  }
+  return 0;
 }

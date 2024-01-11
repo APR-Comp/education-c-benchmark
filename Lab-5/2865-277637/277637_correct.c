@@ -49,22 +49,19 @@ Verdict:ACCEPTED, Visibility:0, Input:"10", ExpOutput:"1098765432*
 *987654321
 "
 */
-#include<stdio.h>
+#include <stdio.h>
 
-int main(){
-    int i,N,j;
-    scanf("%d",&N);
-    for (j=1; j<=N; j=j+1) 
-    {
-        for(i=N; i>=1; i=i-1)
-            if(j==i)
-            {
-                printf("*");
-            }    
-            else
-                printf("%d",i);
-        printf("\n");
-    }
-	//Enter your code here
-	return 0;
+int main() {
+  int i, N, j;
+  scanf("%d", &N);
+  for (j = 1; j <= N; j = j + 1) {
+    for (i = N; i >= 1; i = i - 1)
+      if (j == i) {
+        printf("*");
+      } else
+        printf("%d", i);
+    printf("\n");
+  }
+  // Enter your code here
+  return 0;
 }

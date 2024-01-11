@@ -1,79 +1,87 @@
-/*numPass=2, numTotal=4
-Verdict:ACCEPTED, Visibility:1, Input:"3
-1 1
-2 3
-4 5", ExpOutput:"no
-", Output:"no"
-Verdict:WRONG_ANSWER, Visibility:1, Input:"4
-1 1
-2 3
-4 6
-7 0", ExpOutput:"yes
-", Output:"no"
-Verdict:ACCEPTED, Visibility:0, Input:"4
-0 0
-4 5
-5 4
-3 6", ExpOutput:"no
-", Output:"no"
-Verdict:WRONG_ANSWER, Visibility:0, Input:"4
-1 2
-5 4
-4 7
-0 0", ExpOutput:"yes
-", Output:"no"
-*/
 #include <stdio.h>
-
-int flag=0;
+#include <stdlib.h>
+#include <string.h>
 int main() {
-    int n,a,b,i,j;
-    int r[8];
-    int c[8];
-	scanf("%d\n",&n);
-	for(i=0;i<8;i++)  //filling the row and column
-	{
-	    scanf("%d %d\n",&r[i],&c[i]);
-        
-	    
-	}
-	for(i=0;i<8;i++)
-	{
-	    for(j=i+1;j<8;j++)
-	    {
-	        	if(r[i]==r[j])//rows are same
-	        
-	        {	flag=1;
-	        		break;
-	        }		
-	        	else if(c[i]==c[j]) //columns are same
-	        {
-	        	flag=1;
-	        		break;
-	        }	
-	        	else if(r[j]-r[i]==c[j]-c[i]) //right diagonal are same 
-	        {	
-	        	flag=1;
-	        	    break;
-	        }	    
-	        	else if(r[i]+c[i]==r[j]+c[j]) //left diagonal are same
-	        {	
-	        	flag=1;
-	        		break;
-	        }		
-	    }
-	    if (flag==1)
-	    break;
-	}
-if(flag==1)
-{
-    printf("no");
-    
-}
-else if (flag==0)
-{
-    printf("yes");
-}	
-	
-	return 0;
+  int var__0[8][6];
+  int var__1, var__2, var__3;
+  if (0) {
+  } else {
+    (*(&((*(&(memset))))))((*(&((*(&(var__0)))))), 0, sizeof(var__0));
+  }
+  (*(&(scanf)))("%d", &(*(&((*(&((*(&(var__3))))))))));
+  int var__4[8], var__5[8], var__6[16], var__7[16];
+  if (0) {
+  } else {
+    (*(&((*(&(memset))))))(var__4, 0, sizeof(var__4));
+  }
+  (*(&((*(&(memset))))))((*(&(var__5))), 0, sizeof(var__5));
+  if (0) {
+  } else {
+    (*(&((*(&((*(&(memset)))))))))((*(&((*(&((*(&(var__6))))))))), 0,
+                                   sizeof((*(&((*(&(var__6))))))));
+  }
+  memset(var__7, 0, sizeof((*(&(var__7)))));
+  int var__8 = 0;
+  if (1) {
+    int var__9 = 0;
+    while ((*(&((*(&(var__9)))))) < (*(&((*(&((*(&(var__3)))))))))) {
+      if (0) {
+      } else {
+        {
+          scanf("%d %d", &(*(&((*(&((*(&(var__1))))))))), &var__2);
+          if (0) {
+          } else {
+            var__0[(*(&((*(&((*(&(var__1)))))))))][(*(&((*(&(var__2))))))] = 1;
+          }
+          if (0) {
+          } else {
+            if ((*(&((*(&((*(&(var__4)))))))))[(*(&((*(&(var__1))))))] == 1)
+              if (1) {
+                (*(&(var__8))) = 1;
+              } else
+                (*(&((*(&(var__4))))))[(*(&((*(&(var__1))))))] = 1;
+          }
+          if (0) {
+          } else {
+            if ((*(&(var__5)))[(*(&(var__2)))] == 1)
+              if (1) {
+                (*(&((*(&((*(&(var__8))))))))) = 1;
+              } else if (1) {
+                (*(&((*(&(var__5))))))[var__2] = 1;
+              }
+          }
+          if (0) {
+          } else {
+            if ((*(&((*(&(var__6))))))[(*(&(var__1))) + (*(&(var__2)))] == 1)
+              if (1) {
+                var__8 = 1;
+              } else if (0) {
+              } else {
+                var__6[(*(&(var__1))) + var__2] = 1;
+              }
+          }
+          if (var__7[8 + (*(&((*(&(var__1)))))) - var__2] == 1)
+            (*(&(var__8))) = 1;
+          else if (0) {
+          } else {
+            var__7[8 + (*(&((*(&((*(&(var__1))))))))) - (*(&(var__2)))] = 1;
+          }
+        }
+      };
+      (*(&(var__9)))++;
+    }
+  }
+  if (1) {
+    if ((*(&(var__8))) == 1)
+      if (0) {
+      } else {
+        printf("no\n");
+      }
+    else
+      (*(&((*(&((*(&(printf)))))))))("yes\n");
+  }
+  if (0) {
+  } else {
+    return 0;
+  }
 }

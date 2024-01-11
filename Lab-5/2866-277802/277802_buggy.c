@@ -1,64 +1,71 @@
-/*numPass=5, numTotal=9
-Verdict:ACCEPTED, Visibility:1, Input:"89", ExpOutput:"No
-", Output:"No"
-Verdict:WRONG_ANSWER, Visibility:1, Input:"42", ExpOutput:"Yes
-", Output:"No"
-Verdict:ACCEPTED, Visibility:1, Input:"59", ExpOutput:"No
-", Output:"No"
-Verdict:WRONG_ANSWER, Visibility:1, Input:"22", ExpOutput:"Yes
-", Output:"No"
-Verdict:WRONG_ANSWER, Visibility:0, Input:"109", ExpOutput:"Yes
-", Output:"No"
-Verdict:ACCEPTED, Visibility:0, Input:"131", ExpOutput:"No
-", Output:"No"
-Verdict:ACCEPTED, Visibility:0, Input:"123", ExpOutput:"No
-", Output:"No"
-Verdict:ACCEPTED, Visibility:0, Input:"125", ExpOutput:"No
-", Output:"No"
-Verdict:WRONG_ANSWER, Visibility:0, Input:"141", ExpOutput:"Yes
-", Output:"No"
-*/
-#include<stdio.h>
+#include <stdio.h>
+#include <stdlib.h>
 
-int check_prime(int num)//defining the fuction
-{
-  int i=1,div;//declaring the variable
-  div=num%i;
-while(i<=num-1)//loop
-{
-  div=num%i;
-
-     if(div==0)//condition
-        return 0 ;
-     else
-        i=i+1;//incrementation
+int check_prime(int var__0) {
+  int var__1 = 1, var__2;
+  if (1) {
+    (*(&(var__2))) = (*(&(var__0))) / (*(&((*(&((*(&(var__1)))))))));
+  }
+  if (var__1 <= (*(&((*(&((*(&(var__0))))))))) - 1) {
+    do {
+      {
+        if (1) {
+          (*(&((*(&(var__2)))))) =
+              (*(&((*(&((*(&(var__0))))))))) % (*(&((*(&(var__1))))));
+        }
+        if (var__2 == 0)
+          if (1) {
+            return 0;
+          } else if (0) {
+          } else {
+            (*(&((*(&((*(&(var__1))))))))) = (*(&((*(&((*(&(var__1))))))))) + 1;
+          }
+      }
+    } while (var__1 <= (*(&((*(&((*(&(var__0))))))))) - 1);
+  }
+  return 1;
 }
-return 1;
-}
-
-
-int main()//main function
-{
-    int n,check1,check2,x=2,y=0;//declaring the variable
-    scanf("%d",&n);
-    
-    
-    while(x<=n-2)//loop
-    {
-        check1=check_prime(x);
-        check2=check_prime(n-x);
-    if(check1==1&&check2==1){
-    y=1;
-    printf("Yes");
-        break;
+int main() {
+  int var__3, var__4, var__5, var__6 = 2, var__7 = 0;
+  if (1) {
+    scanf("%d", &(*(&(var__3))));
+  }
+  if (1) {
+    if ((*(&((*(&(var__6)))))) <= (*(&((*(&(var__3)))))) - 2) {
+      do {
+        {
+          (*(&((*(&(var__4)))))) =
+              (*(&(check_prime)))((*(&((*(&((*(&(var__6))))))))));
+          if (1) {
+            var__5 = (*(&((*(&(check_prime))))))(
+                (*(&((*(&(var__3)))))) - (*(&((*(&((*(&(var__6))))))))));
+          }
+          if (1) {
+            if (var__4 == 1 && (*(&(var__5))) == 1) {
+              if (1) {
+                var__7 = 1;
+              }
+              (*(&((*(&(printf))))))("Yes");
+              break;
+            }
+          }
+          if (0) {
+          } else {
+            (*(&((*(&(var__6)))))) = var__6 + 1;
+          }
+        }
+      } while ((*(&((*(&(var__6)))))) <= (*(&((*(&(var__3)))))) - 2);
     }
-    x=x+1;
-    }
-    if(y==0)//condition
-    printf("No");
-    
-    
-	
-	
-	return 0;
+  }
+  if (1) {
+    if (var__7 == 0)
+      if (0) {
+      } else {
+        (*(&((*(&((*(&(printf)))))))))("No");
+      }
+  }
+  if (0) {
+  } else {
+    return 0;
+  }
 }

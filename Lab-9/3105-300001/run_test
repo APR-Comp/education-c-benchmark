@@ -1,3 +1,4 @@
+#!/bin/bash
 script_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 benchmark_name=$(echo $script_dir | rev | cut -d "/" -f 3 | rev)
 project_name=$(echo $script_dir | rev | cut -d "/" -f 2 | rev)
@@ -10,19 +11,72 @@ TEST_ID=$1
 
 EXIT_CODE=1
 
+export ASAN_OPTIONS=detect_leaks=0,allocator_may_return_null=1
+
 if [ -z "$TEST_ID" ];
 then
-  echo "requires a test case id"
-  exit 255
+  for x in $dir_test/in.${problem_name}.*.txt;
+  do
+    TEST_ID=$(echo $x | rev | cut -d "/" -f 1 | rev | cut -d "." -f 3)
+    TEST_CASE=$dir_test/in.${problem_name}.${TEST_ID}.txt
+    cd $dir_test
+
+    timeout -k 5s 20s ${dir_name}/src/${subject_name} < $TEST_CASE > /tmp/out-${subject_name}-${problem_name}.txt 2>/tmp/err-${subject_name}-${problem_name}.txt
+    EXIT_CODE=$?
+    if [[ EXIT_CODE -ne 0 ]]
+    then
+        echo "FAIL"
+        break;
+    else
+      err=$(cat /tmp/err-${subject_name}-${problem_name}.txt | grep 'AddressSanitizer'  | wc -l)
+      if [[ err -ne 0 ]]
+      then
+        echo "FAIL"
+        exit 128
+      fi;
+    fi;
+
+    gcc ${dir_name}/src/Main.c -o ${dir_name}/src/Main -lm
+
+    timeout -k 5s 20s ${dir_name}/src/Main < $TEST_CASE > /tmp/reference-${subject_name}-${problem_name}.txt
+
+    diff -u /tmp/reference-${subject_name}-${problem_name}.txt /tmp/out-${subject_name}-${problem_name}.txt
+    EXIT_CODE=$?
+    if [[ EXIT_CODE -ne 0 ]]
+    then
+        echo "FAIL"
+        break;
+    fi;
+  done
+  exit $EXIT_CODE
 fi
 
 
 TEST_CASE=$dir_test/in.${problem_name}.${TEST_ID}.txt
-TEST_OUTPUT=$dir_test/out.${problem_name}.${TEST_ID}.txt
 
 if [ -f "$TEST_CASE" ]; then
     cd $dir_test
-    diff -u ${TEST_OUTPUT} <( timeout -k 5s 10s ${dir_name}/src/${subject_name} < $TEST_CASE )
+
+    timeout -k 5s 20s ${dir_name}/src/${subject_name} < $TEST_CASE > /tmp/out-${subject_name}-${problem_name}.txt 2>/tmp/err-${subject_name}-${problem_name}.txt
+    EXIT_CODE=$?
+    if [[ EXIT_CODE -ne 0 ]]
+    then
+        echo "FAIL"
+        exit $EXIT_CODE;
+    else
+      err=$(cat /tmp/err-${subject_name}-${problem_name}.txt | grep 'AddressSanitizer'  | wc -l)
+      if [[ err -ne 0 ]]
+      then
+        echo "FAIL"
+        exit 128
+      fi;
+    fi;
+
+    gcc ${dir_name}/src/Main.c -o ${dir_name}/src/Main -lm
+
+    timeout -k 5s 20s ${dir_name}/src/Main < $TEST_CASE > /tmp/reference-${subject_name}-${problem_name}.txt
+
+    diff -u /tmp/reference-${subject_name}-${problem_name}.txt /tmp/out-${subject_name}-${problem_name}.txt
     EXIT_CODE=$?
 else
     echo "unknown test case"

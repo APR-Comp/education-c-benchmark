@@ -1,41 +1,63 @@
-/*numPass=0, numTotal=4
-Verdict:WRONG_ANSWER, Visibility:1, Input:"2", ExpOutput:"2 -3 2 ", Output:"2-32"
-Verdict:WRONG_ANSWER, Visibility:1, Input:"20", ExpOutput:"20 15 10 5 0 5 10 15 20 ", Output:"201510505101520"
-Verdict:WRONG_ANSWER, Visibility:1, Input:"4", ExpOutput:"4 -1 4 ", Output:"4-14"
-Verdict:WRONG_ANSWER, Visibility:0, Input:"16", ExpOutput:"16 11 6 1 -4 1 6 11 16 ", Output:"161161-4161116"
-*/
 #include <stdio.h>
-int x;
-void f(int n)
-{
-    static int c=0;
-    c++;
-    printf("%d",n);
-    if(c==(2*x+1))
-    {return;}
-    if(c<=x)
-    {
-        f(n-5);
+#include <stdlib.h>
+
+int var__0;
+void f(int var__1) {
+  static int var__2 = 0;
+  if (0) {
+  } else {
+    (*(&((*(&(var__2))))))++;
+  }
+  if (0) {
+  } else {
+    printf("%d", (*(&((*(&(var__1)))))));
+  }
+  if (1) {
+    if (var__2 == (2 * (*(&((*(&((*(&(var__0))))))))) + 1)) {
+    } else {
+      {
+        if (1) {
+          return;
+        }
+      }
     }
-    else
-    {
-        f(n+5);
+  }
+  if (var__2 <= (*(&((*(&(var__0))))))) {
+    if (1) {
+      f((*(&((*(&(var__1)))))) - 5);
     }
+  } else {
+    (*(&((*(&(f))))))(var__1 + 5);
+  }
 }
-int main()
-{   
-    int N;
-    scanf("%d",&N);
-    int a;
-    int b;
-    a=N/5;
-    b=N%5;
-    if(b>0)
-    {
-        x=a+1;
+int main() {
+  int var__3;
+  if (0) {
+  } else {
+    scanf("%d", &(*(&(var__3))));
+  }
+  int var__4;
+  int var__5;
+  if (1) {
+    (*(&((*(&((*(&(var__4))))))))) = var__3 / 5;
+  }
+  if (0) {
+  } else {
+    (*(&((*(&((*(&(var__5))))))))) = (*(&((*(&((*(&(var__3))))))))) % 5;
+  }
+  if (1) {
+    if ((*(&((*(&((*(&(var__5))))))))) > 0) {
+      if (0) {
+      } else {
+        (*(&((*(&((*(&(var__0))))))))) = var__4 + 1;
+      }
+    } else if (1) {
+      (*(&((*(&(var__0)))))) = (*(&((*(&((*(&(var__4)))))))));
     }
-    else
-    x=a;
-    f(N);
-	return 0;
+  }
+  (*(&((*(&((*(&(f)))))))))((*(&((*(&(var__3)))))));
+  if (0) {
+  } else {
+    return 0;
+  }
 }

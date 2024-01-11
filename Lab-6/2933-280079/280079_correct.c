@@ -28,36 +28,30 @@ Verdict:ACCEPTED, Visibility:0, Input:"5
 #include <stdio.h>
 
 int main() {
-     int N1,N2,a[50],b[50],k,x,y;
-     scanf("%d",&N1);  //no. of elements in a[]
-     for(int i=0;i<N1;i++)
-     {
-         scanf("%d",&a[i]);
-     }
-     scanf("%d",&N2);
-     
-     for(int i=0;i<N2;i++)
-     {
-         scanf("%d",&b[i]);
-	 }
-	for(k=0;k<=N1-N2+1;k++)
-	{
-	    int count=0,x=k,y=0;
-	while((x<k+N2)&&(y<=N2-1))
-	{
-	    if(a[x]==b[y])
-	    count++;
-	    x++;
-	    y++;
-	}
-	
-	if(count==N2)
-	{
-	    printf("YES");
-	    break;
-	}
-	else if((count!=N2)&&(k==N1-N2+1))
-	printf("NO");
-	}
-	return 0;
+  int N1, N2, a[50], b[50], k, x, y;
+  scanf("%d", &N1); // no. of elements in a[]
+  for (int i = 0; i < N1; i++) {
+    scanf("%d", &a[i]);
+  }
+  scanf("%d", &N2);
+
+  for (int i = 0; i < N2; i++) {
+    scanf("%d", &b[i]);
+  }
+  for (k = 0; k <= N1 - N2 + 1; k++) {
+    int count = 0, x = k, y = 0;
+    while ((x < k + N2) && (y <= N2 - 1)) {
+      if (a[x] == b[y])
+        count++;
+      x++;
+      y++;
+    }
+
+    if (count == N2) {
+      printf("YES");
+      break;
+    } else if ((count != N2) && (k == N1 - N2 + 1))
+      printf("NO");
+  }
+  return 0;
 }

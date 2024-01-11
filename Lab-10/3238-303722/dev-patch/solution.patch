@@ -1,0 +1,181 @@
+--- Lab-10/3238-303722/303722_buggy.c	2023-11-28 02:53:21.249127236 +0800
++++ Lab-10/3238-303722/Main.c	2023-12-27 07:25:54.625223891 +0800
+@@ -1,74 +1,123 @@
+-/*numPass=1, numTotal=5
+-Verdict:WRONG_ANSWER, Visibility:1, Input:"18 abcxyzdefxyzghixyz
++/*
++Up to 20% marks will be allotted for good programming practice. These include
++ - Comments: for non-trivial code
++ - Indentation: align your code properly
++ - Function use and modular programming
++ - Do not include anything in the header other than what is already given in the
++template.
++ - Use pointers only and when required allocate memory Dynamically instead of
++static memory allocation otherwise you will get 0 marks. All Strings are to be
++allocated dynamically
++
++You are given three strings s1, s2 and s3 as input. You need to replace all the
++occurrences of s2 in s1 by s3. Print the string s1 unchanged if s2 does not
++occur in s1.
++
++For Example:
++if the string s1 is "abcxyzdefxyzghixyz",
++s2 is "xyz",
++s3 is "uv" then the output should be "abcuvdefuvghiuv"
++
++INPUT FORMAT :
++Three lines of input each of them are of the form "n s" where n is size of the
++input string s.
++
++For the above example :
++INPUT:
++18 abcxyzdefxyzghixyz
+ 3 xyz
+-2 uv", ExpOutput:"abcuvdefuvghiuv
+-", Output:"abcuvzdefuvzghiuvz"
+-Verdict:WRONG_ANSWER, Visibility:1, Input:"16 hello,howareyou?
+-3 are
+-4 were", ExpOutput:"hello,howwereyou?
+-", Output:"hello,howwereeyou?"
+-Verdict:WRONG_ANSWER, Visibility:1, Input:"20 abcdhefghighehiklmhe
+-2 he
+-4 hehe", ExpOutput:"abcdhehefghighehehiklmhehe
+-", Output:"abcdheheefghigheheehiklmhehee"
+-Verdict:WRONG_ANSWER, Visibility:1, Input:"18 hihellohihellohiih
+-2 hi
+-5 hello", ExpOutput:"hellohellohellohellohelloih
+-", Output:"helloihellohelloihellohelloiih"
+-Verdict:ACCEPTED, Visibility:0, Input:"14 hihellohihello
+-3 hii
+-2 hi", ExpOutput:"hihellohihello
+-", Output:"hihellohihello"
++2 uv
++
++OUTPUT:
++abcuvdefuvghiuv
++
++Note : You can assume that there would be no spaces in the input strings
+ */
+ #include <stdio.h>
+ #include <stdlib.h>
+ 
+-int length(char *s1) // Returns the length of the string
+-{
+-  int i;
+-  for (i = 0; s1[i] != '\0'; i++) {
+-  }
++int get_len(char s[]) {
++  int i = 0;
++  while (s[i] != '\0')
++    i++;
++
+   return i;
+ }
+ 
+-int check_string(char *s,
+-                 char *f) // Tells the user has the substring has occured
+-{
+-  int i;
+-  for (i = 0; f[i] != '\0'; i++) {
+-    if (f[i] != s[i]) {
+-      return 1;
+-    }
++int number_occourences(char *s, char *t) {
++  int s_len, t_len, i, j = 0;
++
++  int ncount, count = 0;
++  s_len = get_len(s);
++  t_len = get_len(t);
++
++  for (i = 0; i < s_len; i++) {
++    ncount = 0;
++    for (j = 0; i + j < s_len && j < t_len; j++)
++      if (s[i + j] == t[j])
++        ncount++;
++
++    count = count + ncount / t_len;
+   }
+-  return 0;
++
++  return count;
+ }
+ 
+-void replace_substring(char *s, char *t, char *w) {
+-  int i;
+-  for (i = 0; s[i] != '\0'; i++) {
+-    if (s[i] == t[0] && check_string(s + i, t) == 0) {
+-      printf("%s", w);
+-      i = i + length(t) - 2; // Cause it will be incremented once more
+-    } else
+-      printf("%c", s[i]);
++int replace_substring(char *s, char *t, char *w) {
++  int j, i = 0, k = 0, index = -1, ncount = 0;
++  char *copy, *x, *y, *z;
++
++  int s_len = get_len(s);
++  int t_len = get_len(t);
++  int w_len = get_len(w);
++
++  int max_size_new = s_len + w_len * (number_occourences(s, t) + 1);
++  copy = (char *)malloc(max_size_new * sizeof(char));
++
++  for (i = 0; i < s_len; i++) {
++    ncount = 0;
++
++    // checking if we have an occourence of a substring
++    for (j = 0; i + j < s_len && j < t_len; j++)
++      if (s[i + j] == t[j])
++        ncount++;
++
++    // we have found an occourence
++    if (ncount / t_len) {
++      for (j = 0; j < w_len; j++)
++        copy[k + j] = w[j];
++
++      i = i + t_len - 1;
++      k = k + w_len;
++    } else {
++      copy[k] = s[i];
++      k++;
++    }
+   }
++
++  copy[k] = '\0';
++
++  printf("%s\n", copy);
+ }
+ 
+ int main() {
+-  char *s1, *s2, *s3; // The three strings
+-  int n1, n2, n3;     // For the length of the three strings
++  int n1, n2, n3;
++  char *s, *t, *w;
++
+   scanf("%d", &n1);
+-  s1 = (char *)malloc((n1 + 1) * sizeof(char));
+-  scanf("%s", s1);
++  s = (char *)malloc((n1 + 1) * sizeof(char));
++  scanf("%s", s);
++
+   scanf("%d", &n2);
+-  s2 = (char *)malloc((n2 + 1) * sizeof(char));
+-  scanf("%s", s2);
++  t = (char *)malloc((n2 + 1) * sizeof(char));
++  scanf("%s", t);
++
+   scanf("%d", &n3);
+-  s3 = (char *)malloc((n3 + 1) * sizeof(char));
+-  scanf("%s", s3);
+-  // printf("%s",s1);
+-  // printf("%s",s2);
+-  // printf("%s",s3);
+-  replace_substring(s1, s2, s3);
++  w = (char *)malloc((n3 + 1) * sizeof(char));
++  scanf("%s", w);
++
++  // printf("%d" , number_occourences(s,t));
++  replace_substring(s, t, w);
++
+   return 0;
+ }
+\ No newline at end of file

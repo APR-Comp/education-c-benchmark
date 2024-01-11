@@ -1,12 +1,12 @@
 /*
-ANNOUNCEMENT: Up to 20% marks will be allotted for good programming practice. These include 
+ANNOUNCEMENT: Up to 20% marks will be allotted for good programming practice.
+These include
 - Comments: for the non trivial part of the code
 - Indentation: align your code properly
 - Don't put extra whitespace anywhere.
 ---------------------------------
-Given an integer N(N>0) as input,your program should output the following pattern,
-eg: 
-Input : 
+Given an integer N(N>0) as input,your program should output the following
+pattern, eg: Input :
 5
 
 Output:
@@ -24,20 +24,17 @@ Output:
 2*
 *1
 */
-#include<stdio.h>
-int main()
-{
-  int i,j;
+#include <stdio.h>
+int main() {
+  int i, j;
   int N;
-  scanf("%d",&N);
-  for(i=1;i<=N;i++)
-  {
-    for(j=N;j>=1;j--)
-    {
-      if(i==j)
+  scanf("%d", &N);
+  for (i = 1; i <= N; i++) {
+    for (j = N; j >= 1; j--) {
+      if (i == j)
         printf("*");
       else
-        printf("%d",j);
+        printf("%d", j);
     }
     printf("\n");
   }

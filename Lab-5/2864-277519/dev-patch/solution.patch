@@ -1,0 +1,86 @@
+--- Lab-5/2864-277519//277519_buggy.c	2023-11-27 20:53:21.282460903 +0200
++++ Lab-5/2864-277519//Main.c	2023-11-27 20:53:21.282460903 +0200
+@@ -1,34 +1,55 @@
+-/*numPass=4, numTotal=5
+-Verdict:ACCEPTED, Visibility:1, Input:"3 23", ExpOutput:"3 5 7 11 13 17 19 23 ",
+-Output:"3 5 7 11 13 17 19 23 " Verdict:ACCEPTED, Visibility:1, Input:"5 31",
+-ExpOutput:"5 7 11 13 17 19 23 29 31 ", Output:"5 7 11 13 17 19 23 29 31 "
+-Verdict:WRONG_ANSWER, Visibility:1, Input:"1  20", ExpOutput:"2 3 5 7 11 13 17
+-19 ", Output:"1 2 3 5 7 11 13 17 19 " Verdict:ACCEPTED, Visibility:0, Input:"23
+-57", ExpOutput:"23 29 31 37 41 43 47 53 ", Output:"23 29 31 37 41 43 47 53 "
+-Verdict:ACCEPTED, Visibility:0, Input:"31 47", ExpOutput:"31 37 41 43 47 ",
+-Output:"31 37 41 43 47 "
+-*/
+-#include <stdio.h>
++/*
++ANNOUNCEMENT: Up to 20% marks will be allotted for good programming practice.
++These include
++- Comments: for the non trivial part of the code
++- Indentation: align your code properly
++- Use the function in the template compulsorily and more functions, if
++necessary.
++---------------------------------
++Given two positive integers, n1 and n2, output all the prime numbers between
++(and including) n1 and n2, separated by a space each.
+ 
+-int check_prime(int num) {
++e.g.
+ 
+-  // Complete the function definitions here.
+-  int j, r;
+-  for (j = 2; j < num; j++) {
+-    r = num % j;
+-    if (r == 0)
+-      return 0;
+-  }
+-  return 1;
+-}
++Input:
++11 20
++Output:
++11 13 17 19
++
++
++Input:
++3 11
++Output:
++3 5 7 11
++
++Input:
++4 10
++Output:
++5 7
++*/
++#include <stdio.h>
++int check_prime(int num);
+ int main() {
+-  // Enter your code here
+-  int a, n1, n2, num;
++  int n1, n2, i, flag;
+   scanf("%d %d", &n1, &n2);
+-  for (num = n1; num <= n2; num++) {
+-    a = check_prime(num);
+-    if (a != 0)
+-      printf("%d ", num);
++  for (i = n1; i <= n2; ++i) {
++    flag = check_prime(i);
++    if (flag == 0)
++      printf("%d ", i);
+   }
+   return 0;
++}
++int check_prime(int num) /* User-defined function to check prime number*/
++{
++  if (num == 1) {
++    return 1;
++  }
++  int j, flag = 0;
++  for (j = 2; j <= num / 2; ++j) {
++    if (num % j == 0) {
++      flag = 1;
++      break;
++    }
++  }
++  return flag;
+ }
+\ No newline at end of file

@@ -1,45 +1,68 @@
-/*numPass=4, numTotal=9
-Verdict:ACCEPTED, Visibility:1, Input:"abcdef", ExpOutput:"defabc", Output:"defabc"
-Verdict:WRONG_ANSWER, Visibility:1, Input:"programming", ExpOutput:"mmingaprogr", Output:"mmingamming"
-Verdict:WRONG_ANSWER, Visibility:1, Input:"hello-@programmer", ExpOutput:"ogrammerrhello-@p", Output:"ogrammerrogrammer"
-Verdict:ACCEPTED, Visibility:1, Input:"abab", ExpOutput:"abab", Output:"abab"
-Verdict:WRONG_ANSWER, Visibility:0, Input:"hellodear", ExpOutput:"dearohell", Output:"dearodear"
-Verdict:ACCEPTED, Visibility:0, Input:"progamming", ExpOutput:"mmingproga", Output:"mmingproga"
-Verdict:WRONG_ANSWER, Visibility:0, Input:"abcdz", ExpOutput:"dzcab", Output:"dzcdz"
-Verdict:WRONG_ANSWER, Visibility:0, Input:"abc", ExpOutput:"cba", Output:"cbc"
-Verdict:ACCEPTED, Visibility:0, Input:"a", ExpOutput:"a", Output:"a"
-*/
 #include <stdio.h>
-int str_len (char str[], int size)
-    {
-        int i=0;
-        while (str[i]!='\0')
-            i++;
-        return i;
-    }
+#include <stdlib.h>
 
-int main()
-    {
-        char ar[100];
-        int len, i, tmp;
-        scanf ("%s", ar);
-        len = str_len (ar, 100);
-        for (i=0; i<len/2; i++)
-            {
-                if (len%2 == 0)
-                    {
-                        tmp = ar[i];
-                        ar[i] = ar[len/2 + i];
-                        ar[len/2 + i] = tmp;
-                    }
-                else
-                    {
-                        tmp = ar[i];
-                        ar [i] = ar[len/2 + 1 + i];
-                        ar[len/2 + 1 + i] = ar[i];
-                    }
+int str_len(char var__0[], int var__1) {
+  int var__2 = 0;
+  if ((*(&((*(&(var__0))))))[var__2] != '\0') {
+    do {
+      if (0) {
+      } else {
+        (*(&((*(&(var__2))))))++;
+      }
+    } while ((*(&((*(&(var__0))))))[var__2] != '\0');
+  }
+  if (1) {
+    return (*(&((*(&((*(&(var__2)))))))));
+  }
+}
+int main() {
+  char var__3[100];
+  int var__4, var__2, var__5;
+  if (0) {
+  } else {
+    (*(&(scanf)))("%s", (*(&((*(&((*(&(var__3))))))))));
+  }
+  if (1) {
+    (*(&(var__4))) = (*(&(str_len)))((*(&((*(&((*(&(var__3))))))))), 100);
+  }
+  if (0) {
+  } else {
+    var__2 = 0;
+    while ((*(&((*(&(var__2)))))) < (*(&((*(&((*(&(var__4))))))))) / 2) {
+      {
+        if (0) {
+        } else {
+          if (!(*(&((*(&((*(&(var__4))))))))) % 2 == 0) {
+            if (1) {
+              {
+                var__5 = var__3[var__2];
+                if (1) {
+                  (*(&((*(&((*(&(var__3)))))))))[var__2] = (*(&((
+                      *(&(var__3))))))[var__4 / 2 + 1 + (*(&((*(&(var__2))))))];
+                }
+                (*(&((*(&(var__3))))))[(*(&(var__4))) / 2 + 1 + var__2] =
+                    (*(&((*(&(var__3))))))[(*(&((*(&(var__2))))))];
+              }
             }
-        printf ("%s", ar);
-	// Fill this area with your code.
-	return 0;
+          } else {
+            {
+              if (1) {
+                var__5 = (*(&((*(&((*(&(var__3)))))))))[var__2];
+              }
+              (*(&((*(&((*(&(var__3)))))))))[(*(&(var__2)))] =
+                  var__3[(*(&(var__4))) / 2 + (*(&(var__2)))];
+              (*(&((*(&(var__3))))))[(*(&((*(&(var__4)))))) / 2 +
+                                     (*(&((*(&((*(&(var__2)))))))))] =
+                  (*(&((*(&(var__5))))));
+            }
+          }
+        }
+      };
+      (*(&(var__2)))++;
     }
+  }
+  if (1) {
+    (*(&((*(&(printf))))))("%s", var__3);
+  }
+  return 0;
+}

@@ -1,0 +1,137 @@
+--- Lab-7/3077-295971//295971_buggy.c	2023-11-27 20:53:21.292461003 +0200
++++ Lab-7/3077-295971//Main.c	2023-11-27 20:53:21.292461003 +0200
+@@ -1,77 +1,62 @@
++/*
++Up to 20% marks will be allotted for good programming practice. These include
++- Comments: for nontrivial code
++- Indentation: align your code properly
++- Function use and modular programming
++- Usage of string.h is NOT allowed. Do not include anything in the header other
++than what is already given in the template.
++--------------------------------------------------------------------------------------------------------------
++
++Write a program to shift a given string by an input amount 'n' and print the
++final string. The string has only lower case alphabets.
++
++Input Format:
++A string of at most 100 lower case alphabets.
++A non-negative integer n.
++
++Output Format:
++The string with each alphabet shifted by n.
++
++Example 1:
++Input:
++abcdef
++2
++
++Output:
++cdefgh
++
++Example 2:
++Input:
++wxyz
++3
++
++Output:
++zabc
++*/
+ #include <stdio.h>
+-#include <stdlib.h>
+ 
+-int read(char var__0[]) {
+-  int var__1, var__2 = 0;
+-  char var__3;
+-  if (0) {
+-  } else {
+-    var__3 = getchar();
+-  }
+-  var__1 = 1;
+-  while ((*(&((*(&((*(&(var__3))))))))) != '\n') {
+-    {
+-      (*(&((*(&(var__0))))))[(*(&((*(&(var__1))))))] =
+-          (*(&((*(&((*(&(var__3)))))))));
+-      (*(&((*(&((*(&(var__2))))))))) = (*(&((*(&(var__2)))))) + 1;
+-      if (1) {
+-        (*(&((*(&(var__3)))))) = (*(&((*(&(getchar))))))();
+-      }
+-    };
+-    (*(&((*(&(var__1))))))++;
+-  }
+-  var__0[(*(&(var__2)))] = '\0';
+-  if (0) {
+-  } else {
+-    return var__2;
++int strLen(char str[]) {
++  int i;
++  for (i = 0; str[i] != '\0'; i++) {
+   }
++
++  return i;
+ }
+-void shift(char var__0[], int var__5, int var__2) {
+-  int var__1, var__6, var__7;
+-  char var__3;
+-  (*(&((*(&((*(&(var__6))))))))) = (*(&((*(&(var__5)))))) % 26;
+-  (*(&((*(&((*(&(var__1))))))))) = 0;
+-  while (var__1 < (*(&(var__2)))) {
+-    {
+-      if (0) {
+-      } else {
+-        (*(&((*(&((*(&(var__3))))))))) =
+-            (*(&(var__0)))[(*(&((*(&((*(&(var__1)))))))))] +
+-            (*(&((*(&(var__6))))));
+-      }
+-      if (1) {
+-        if (((*(&(var__3))) <= 'a') || ((*(&((*(&(var__3)))))) >= 'z')) {
+-          if (1) {
+-            (*(&(var__7))) =
+-                (*(&(var__0)))[(*(&((*(&(var__1))))))] + (*(&(var__6))) - 'z';
+-          }
+-          if (0) {
+-          } else {
+-            (*(&((*(&(var__3)))))) = 'a' + (*(&((*(&((*(&(var__7))))))))) - 1;
+-          }
+-        }
+-      }
+-      if (0) {
+-      } else {
+-        (*(&((*(&((*(&(printf)))))))))("%c", var__3);
+-      }
+-    };
+-    (*(&((*(&(var__1))))))++;
+-  }
++
++void ShiftByAmount(char *str,
++                   int amount) // Shift all characters by a specified amount
++{
++  int i, len = strLen(str);
++
++  for (i = 0; i < len; i++)
++    str[i] = (str[i] - 'a' + amount) % 26 + 'a';
+ }
+ int main() {
+-  char var__0[100];
+-  int var__5, var__8;
+-  if (1) {
+-    (*(&((*(&(var__8)))))) =
+-        (*(&((*(&(read))))))((*(&((*(&((*(&(var__0))))))))));
+-  }
+-  (*(&(scanf)))("\n%d", &(*(&((*(&((*(&(var__5))))))))));
+-  if (1) {
+-    (*(&(shift)))((*(&((*(&(var__0)))))), (*(&(var__5))),
+-                  (*(&((*(&((*(&(var__8))))))))));
+-  }
+-  if (1) {
+-    return 0;
+-  }
+-}
++  char str[100];
++  scanf("%s", str);
++  int n;
++  scanf("%d", &n);
++  ShiftByAmount(str, n);
++  printf("%s", str);
++  return 0;
++}
+\ No newline at end of file

@@ -28,30 +28,27 @@ Verdict:ACCEPTED, Visibility:0, Input:"8 10
 ", Output:"NO"
 */
 #include <stdio.h>
-struct index{
-    int x;
-    int y;
+struct index {
+  int x;
+  int y;
 };
-struct interval{
-    struct index left;
-    struct index right;
+struct interval {
+  struct index left;
+  struct index right;
 };
 struct interval pt;
 int main() {
-    int x,y;
-    scanf("%d%d%d%d",&pt.left.x,&pt.left.y,&pt.right.x,&pt.right.y);
-    if(pt.right.x>=pt.left.x && pt.right.x<=pt.left.y){
-        printf("YES");
-    } 
-    else if(pt.right.y>=pt.left.x &&pt.right.y<=pt.left.y){
-        printf("YES");
-    }
-    else if(pt.left.x>=pt.right.x && pt.left.x<=pt.right.y){
-        printf("YES");
-    }
-    else if(pt.left.y>=pt.right.x && pt.left.y<=pt.right.y){
-        printf("YES");
-    }
-    else printf("NO");
-    return 0;
+  int x, y;
+  scanf("%d%d%d%d", &pt.left.x, &pt.left.y, &pt.right.x, &pt.right.y);
+  if (pt.right.x >= pt.left.x && pt.right.x <= pt.left.y) {
+    printf("YES");
+  } else if (pt.right.y >= pt.left.x && pt.right.y <= pt.left.y) {
+    printf("YES");
+  } else if (pt.left.x >= pt.right.x && pt.left.x <= pt.right.y) {
+    printf("YES");
+  } else if (pt.left.y >= pt.right.x && pt.left.y <= pt.right.y) {
+    printf("YES");
+  } else
+    printf("NO");
+  return 0;
 }

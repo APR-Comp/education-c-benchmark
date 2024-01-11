@@ -34,33 +34,36 @@ lhoeidear", ExpOutput:"6", Output:"6"
 */
 #include <stdio.h>
 #include <stdlib.h>
-int n1,n2,count=0;
-int get_common_elements(char *str1,char *str2) {
-    int i,j;
-    for (i=0;i<n1;i++) {
-        for (j=0;j<n2;j++) {
-            if (str1[i]==str2[j]) {
-                count++;
-               str1[i]=1;str2[j]=2; 
-            }
-        }
+int n1, n2, count = 0;
+int get_common_elements(char *str1, char *str2) {
+  int i, j;
+  for (i = 0; i < n1; i++) {
+    for (j = 0; j < n2; j++) {
+      if (str1[i] == str2[j]) {
+        count++;
+        str1[i] = 1;
+        str2[j] = 2;
+      }
     }
-    return count;
+  }
+  return count;
 }
-int makeEqual(char * str1, int n1, char * str2, int n2){
-    int k=get_common_elements(str1,str2);
-    return n1+n2-2*k;//return the total no of elements(n1+n2) subtracted by total common elements.
+int makeEqual(char *str1, int n1, char *str2, int n2) {
+  int k = get_common_elements(str1, str2);
+  return n1 + n2 - 2 * k; // return the total no of elements(n1+n2) subtracted
+                          // by total common elements.
 }
 
-int main(){
-    char *str1,*str2;int result;
-    scanf("%d",&n1);    //read size of first string
-    str1=(char *)malloc((n1+1)*sizeof(char));//dynamic memory alloc.
-    scanf("%s",str1);   //read first string
-    scanf("%d",&n2);    //read size of second string
-    str2=(char *)malloc((n2+1)*sizeof(char));//dynamic memory alloc.
-    scanf("%s",str2);   //read second string
-    result=makeEqual(str1,n1,str2,n2);
-    printf("%d",result);
-    return 0;
+int main() {
+  char *str1, *str2;
+  int result;
+  scanf("%d", &n1);                               // read size of first string
+  str1 = (char *)malloc((n1 + 1) * sizeof(char)); // dynamic memory alloc.
+  scanf("%s", str1);                              // read first string
+  scanf("%d", &n2);                               // read size of second string
+  str2 = (char *)malloc((n2 + 1) * sizeof(char)); // dynamic memory alloc.
+  scanf("%s", str2);                              // read second string
+  result = makeEqual(str1, n1, str2, n2);
+  printf("%d", result);
+  return 0;
 }

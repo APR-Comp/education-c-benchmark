@@ -23,34 +23,31 @@ Verdict:ACCEPTED, Visibility:0, Input:"0 0 5 -5
 */
 #include <stdio.h>
 
-typedef struct{
-    int x,y;
+typedef struct {
+  int x, y;
 } point;
 
-typedef struct{
-    point left;
-    point right;
+typedef struct {
+  point left;
+  point right;
 } rect;
 int main() {
-    rect r1,r2;
-    scanf("%d %d",&(r1.left.x),&(r1.left.y));
-    scanf("%d %d",&r1.right.x,&r1.right.y);
-    scanf("%d %d",&r2.left.x,&r2.left.y);
-    scanf("%d %d",&r2.right.x,&r2.right.y);
-    
-    int i,j;
-    for(i=(r2.left.y),j=(r2.left.x);
-    i>=(r2.right.y) && j<=(r2.right.x);
-    j++,i--)
-    {
-//printf("i=%d j=%d\n",i,j);
-        if(i<=r1.left.y && i>=r1.right.y 
-          &&j>=r1.left.x && j<=r1.right.x)
-        {
-            printf("YES");
-            return 0;
-        }
+  rect r1, r2;
+  scanf("%d %d", &(r1.left.x), &(r1.left.y));
+  scanf("%d %d", &r1.right.x, &r1.right.y);
+  scanf("%d %d", &r2.left.x, &r2.left.y);
+  scanf("%d %d", &r2.right.x, &r2.right.y);
+
+  int i, j;
+  for (i = (r2.left.y), j = (r2.left.x); i >= (r2.right.y) && j <= (r2.right.x);
+       j++, i--) {
+    // printf("i=%d j=%d\n",i,j);
+    if (i <= r1.left.y && i >= r1.right.y && j >= r1.left.x &&
+        j <= r1.right.x) {
+      printf("YES");
+      return 0;
     }
+  }
   /*  for(j=(r2.left.x);j<=(r2.right.x);j++)
     {
         printf("j=%d\n",j);
@@ -60,12 +57,12 @@ int main() {
             return 0;
         }
     }*/
-    printf("NO");
-    
+  printf("NO");
+
   /*  printf("%d %d ",(r1.left.x),(r1.left.y));
     printf("%d %d\n",r1.right.x,r1.right.y);
     printf("%d %d ",r2.left.x,r2.left.y);
     printf("%d %d",r2.right.x,r2.right.y);*/
-    
-    return 0;
+
+  return 0;
 }

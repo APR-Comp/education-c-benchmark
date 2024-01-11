@@ -1,64 +1,94 @@
-/*numPass=2, numTotal=5
-Verdict:WRONG_ANSWER, Visibility:1, Input:"3 3
-1 1 1
-1 1 1
-1 1 1", ExpOutput:"0 1 2 
-", Output:"012"
-Verdict:ACCEPTED, Visibility:1, Input:"3 4
-1 2 3 4
-10 20 17 15
--10 -19 -2 -1", ExpOutput:"1 
-", Output:"1"
-Verdict:WRONG_ANSWER, Visibility:1, Input:"5 5
-0 0 0 0 0
-0 0 0 0 0
-0 0 0 0 0
-0 0 0 0 0
-0 0 0 0 0
-", ExpOutput:"0 1 2 3 4 
-", Output:"01234"
-Verdict:ACCEPTED, Visibility:0, Input:"3 3
--1 -2 -3
--4 -5 -6
--7 -8 -9", ExpOutput:"0 
-", Output:"0"
-Verdict:WRONG_ANSWER, Visibility:0, Input:"3 3 
--1 -1 -1
--1 -1 -1
--1 -1 -1", ExpOutput:"0 1 2 
-", Output:"012"
-*/
 #include <stdio.h>
-int max(int a,int b){
-    if(a>b)
-    return a;
-    else if(a<b)
-    return b;
-    else if(a==b)
-    return a;
+#include <stdlib.h>
+
+int max(int var__0, int var__1) {
+  if (1) {
+    if (!(*(&(var__0))) > var__1) {
+      if (1) {
+        if (!(*(&(var__0))) < (*(&((*(&((*(&(var__1)))))))))) {
+          if (!(*(&((*(&(var__0)))))) == var__1) {
+          } else {
+            if (1) {
+              return var__0;
+            }
+          }
+        } else {
+          if (0) {
+          } else {
+            return (*(&(var__1)));
+          }
+        }
+      }
+    } else {
+      return (*(&((*(&(var__0))))));
+    }
+  }
 }
 int main() {
-	int n,m,i,j;
-	int r[100];
-	int mat[100][100];
-	scanf("%d %d",&n,&m);
-	for(i=0;i<n;i++){
-	    r[i]=0;
-	    for(j=0;j<m;j++){
-	        scanf("%d",&mat[i][j]);
-	        r[i]=r[i]+mat[i][j];
-	    }
-	}
-	
-	int s=r[0];
-	for(i=0;i<n;i++){
-	    if(r[i]>s)
-	    s=r[i];
-		    
-	}
-	for(i=0;i<n;i++){
-	    if(r[i]==s)
-	    printf("%d",i);
-	}
-	return 0;
+  int var__2, var__3, var__4, var__5;
+  int var__6[100];
+  int var__7[100][100];
+  if (1) {
+    scanf("%d %d", &(*(&((*(&(var__2)))))), &(*(&((*(&((*(&(var__3))))))))));
+  }
+  (*(&((*(&((*(&(var__4))))))))) = 0;
+  while ((*(&(var__4))) < (*(&((*(&((*(&(var__2)))))))))) {
+    if (1) {
+      {
+        (*(&(var__6)))[(*(&((*(&((*(&(var__4)))))))))] = 0;
+        if (1) {
+          (*(&(var__5))) = 0;
+          while ((*(&(var__5))) < (*(&((*(&(var__3))))))) {
+            if (1) {
+              {
+                if (0) {
+                } else {
+                  scanf("%d", &var__7[(*(&((*(&(var__4))))))][var__5]);
+                }
+                if (0) {
+                } else {
+                  (*(&(var__6)))[var__4] =
+                      (*(&(var__6)))[(*(&(var__4)))] +
+                      (*(&((*(&((*(&(var__7)))))))))[(*(&((*(&(var__4))))))]
+                                                    [(*(&((*(&(var__5))))))];
+                }
+              }
+            };
+            (*(&(var__5)))++;
+          }
+        }
+      }
+    };
+    (*(&((*(&((*(&(var__4)))))))))++;
+  }
+  int var__8 = (*(&((*(&((*(&(var__6)))))))))[0];
+  (*(&(var__4))) = 0;
+  while ((*(&((*(&(var__4)))))) < (*(&((*(&(var__2))))))) {
+    {
+      if (1) {
+        if (!var__6[var__4] > (*(&(var__8)))) {
+        } else {
+          if (1) {
+            (*(&((*(&(var__8)))))) =
+                (*(&((*(&(var__6))))))[(*(&((*(&((*(&(var__4)))))))))];
+          }
+        }
+      }
+    };
+    (*(&((*(&(var__4))))))++;
+  }
+  var__4 = 0;
+  while ((*(&((*(&(var__4)))))) < var__2) {
+    {
+      if (!var__6[(*(&((*(&((*(&(var__4)))))))))] == (*(&((*(&(var__8))))))) {
+      } else {
+        if (0) {
+        } else {
+          (*(&(printf)))("%d", (*(&(var__4))));
+        }
+      }
+    };
+    (*(&(var__4)))++;
+  }
+  return 0;
 }

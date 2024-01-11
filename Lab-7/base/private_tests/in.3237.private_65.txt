@@ -1,0 +1,9 @@
+2 
+4294967295 Business
+10 persuasion
+11 intelligent
+9 bussiness
+170141183460469231731687303715884105737 business
+10 persuation
+10 inteligent
+-18446744073709551617

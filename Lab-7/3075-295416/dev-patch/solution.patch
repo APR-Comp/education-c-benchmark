@@ -1,0 +1,107 @@
+--- Lab-7/3075-295416//295416_buggy.c	2023-11-27 20:53:21.289127637 +0200
++++ Lab-7/3075-295416//Main.c	2023-11-27 20:53:21.289127637 +0200
+@@ -1,41 +1,70 @@
+-/*numPass=8, numTotal=9
+-Verdict:ACCEPTED, Visibility:1, Input:"abcdef
+-2", ExpOutput:"efabcd", Output:"efabcd"
+-Verdict:ACCEPTED, Visibility:1, Input:"programming
+-11", ExpOutput:"programming", Output:"programming"
+-Verdict:ACCEPTED, Visibility:1, Input:"hello-@programmer
+-5", ExpOutput:"ammerhello-@progr", Output:"ammerhello-@progr"
+-Verdict:ACCEPTED, Visibility:0, Input:"hellodear
+-3", ExpOutput:"earhellod", Output:"earhellod"
+-Verdict:ACCEPTED, Visibility:0, Input:"progamming
+-0", ExpOutput:"progamming", Output:"progamming"
+-Verdict:ACCEPTED, Visibility:0, Input:"programming
+-10", ExpOutput:"rogrammingp", Output:"rogrammingp"
+-Verdict:WRONG_ANSWER, Visibility:0, Input:"programming
+-13", ExpOutput:"ngprogrammi", Output:"programming"
+-Verdict:ACCEPTED, Visibility:0, Input:"abcde
+-4", ExpOutput:"bcdea", Output:"bcdea"
+-Verdict:ACCEPTED, Visibility:0, Input:"abcdz
+-5", ExpOutput:"abcdz", Output:"abcdz"
++/*
++Up to 20% marks will be allotted for good programming practice. These include
++- Comments: for nontrivial code
++- Indentation: align your code properly
++- Function use and modular programming
++- Usage of string.h is NOT allowed. Do not include anything in the header other
++than what is already given in the template.
++--------------------------------------------------------------------------------------------------------------
++
++Write a program to right circular rotate the given string by an input amount 'n'
++and print the final string.
++
++Input Format:
++A string of at most 100 characters. There is no whitespace.
++A positive integer.
++
++Output Format:
++Rotated string.
++
++Example 1:
++Input:
++abcdef
++2
++
++Output:
++efabcd
++
++Example 2:
++Input:
++hello-@programmer
++5
++
++Output:
++ammerhello-@progr
++
+ */
+ #include <stdio.h>
+ 
++int strLen(char str[]) {
++  int i;
++  for (i = 0; str[i] != '\0'; i++) {
++  }
++
++  return i;
++}
++
++void RotateByAmount(char *str,
++                    int amount) // Circular rotate a string right by amount
++{
++  int i, pos, len = strLen(str);
++  char temp[len];
++  for (i = 0; i < len; i++) {
++    temp[i] = str[i];
++  }
++  for (i = 0; i < len; i++) {
++    int pos = i + amount;
++    pos = pos % len;
++    str[pos] = temp[i];
++  }
++}
++
+ int main() {
+-  // Fill this area with your code.
+-  char s[100];
+-  int i, l = 0;
+-  scanf("%s", s);
+-  for (l = 0; l < 100; l++)
+-    if (s[l] == '\0')
+-      break;
+-    else
+-      continue;
++  char str[100];
++  scanf("%s", str);
+   int n;
+   scanf("%d", &n);
+-  for (i = l - n; i < l; i++)
+-    printf("%c", s[i]);
+-  for (i = 0; i < l - n; i++)
+-    printf("%c", s[i]);
+-
++  RotateByAmount(str, n);
++  printf("%s", str);
+   return 0;
+ }
+\ No newline at end of file

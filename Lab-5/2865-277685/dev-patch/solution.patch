@@ -1,0 +1,77 @@
+--- Lab-5/2865-277685//277685_buggy.c	2023-11-27 20:53:21.285794269 +0200
++++ Lab-5/2865-277685//Main.c	2023-11-27 20:53:21.285794269 +0200
+@@ -1,36 +1,42 @@
+-#include <stdio.h>
+-#include <stdlib.h>
++/*
++ANNOUNCEMENT: Up to 20% marks will be allotted for good programming practice.
++These include
++- Comments: for the non trivial part of the code
++- Indentation: align your code properly
++- Don't put extra whitespace anywhere.
++---------------------------------
++Given an integer N(N>0) as input,your program should output the following
++pattern, eg: Input :
++5
++
++Output:
++5432*
++543*1
++54*21
++5*321
++*4321
++
++eg:
++Input:
++2
+ 
++Output:
++2*
++*1
++*/
++#include <stdio.h>
+ int main() {
+-  int var__0, var__1;
+-  int var__2;
+-  if (1) {
+-    (*(&((*(&((*(&(scanf)))))))))("%d", &(*(&(var__2))));
+-  }
+-  if (1) {
+-    (*(&((*(&(var__0)))))) = 1;
+-    while ((*(&((*(&((*(&(var__0))))))))) <= (*(&(var__2)))) {
+-      if (1) {
+-        {
+-          var__1 = (*(&((*(&(var__2))))));
+-          while (var__1 >= 1) {
+-            {
+-              if (0) {
+-              } else {
+-                if ((*(&((*(&((*(&(var__0))))))))) == var__1)
+-                  printf("*");
+-                else if (1) {
+-                  printf("%d ", (*(&((*(&((*(&(var__1))))))))));
+-                }
+-              }
+-            };
+-            (*(&(var__1)))--;
+-          }
+-          (*(&((*(&((*(&(printf)))))))))("\n");
+-        }
+-      };
+-      var__0++;
++  int i, j;
++  int N;
++  scanf("%d", &N);
++  for (i = 1; i <= N; i++) {
++    for (j = N; j >= 1; j--) {
++      if (i == j)
++        printf("*");
++      else
++        printf("%d", j);
+     }
++    printf("\n");
+   }
+   return 0;
+-}
++}
+\ No newline at end of file

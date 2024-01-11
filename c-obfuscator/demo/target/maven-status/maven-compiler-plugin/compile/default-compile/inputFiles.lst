@@ -1,0 +1,13 @@
+/home/mmirchev/c-obfuscator/demo/src/main/java/com/example/App.java
+/home/mmirchev/c-obfuscator/demo/src/main/java/com/example/Mutator.java
+/home/mmirchev/c-obfuscator/demo/src/main/java/com/example/c/CListener.java
+/home/mmirchev/c-obfuscator/demo/src/main/java/com/example/c/CBaseVisitor.java
+/home/mmirchev/c-obfuscator/demo/src/main/java/com/example/Mangler.java
+/home/mmirchev/c-obfuscator/demo/src/main/java/com/example/c/CLexer.java
+/home/mmirchev/c-obfuscator/demo/src/main/java/com/example/c/CVisitor.java
+/home/mmirchev/c-obfuscator/demo/src/main/java/com/example/c/CParser.java
+/home/mmirchev/c-obfuscator/demo/src/main/java/com/example/Obfuscator.java
+/home/mmirchev/c-obfuscator/demo/src/main/java/com/example/DirectDeclarationContext.java
+/home/mmirchev/c-obfuscator/demo/src/main/java/com/example/c/.antlr/CParser.java
+/home/mmirchev/c-obfuscator/demo/src/main/java/com/example/c/CBaseListener.java
+/home/mmirchev/c-obfuscator/demo/src/main/java/com/example/c/.antlr/CLexer.java

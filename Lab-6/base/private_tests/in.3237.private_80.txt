@@ -1,0 +1,9 @@
+3 
+8 Business
+10 persuasion
+11 intelligent
+32768 bussiness
+32769 business
+10 persuation
+2 inteligent
+-1

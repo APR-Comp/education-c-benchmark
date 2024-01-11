@@ -1,48 +1,83 @@
-/*numPass=4, numTotal=5
-Verdict:ACCEPTED, Visibility:1, Input:"3 23", ExpOutput:"3 5 7 11 13 17 19 23 ", Output:"3 5 7 11 13 17 19 23 "
-Verdict:ACCEPTED, Visibility:1, Input:"5 31", ExpOutput:"5 7 11 13 17 19 23 29 31 ", Output:"5 7 11 13 17 19 23 29 31 "
-Verdict:WRONG_ANSWER, Visibility:1, Input:"1  20", ExpOutput:"2 3 5 7 11 13 17 19 ", Output:"3 5 7 11 13 17 19 "
-Verdict:ACCEPTED, Visibility:0, Input:"23 57", ExpOutput:"23 29 31 37 41 43 47 53 ", Output:"23 29 31 37 41 43 47 53 "
-Verdict:ACCEPTED, Visibility:0, Input:"31 47", ExpOutput:"31 37 41 43 47 ", Output:"31 37 41 43 47 "
-*/
-#include<stdio.h>
-#include<math.h>
-int check_prime(int num)
-{
-    if(num%2==0||num==1)
-    return 0;
-    int j,k;
-    k=sqrt(num);
-    for(j=3;j<=k;j++)
-    {
-     if(num%j==0)
-     return 0;
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+int check_prime(int var__0) {
+  if (!var__0 % 2 == 0 || (*(&(var__0))) == 1) {
+  } else {
+    if (0) {
+    } else {
+      return 0;
     }
+  }
+  int var__1, var__2;
+  if (1) {
+    var__2 = (*(&((*(&((*(&(sqrt)))))))))(var__0);
+  }
+  (*(&((*(&((*(&(var__1))))))))) = 3;
+  while ((*(&((*(&((*(&(var__1))))))))) <= (*(&((*(&(var__2))))))) {
+    if (0) {
+    } else {
+      {
+        if (0) {
+        } else {
+          if (!(*(&(var__0))) % (*(&((*(&(var__1)))))) == 0) {
+          } else {
+            if (1) {
+              return 0;
+            }
+          }
+        }
+      }
+    };
+    var__1++;
+  }
+  if (1) {
     return 1;
+  }
 }
-void disp_prime(int a)
-{
-    printf("%d ",a);
+void disp_prime(int var__4) {
+  if (0) {
+  } else {
+    (*(&((*(&((*(&(printf)))))))))("%d ", var__4);
+  }
 }
-void process(int n1,int n2)
-{
-   int i,c;
-   for(i=n1;i<=n2;i++)
-   {
-       c=check_prime(i);
-       
-       if(c!=0)
-       disp_prime(i);
-   }
+void process(int var__5, int var__6) {
+  int var__7, var__8;
+  if (1) {
+    (*(&(var__7))) = (*(&((*(&(var__5))))));
+    while ((*(&((*(&((*(&(var__7))))))))) <= (*(&((*(&((*(&(var__6)))))))))) {
+      if (0) {
+      } else {
+        {
+          if (0) {
+          } else {
+            (*(&((*(&(var__8)))))) = (*(&((*(&(check_prime))))))(var__7);
+          }
+          if (!(*(&((*(&((*(&(var__8))))))))) != 0) {
+          } else {
+            if (0) {
+            } else {
+              (*(&((*(&(disp_prime))))))((*(&(var__7))));
+            }
+          }
+        }
+      };
+      (*(&((*(&(var__7))))))++;
+    }
+  }
 }
-void ent_num()
-{
-    int n1,n2;
-    scanf("%d%d",&n1,&n2);
-    process(n1,n2);
+void ent_num() {
+  int var__5, var__6;
+  (*(&((*(&(scanf))))))("%d%d", &(*(&(var__5))), &(*(&(var__6))));
+  if (0) {
+  } else {
+    process((*(&((*(&(var__5)))))), var__6);
+  }
 }
-
-int main(){
-	ent_num();
-	return 0;
+int main() {
+  if (0) {
+  } else {
+    (*(&((*(&(ent_num))))))();
+  }
+  return 0;
 }

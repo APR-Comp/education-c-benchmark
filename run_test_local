@@ -1,0 +1,85 @@
+#!/bin/bash
+set -x
+script_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+benchmark_name=$(echo $script_dir | rev | cut -d "/" -f 3 | rev)
+project_name=$(echo $script_dir | rev | cut -d "/" -f 2 | rev)
+bug_id=$(echo $script_dir | rev | cut -d "/" -f 1 | rev)
+dir_name=~/$benchmark_name/$project_name/$bug_id
+subject_name=$(echo $bug_id | cut -d "-" -f 2)
+problem_name=$(echo $bug_id | cut -d "-" -f 1)
+dir_test=~/$benchmark_name/base/test
+TEST_ID=$1
+
+EXIT_CODE=1
+
+if [ -z "$TEST_ID" ];
+then
+  echo "requires a test case id"
+  exit 255
+fi
+
+export ASAN_OPTIONS=detect_leaks=0
+
+TEST_CASE=$dir_test/in.${problem_name}.${TEST_ID}.txt
+
+echo $TEST_CASE
+
+if [ -f "$TEST_CASE" ]; then
+    cd $dir_test
+
+    timeout -k 2s 2s ${dir_name}/Main < $TEST_CASE > /tmp/reference-${problem_name}.txt
+    EXIT_CODE=$?
+
+    if [[ EXIT_CODE -ne 0 ]]
+    then
+      echo "FAIL REFERENCE"
+      exit 2
+    fi;
+    
+    timeout -k 2s 2s ${dir_name}/${subject_name} < $TEST_CASE > /tmp/output-${problem_name}.txt
+    EXIT_CODE=$?
+
+    if [[ EXIT_CODE -ne 0 ]]
+    then
+      echo "FAIL"
+      exit 3
+    fi;
+
+    diff -u /tmp/reference-${problem_name}.txt /tmp/output-${problem_name}.txt
+    EXIT_CODE=$?
+    if [[ EXIT_CODE -ne 0 ]]
+    then
+      echo "FAIL"
+      exit 3
+    fi;
+
+    for exec in $(seq 1 5);
+    do
+      echo "CONSISTENCY CHECK $exec"
+      timeout -k 2s 2s ${dir_name}/${subject_name} < $TEST_CASE > /tmp/output-consistency-${problem_name}.txt
+
+      diff -u /tmp/output-${problem_name}.txt /tmp/output-consistency-${problem_name}.txt > /dev/null
+      EXIT_CODE_CONSISTENCY=$?
+      if [[ EXIT_CODE_CONSISTENCY -ne 0 ]]
+      then
+        echo "FAIL";
+        exit 2
+      fi;
+    done;
+
+else
+    echo "unknown test case"
+    exit 255
+fi
+
+
+
+if [[ EXIT_CODE -eq 0 ]]
+then
+  echo "PASS"
+else
+  echo "FAIL"
+  exit 3
+fi;
+
+exit $EXIT_CODE

@@ -30,31 +30,27 @@ Verdict:ACCEPTED, Visibility:0, Input:"8 10
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef struct interval 
-{
-    int li,ri;
+typedef struct interval {
+  int li, ri;
 } inv;
-void inp_inv(inv* s)
-{
-    scanf("%d%d",&(s->li),&(s->ri));
-}
+void inp_inv(inv *s) { scanf("%d%d", &(s->li), &(s->ri)); }
 
-void overlap(inv*,inv*);
+void overlap(inv *, inv *);
 
 int main() {
-    inv *A,*B;
-    A=(inv*)malloc(sizeof(inv));
-    B=(inv*)malloc(sizeof(inv));
-    inp_inv(A);
-    inp_inv(B);
-    overlap(A,B);
-    return 0;
+  inv *A, *B;
+  A = (inv *)malloc(sizeof(inv));
+  B = (inv *)malloc(sizeof(inv));
+  inp_inv(A);
+  inp_inv(B);
+  overlap(A, B);
+  return 0;
 }
 
-void overlap (inv* i1,inv* i2)
-{
-    if(((i1->li>=i2->li)&&(i1->li<=i2->ri))||((i1->ri>=i2->li)&&(i1->ri<=i2->ri)))
-     printf("YES");
-    else
-     printf("NO");
+void overlap(inv *i1, inv *i2) {
+  if (((i1->li >= i2->li) && (i1->li <= i2->ri)) ||
+      ((i1->ri >= i2->li) && (i1->ri <= i2->ri)))
+    printf("YES");
+  else
+    printf("NO");
 }

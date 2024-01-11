@@ -31,54 +31,45 @@ Verdict:ACCEPTED, Visibility:0, Input:"5
 "
 */
 #include <stdio.h>
-int check_arrays(int [],int [],int,int);//function to check contiguos                                            array
+int check_arrays(int[], int[], int, int); // function to check contiguos array
 int main() {
-	int s1,s2;
-	int i;
-    scanf("%d",&s1);
-    int A1[s1];
-    for(i=0;i<s1;i++)
-    {
-        scanf("%d",&A1[i]);
-    }
-    scanf("%d",&s2);
-    int A2[s2];
-    for(i=0;i<s2;i++)
-    {
-        scanf("%d",&A2[i]);
-    }
-   int ans=check_arrays(A1,A2,s1,s2);
-   if(ans==1)
-   {
-       printf("YES\n");
-   }
-   else
-   {
-       printf("NO\n");
-   }
-	return 0;
+  int s1, s2;
+  int i;
+  scanf("%d", &s1);
+  int A1[s1];
+  for (i = 0; i < s1; i++) {
+    scanf("%d", &A1[i]);
+  }
+  scanf("%d", &s2);
+  int A2[s2];
+  for (i = 0; i < s2; i++) {
+    scanf("%d", &A2[i]);
+  }
+  int ans = check_arrays(A1, A2, s1, s2);
+  if (ans == 1) {
+    printf("YES\n");
+  } else {
+    printf("NO\n");
+  }
+  return 0;
 }
-int check_arrays(int B1[],int B2[],int c1,int c2)
-{
-    int i,c=0;
-    for(i=0;i<c1-c2;i++)
-    {
-        if(B2[0]==B1[i])
-        {
-         c=1;
-         break;
-        }
+int check_arrays(int B1[], int B2[], int c1, int c2) {
+  int i, c = 0;
+  for (i = 0; i < c1 - c2; i++) {
+    if (B2[0] == B1[i]) {
+      c = 1;
+      break;
     }
-    if(c==0)
-        return 0;
-    int j=1;
+  }
+  if (c == 0)
+    return 0;
+  int j = 1;
+  i++;
+  while (j < c2) {
+    if ((B2[j]) != B1[i])
+      return 0;
+    j++;
     i++;
-    while(j<c2)
-    {
-        if((B2[j])!=B1[i])
-        return 0;
-        j++;
-        i++;
-    }
-    return 1;
+  }
+  return 1;
 }

@@ -1,92 +1,124 @@
-/*numPass=2, numTotal=9
-Verdict:WRONG_ANSWER, Visibility:1, Input:"5
-abcde
-5
-dceab", ExpOutput:"Valid", Output:""
-Verdict:WRONG_ANSWER, Visibility:1, Input:"5
-xatps
-5
-sptay", ExpOutput:"Not Valid", Output:""
-Verdict:WRONG_ANSWER, Visibility:1, Input:"7
-labexam
-7
-balmaex", ExpOutput:"Valid", Output:""
-Verdict:WRONG_ANSWER, Visibility:1, Input:"5
-hello
-5
-lolhe", ExpOutput:"Valid", Output:""
-Verdict:ACCEPTED, Visibility:0, Input:"5
-hello
-7
-labexam", ExpOutput:"Not Valid", Output:"Not Valid"
-Verdict:ACCEPTED, Visibility:0, Input:"7
-anagram
-6
-anagrm", ExpOutput:"Not Valid", Output:"Not Valid"
-Verdict:WRONG_ANSWER, Visibility:0, Input:"6
-pppqqq
-6
-qpqpqp", ExpOutput:"Valid", Output:""
-Verdict:WRONG_ANSWER, Visibility:0, Input:"7
-abcdefg
-7
-gfedbac", ExpOutput:"Valid", Output:""
-Verdict:WRONG_ANSWER, Visibility:0, Input:"1 
-p
-1 
-p", ExpOutput:"Valid", Output:""
-*/
 #include <stdio.h>
 #include <stdlib.h>
-int valid(char * s1, char * s2, int n){
-    int i,flag,mark=1,j;
-    for(i=0;i<n;i++)
-    {
-        flag=0;
-     for(j=0;j<n;j++)
-     {
-         if(*(s1+i)==*(s2+j))
-         {
-             flag=1;
-             break;
-         }
-     }
-     if(flag==0)
-     {
-         mark=0;
-         break;
-     }
-    }
-    return mark;
-}
 
-int main(){
-    //Fill this area with your code.
-    int size1,size2,res;
-    char *s1,*s2;
-    char ch;
-    scanf("%d",&size1);
-    s1=(char*)malloc((size1+1)*sizeof(char));
-    scanf("%s",s1);
-    scanf("%d",&size2);
-    scanf("%c",&ch);
-    s2=(char*)malloc((size2+1)*sizeof(char));
-    scanf("%s",s2);
-    if(size1!=size2)
-    {
-        res=0;
+int valid(char *var__0, char *var__1, int var__2) {
+  int var__3, var__4, var__5 = 1, var__6;
+  if (1) {
+    var__3 = 0;
+    while ((*(&((*(&(var__3)))))) < var__2) {
+      if (0) {
+      } else {
+        {
+          (*(&((*(&(var__4)))))) = 0;
+          if (1) {
+            (*(&(var__6))) = 0;
+            while ((*(&((*(&(var__6)))))) < (*(&((*(&(var__2))))))) {
+              if (1) {
+                {
+                  if (1) {
+                    if (!*((*(&((*(&(var__0)))))) + var__3) ==
+                        *((*(&((*(&((*(&(var__1))))))))) +
+                          (*(&((*(&((*(&(var__6))))))))))) {
+                    } else {
+                      {
+                        if (0) {
+                        } else {
+                          (*(&((*(&((*(&(var__4))))))))) = 1;
+                        }
+                        if (1) {
+                          break;
+                        }
+                      }
+                    }
+                  }
+                }
+              };
+              (*(&((*(&(var__6))))))++;
+            }
+          }
+          if (1) {
+            if (!var__4 == 0) {
+            } else {
+              if (1) {
+                {
+                  (*(&(var__5))) = 0;
+                  if (1) {
+                    break;
+                  }
+                }
+              }
+            }
+          }
+        }
+      };
+      (*(&(var__3)))++;
     }
-    else
-    {
-        res=valid(*s1,*s2,size1);
+  }
+  return (*(&((*(&(var__5))))));
+}
+int main() {
+  int var__7, var__8, var__9;
+  char *var__0, *var__1;
+  char var__10;
+  if (0) {
+  } else {
+    (*(&((*(&(scanf))))))("%d", &(*(&((*(&(var__7)))))));
+  }
+  var__0 = (char *)(*(&(malloc)))(((*(&((*(&(var__7)))))) + 1) * sizeof(char));
+  scanf("%s", (*(&((*(&((*(&(var__0))))))))));
+  (*(&(scanf)))("%d", &var__8);
+  (*(&((*(&((*(&(scanf)))))))))("%c", &(*(&((*(&((*(&(var__10))))))))));
+  if (0) {
+  } else {
+    var__1 = (char *)malloc(((*(&((*(&(var__8)))))) + 1) * sizeof(char));
+  }
+  if (0) {
+  } else {
+    (*(&((*(&(scanf))))))("%s", (*(&((*(&(var__1)))))));
+  }
+  if (0) {
+  } else {
+    if (!var__7 != (*(&(var__8)))) {
+      {
+        if (0) {
+        } else {
+          (*(&(var__9))) = (*(&(valid)))(*(*(&((*(&(var__0)))))), *var__1,
+                                         (*(&((*(&((*(&(var__7))))))))));
+        }
+      }
+    } else {
+      if (1) {
+        {
+          if (0) {
+          } else {
+            (*(&(var__9))) = 0;
+          }
+        }
+      }
     }
-    if(res==1)
+  }
+  if (!(*(&(var__9))) == 1) {
+  } else {
     {
-        printf("Valid");
+      if (0) {
+      } else {
+        (*(&((*(&(printf))))))("Valid");
+      }
     }
-    if(res==0)
-    {
-        printf("Not Valid");
+  }
+  if (0) {
+  } else {
+    if (!var__9 == 0) {
+    } else {
+      if (1) {
+        {
+          (*(&(printf)))("Not Valid");
+        }
+      }
     }
+  }
+  if (0) {
+  } else {
     return 0;
+  }
 }

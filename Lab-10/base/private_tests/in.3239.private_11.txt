@@ -1,0 +1,6 @@
+-121
+abcde
+5
+dce
+5
+dceab

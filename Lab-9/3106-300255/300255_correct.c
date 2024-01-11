@@ -10,16 +10,15 @@ Verdict:ACCEPTED, Visibility:0, Input:"qwertyuiiuytrpwq", ExpOutput:"No
 */
 #include <stdio.h>
 #include <string.h>
- 
-int pali(char str[100],int end,int start)
-{
-    if(start>=end)
+
+int pali(char str[100], int end, int start) {
+  if (start >= end)
     return 1;
-    if(str[end]!=str[start])
+  if (str[end] != str[start])
     return 0;
-   return pali(str,--end,++start);
-    return 1;
-  /* 
+  return pali(str, --end, ++start);
+  return 1;
+  /*
   //  static int i=0;
     printf("%d\n",i);
     if(i>n/2)
@@ -30,21 +29,21 @@ int pali(char str[100],int end,int start)
     {
         return 0;
     }
-    
+
     pali(str,n,l-1,++i);
     return 1;*/
 }
 
-int main()
-{
-    char str[100];
-    scanf("%s",str);
-    int l=strlen(str);
- 
-    int res=pali(str,l-1,0);
-   // printf("%d %d",l,res);
-   if(res==1)
-   printf("Yes");
-   else printf("No");
-    return 0;
+int main() {
+  char str[100];
+  scanf("%s", str);
+  int l = strlen(str);
+
+  int res = pali(str, l - 1, 0);
+  // printf("%d %d",l,res);
+  if (res == 1)
+    printf("Yes");
+  else
+    printf("No");
+  return 0;
 }

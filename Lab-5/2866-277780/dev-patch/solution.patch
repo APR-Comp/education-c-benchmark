@@ -1,0 +1,106 @@
+--- Lab-5/2866-277780//277780_buggy.c	2023-11-27 20:53:21.285794269 +0200
++++ Lab-5/2866-277780//Main.c	2023-11-27 20:53:21.285794269 +0200
+@@ -1,58 +1,49 @@
+-#include <stdio.h>
+-#include <stdlib.h>
++/*
++ANNOUNCEMENT: Up to 20% marks will be allotted for good programming practice.
++These include
++- Comments: for the non trivial part of the code
++- Indentation: align your code properly
++- Use the function in the template compulsorily and more functions, if
++necessary.
++---------------------------------
+ 
+-int check_prime(int var__0) {
+-  int var__1;
+-  if (1) {
+-    (*(&((*(&((*(&(var__1))))))))) = 2;
+-    while ((*(&((*(&((*(&(var__1))))))))) < (*(&((*(&((*(&(var__0)))))))))) {
+-      if (1) {
+-        {
+-          if (0) {
+-          } else {
+-            if (!((*(&((*(&(var__0)))))) / (*(&(var__1)))) == 0) {
+-            } else {
+-              return 0;
+-            }
+-          }
+-        }
+-      };
+-      (*(&(var__1)))++;
+-    }
+-  }
+-  if (1) {
+-    return 1;
+-  }
+-}
++Given a positive integer N, output whether N can be expressed as a sum of two
++prime numbers.
++
++e.g.
++Input: 9
++Output: Yes
++Explanation: 9 = 7 + 2
++
++Input: 11
++Output: No
++Explanation: There do not exist positive integers, x and y such that x+y=11 and
++x and y are prime numbers.
++*/
++#include <stdio.h>
++int check_prime(int n);
+ int main() {
+-  int var__1, var__2, var__3 = 0;
+-  (*(&(scanf)))("%d", &(*(&((*(&(var__2)))))));
+-  (*(&((*(&((*(&(var__1))))))))) = 2;
+-  while ((*(&((*(&(var__1)))))) < (*(&((*(&(var__2))))))) {
+-    if (1) {
+-      {
+-        if (0) {
+-        } else {
+-          if ((*(&((*(&((*(&(check_prime)))))))))(
+-                  (*(&((*(&((*(&(var__1)))))))))) &&
+-              (*(&(check_prime)))((*(&(var__2))) - (*(&(var__1))))) {
+-            if (0) {
+-            } else {
+-              (*(&((*(&((*(&(var__3))))))))) = 1;
+-            }
+-            if (1) {
+-              printf("yes");
+-            }
+-            if (0) {
+-            } else {
+-              break;
+-            }
+-          }
+-        }
++  int n, i;
++  scanf("%d", &n);
++  for (i = 2; i <= n / 2; ++i) {
++    if (check_prime(i) != 0) {
++      if (check_prime(n - i) != 0) {
++        printf("Yes\n");
++        return 0;
+       }
+-    };
+-    var__1++;
++    }
+   }
+-  if ((*(&(var__3))) == 0)
+-    printf("no");
++  printf("No\n");
++  return 0;
+ }
++int check_prime(int n) /* Function to check prime number */
++{
++  if (n == 1)
++    return 1;
++
++  int i, flag = 1;
++  for (i = 2; i <= n / 2; ++i)
++    if (n % i == 0)
++      flag = 0;
++  return flag;
++}
+\ No newline at end of file

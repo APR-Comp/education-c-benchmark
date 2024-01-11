@@ -22,33 +22,27 @@ Verdict:ACCEPTED, Visibility:0, Input:"20 30
 ", Output:"-341"
 */
 #include <stdio.h>
-void read_into_array(int arr[],int size)
-{
-    int i;
-    for(i=0;i<size;i++)
-    {
-        scanf("%d ",&arr[i]);
-    }
+void read_into_array(int arr[], int size) {
+  int i;
+  for (i = 0; i < size; i++) {
+    scanf("%d ", &arr[i]);
+  }
 }
-void extension(int arr[],int size,int d)
-{
-     int i,j=d;
-     while(j<=size)
-     {
-     arr[j]=0;
-     for(i=1;i<=d;i++)
-     {
-         arr[j]+=arr[j-i];
-     }
-     j++;
-     }
+void extension(int arr[], int size, int d) {
+  int i, j = d;
+  while (j <= size) {
+    arr[j] = 0;
+    for (i = 1; i <= d; i++) {
+      arr[j] += arr[j - i];
+    }
+    j++;
+  }
 }
 
-int main()
-{
-    int d,N,a[30];
-    scanf("%d %d\n",&d,&N);
-    read_into_array(a,d);
-    extension(a,N,d);
-    printf("%d",a[N]);
+int main() {
+  int d, N, a[30];
+  scanf("%d %d\n", &d, &N);
+  read_into_array(a, d);
+  extension(a, N, d);
+  printf("%d", a[N]);
 }

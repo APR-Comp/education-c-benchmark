@@ -1,0 +1,10 @@
+/home/mmirchev/python-obfuscator/demo/src/main/java/com/example/python3/Python3ParserVisitor.java
+/home/mmirchev/python-obfuscator/demo/src/main/java/com/example/python3/Python3Parser.java
+/home/mmirchev/python-obfuscator/demo/src/main/java/com/example/Mangler.java
+/home/mmirchev/python-obfuscator/demo/src/main/java/com/example/python3/Python3Lexer.java
+/home/mmirchev/python-obfuscator/demo/src/main/java/com/example/python3/Python3ParserBaseListener.java
+/home/mmirchev/python-obfuscator/demo/src/main/java/com/example/python3/Python3ParserListener.java
+/home/mmirchev/python-obfuscator/demo/src/main/java/com/example/python3/Python3ParserBase.java
+/home/mmirchev/python-obfuscator/demo/src/main/java/com/example/python3/Python3LexerBase.java
+/home/mmirchev/python-obfuscator/demo/src/main/java/com/example/App.java
+/home/mmirchev/python-obfuscator/demo/src/main/java/com/example/python3/Python3ParserBaseVisitor.java

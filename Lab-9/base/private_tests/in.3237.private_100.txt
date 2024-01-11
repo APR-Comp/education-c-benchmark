@@ -1,0 +1,13 @@
+4 
+340282366920938463463374607431768211447 Business
+10 persuasion
+3 intelligent
+18446744073709551616 bussiness
+8 business
+10 persuasion
+11 intelligent
+9 bussiness
+8 business
+10 persuation
+10 inteligent
+-1

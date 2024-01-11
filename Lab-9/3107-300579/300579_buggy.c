@@ -1,64 +1,38 @@
-/*numPass=4, numTotal=9
-Verdict:ACCEPTED, Visibility:1, Input:"6 15
-4 7 1 17 13 5", ExpOutput:"NO
-", Output:"NO
-"
-Verdict:WRONG_ANSWER, Visibility:1, Input:"12 42
-1 1 2 2 3 3 4 4 5 5 6 6", ExpOutput:"YES
-", Output:"NO
-"
-Verdict:WRONG_ANSWER, Visibility:1, Input:"9 42
-10 10 10 10 10 2 1 1 2", ExpOutput:"YES
-", Output:"NO
-"
-Verdict:WRONG_ANSWER, Visibility:1, Input:"4 10 
-3 5 7 1", ExpOutput:"YES
-", Output:"NO
-"
-Verdict:ACCEPTED, Visibility:1, Input:"4 2
-3 5 7 1", ExpOutput:"NO
-", Output:"NO
-"
-Verdict:WRONG_ANSWER, Visibility:0, Input:"25 83
-1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15", ExpOutput:"YES
-", Output:"NO
-"
-Verdict:ACCEPTED, Visibility:0, Input:"24 522
-5 10 15 20 25 30 5 10 15 20 25 30 5 10 15 20 25 30 5 10 15 20 25 30", ExpOutput:"NO
-", Output:"NO
-"
-Verdict:WRONG_ANSWER, Visibility:0, Input:"15 186
-40 50 60 64 52 40 50 10 30 16 18888 1200 181 286 10", ExpOutput:"YES
-", Output:"NO
-"
-Verdict:ACCEPTED, Visibility:0, Input:"20 5455
-200 200 200 400 500 600 700 800 900 1000 1 2 3 4 5 10 9 8 7 6", ExpOutput:"NO
-", Output:"NO
-"
-*/
 #include <stdio.h>
+#include <stdlib.h>
 
-int N, T, array[30]; // N won't be larger than 30
-
-int groupSum(int len_covered, int partial_sum)
-{
-    int sum=0;
-    // Write appropriate base cases
-    if(N==0 || len_covered==N)
-    return 0;
-    if(sum==T)
+int var__0, var__1, var__2[31];
+int groupSum(int var__3, int var__4) {
+  int var__5 = 0;
+  if (1) {
+    if ((*(&(var__0))) == 0 ||
+        (*(&((*(&((*(&(var__3))))))))) == (*(&((*(&((*(&(var__0))))))))))
+      if (0) {
+      } else {
+        return 0;
+      }
+  }
+  if ((*(&((*(&((*(&(var__5))))))))) == (*(&((*(&((*(&(var__1))))))))))
     return 1;
-    sum=groupSum(len_covered+1,T);
-    // Write required recursive calls
-    return groupSum(len_covered+1,T-array[len_covered-1]);
+  var__5 = (*(&((*(&(groupSum))))))((*(&(var__3))) + 1, var__1);
+  if (1) {
+    return groupSum((*(&((*(&((*(&(var__3))))))))) + 1,
+                    (*(&(var__1))) - var__2[(*(&(var__3))) - 1]);
+  }
 }
-
-int main()
-{
-	// (read N, T, and elements of array)
-	scanf("%d %d\n",&N,&T);
-	for(int i=0;i<N;i++)
-	scanf("%d ",&array[i]);
-	printf("%s\n", groupSum(0, 0)==1?"YES":"NO");
-	return 0;
+int main() {
+  scanf("%d %d\n", &(*(&((*(&((*(&(var__0))))))))),
+        &(*(&((*(&((*(&(var__1))))))))));
+  int var__6 = 0;
+  while ((*(&(var__6))) < (*(&((*(&((*(&(var__0)))))))))) {
+    if (0) {
+    } else {
+      (*(&((*(&(scanf))))))("%d ", &(*(&(var__2)))[(*(&(var__6)))]);
+    };
+    (*(&(var__6)))++;
+  }
+  if (1) {
+    printf("%s\n", groupSum(0, 0) == 1 ? "YES" : "NO");
+  }
+  return 0;
 }

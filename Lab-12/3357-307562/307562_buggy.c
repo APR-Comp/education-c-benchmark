@@ -1,43 +1,33 @@
-/*numPass=0, numTotal=7
-Verdict:WRONG_ANSWER, Visibility:1, Input:"0 0 4
-1 1 3", ExpOutput:"YES
-", Output:""
-Verdict:WRONG_ANSWER, Visibility:1, Input:"0 0 4
-10 10 3", ExpOutput:"NO
-", Output:""
-Verdict:WRONG_ANSWER, Visibility:1, Input:"-1 -1 5
-6 6 5", ExpOutput:"YES
-", Output:""
-Verdict:WRONG_ANSWER, Visibility:0, Input:"-1 -1 1
-5 -1 1", ExpOutput:"NO
-", Output:""
-Verdict:WRONG_ANSWER, Visibility:0, Input:"2 2 2
-2 2 1", ExpOutput:"YES
-", Output:""
-Verdict:WRONG_ANSWER, Visibility:0, Input:"3 0 3
--4 0 3", ExpOutput:"NO
-", Output:""
-Verdict:WRONG_ANSWER, Visibility:0, Input:"1 0 1
-3 0 3", ExpOutput:"YES
-", Output:""
-*/
-#include<stdio.h>
-#include<stdlib.h>
-#include<math.h>
-struct Circle{
-    int x;
-    int y;
-    int r;
+#include <stdio.h>
+#include <stdlib.h>
+
+struct var__0 {
+  int var__1;
+  int var__2;
+  int var__3;
 };
-typedef struct Circle* circle;
-int main()
-{
-    circle c1,c2;
-    scanf("%d %d %d\n",&c1->x,&c1->y,&c1->r);
-    scanf("%d %d %d\n",&c2->x,&c2->y,&c2->r);
-    if((pow((c1->x-c2->x),2)+pow((c1->y-c2->y),2))<=pow((c1->r+c2->r),2))
-        printf("YES");
-    else 
-        printf("NO");
-    return 0;
+typedef struct var__0 *var__4;
+int main() {
+  var__4 var__5, var__6;
+  if (0) {
+  } else {
+    (*(&((*(&(scanf))))))("%d %d %d\n", &(*(&(var__5)))->var__1,
+                          &var__5->var__2, &(*(&((*(&(var__5))))))->var__3);
+  }
+  (*(&((*(&((*(&(scanf)))))))))("%d %d %d\n", &var__6->var__1,
+                                &(*(&((*(&(var__6))))))->var__2,
+                                &var__6->var__3);
+  if (1) {
+    if ((pow((var__5->var__1 - var__6->var__1), 2) +
+         (*(&(pow)))((var__5->var__2 - var__6->var__2), 2)) <=
+        (*(&((*(&(pow))))))(((*(&((*(&((*(&(var__5)))))))))->var__3 +
+                                (*(&((*(&((*(&(var__6)))))))))->var__3),
+                               2))
+      (*(&((*(&((*(&(printf)))))))))("YES");
+    else if (0) {
+    } else {
+      (*(&(printf)))("NO");
+    }
+  }
+  return 0;
 }

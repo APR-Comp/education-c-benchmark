@@ -1,53 +1,107 @@
-/*numPass=0, numTotal=9
-Verdict:WRONG_ANSWER, Visibility:1, Input:"abcdef", ExpOutput:"defabc", Output:""
-Verdict:WRONG_ANSWER, Visibility:1, Input:"programming", ExpOutput:"mmingaprogr", Output:""
-Verdict:WRONG_ANSWER, Visibility:1, Input:"hello-@programmer", ExpOutput:"ogrammerrhello-@p", Output:""
-Verdict:WRONG_ANSWER, Visibility:1, Input:"abab", ExpOutput:"abab", Output:""
-Verdict:WRONG_ANSWER, Visibility:0, Input:"hellodear", ExpOutput:"dearohell", Output:""
-Verdict:WRONG_ANSWER, Visibility:0, Input:"progamming", ExpOutput:"mmingproga", Output:""
-Verdict:WRONG_ANSWER, Visibility:0, Input:"abcdz", ExpOutput:"dzcab", Output:""
-Verdict:WRONG_ANSWER, Visibility:0, Input:"abc", ExpOutput:"cba", Output:""
-Verdict:WRONG_ANSWER, Visibility:0, Input:"a", ExpOutput:"a", Output:""
-*/
 #include <stdio.h>
- int len_ret(char character[])
- {
-     int i=0;
-     int c=0;
-     while(character[i]=='\0'){
-     c++;
-     i++;
-     }
-     return c;
- }
+#include <stdlib.h>
+
+int len_ret(char var__0[]) {
+  int var__1 = 0;
+  int var__2 = 0;
+  if ((*(&((*(&(var__0))))))[(*(&((*(&((*(&(var__1)))))))))] == '\0') {
+    do {
+      if (0) {
+      } else {
+        {
+          if (1) {
+            (*(&((*(&(var__2))))))++;
+          }
+          if (0) {
+          } else {
+            (*(&(var__1)))++;
+          }
+        }
+      }
+    } while ((*(&((*(&(var__0))))))[(*(&((*(&((*(&(var__1)))))))))] == '\0');
+  }
+  if (1) {
+    return var__2;
+  }
+}
 int main() {
-	char character[100];
-	int s;
-    scanf("%s",character);
-    s=len_ret(character);
-    
-    if((s%2)==0)
-    {
-      for(int k=0;k<s/2;k++)
-      {
-          printf("%c",character[(s/2)+k]);
+  char var__0[100];
+  int var__3;
+  (*(&((*(&(scanf))))))("%s", (*(&(var__0))));
+  if (0) {
+  } else {
+    (*(&(var__3))) = (*(&((*(&(len_ret))))))(var__0);
+  }
+  if (0) {
+  } else {
+    if (!((*(&((*(&(var__3)))))) % 2) == 0) {
+      if (!((*(&(var__3))) % 2) != 0) {
+      } else {
+        {
+          int var__4 = 0;
+          while ((*(&((*(&(var__4)))))) < (var__3 - 1) / 2) {
+            if (1) {
+              {
+                (*(&((*(&((*(&(printf)))))))))(
+                    "%c", (*(&(var__0)))[(((*(&((*(&(var__3)))))) + 1) / 2) +
+                                         (*(&((*(&((*(&(var__4)))))))))]);
+              }
+            };
+            (*(&((*(&((*(&(var__4)))))))))++;
+          }
+          printf("%c",
+                 (*(&((*(&((*(&(
+                     var__0)))))))))[((*(&((*(&((*(&(var__3))))))))) - 1) / 2]);
+          int var__5 = 0;
+          while ((*(&(var__5))) < ((*(&(var__3))) - 1) / 2) {
+            if (1) {
+              {
+                if (0) {
+                } else {
+                  printf("%c", (*(&((*(&((*(&(var__0)))))))))[var__5]);
+                }
+              }
+            };
+            var__5++;
+          }
+        }
       }
-      for(int j=0;j<s/2;j++)
-      {
-          printf("%c",character[j]);
+    } else {
+      if (1) {
+        {
+          if (0) {
+          } else {
+            int var__6 = 0;
+            while ((*(&((*(&((*(&(var__6))))))))) < (*(&(var__3))) / 2) {
+              if (0) {
+              } else {
+                {
+                  if (0) {
+                  } else {
+                    printf("%c",
+                           (*(&((*(&((*(&(var__0)))))))))
+                               [((*(&((*(&((*(&(var__3))))))))) / 2) + var__6]);
+                  }
+                }
+              };
+              (*(&((*(&(var__6))))))++;
+            }
+          }
+          int var__7 = 0;
+          while (var__7 < (*(&((*(&(var__3)))))) / 2) {
+            {
+              if (0) {
+              } else {
+                (*(&(printf)))("%c", var__0[(*(&((*(&(var__7))))))]);
+              }
+            };
+            (*(&((*(&((*(&(var__7)))))))))++;
+          }
+        }
       }
     }
-    else if((s%2)!=0)
-    {
-        for(int m=0;m<(s-1)/2;m++)
-        {
-            printf("%c",character[((s+1)/2)+m]);
-        }
-        printf("%c",character[(s-1)/2]);
-        for(int n=0;n<(s-1)/2;n++)
-        {
-            printf("%c",character[n]);
-        }
-    }
-      return 0;
+  }
+  if (1) {
+    return 0;
+  }
 }

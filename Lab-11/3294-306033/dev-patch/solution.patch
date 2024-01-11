@@ -1,0 +1,90 @@
+--- Lab-11/3294-306033//306033_buggy.c	2023-11-27 20:53:21.265794070 +0200
++++ Lab-11/3294-306033//Main.c	2023-11-27 20:53:21.265794070 +0200
+@@ -1,48 +1,46 @@
++/*
++--------------------------------------------
++Up to 20% marks will be allotted for good programming practice. These include
++ - Comments: for non-trivial code
++ - Indentation: align your code properly
++ - Function use and modular programming
++ - Do not include anything in the header other than what is already given in the
++template. TAs: Recursive algorithm is required.
++ ---------------------------------------------
++
++Given a positive number n, you need to give as an output the following pattern.
++You need to use recursion. No marks if loops are used.
++
++Example 1
++Input:
++11
++
++Output:
++11 6 1 -4 1 6 11
++
++Example 2
++Input:
++15
++
++Output
++15 10 5 0 5 10 15
++*/
+ #include <stdio.h>
+-#include <stdlib.h>
+ 
+-void pat(int var__1) {
+-  if (0) {
++void pattern(n) {
++  if (n <= 0) {
++    printf("%d ", n);
++    return;
+   } else {
+-    if ((*(&(var__1))) <= 0) {
+-      {
+-        if (0) {
+-        } else {
+-          (*(&(printf)))("%d ", (*(&((*(&(var__1)))))));
+-        }
+-        if (1) {
+-          (*(&((*(&(pat))))))((*(&(var__1))) - 5);
+-        }
+-        if (0) {
+-        } else {
+-          (*(&((*(&((*(&(printf)))))))))("%d ", (*(&((*(&((*(&(var__1))))))))));
+-        }
+-      }
+-    } else {
+-      if (1) {
+-        {
+-          if (0) {
+-          } else {
+-            (*(&((*(&(printf))))))("%d ", (*(&((*(&(var__1)))))));
+-          }
+-          if (0) {
+-          } else {
+-            return;
+-          }
+-        }
+-      }
+-    }
++    printf("%d ", n);
++    pattern(n - 5);
++    printf("%d ", n);
+   }
+ }
++
+ int main() {
+-  int var__1;
+-  if (0) {
+-  } else {
+-    (*(&((*(&((*(&(scanf)))))))))("%d", &(*(&((*(&((*(&(var__1))))))))));
+-  }
+-  pat((*(&(var__1))));
+-  if (0) {
+-  } else {
+-    return 0;
+-  }
++  int n;
++  scanf("%d", &n);
++  pattern(n);
++  return 0;
+ }

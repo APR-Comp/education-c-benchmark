@@ -1,90 +1,83 @@
-/*numPass=1, numTotal=8
-Verdict:WRONG_ANSWER, Visibility:1, Input:"3
-abc
-4
-dbca", ExpOutput:"1", Output:"3"
-Verdict:WRONG_ANSWER, Visibility:1, Input:"4
-abce
-4
-dbca", ExpOutput:"2", Output:"4"
-Verdict:WRONG_ANSWER, Visibility:1, Input:"7
-labexam
-4
-dbca", ExpOutput:"7", Output:"8"
-Verdict:WRONG_ANSWER, Visibility:1, Input:"7
-labexam
-7
-balmmmm", ExpOutput:"6", Output:"9"
-Verdict:WRONG_ANSWER, Visibility:0, Input:"7
-labexam
-7
-balmaex", ExpOutput:"0", Output:"7"
-Verdict:WRONG_ANSWER, Visibility:0, Input:"7
-labexam
-9
-balmaexam", ExpOutput:"2", Output:"9"
-Verdict:ACCEPTED, Visibility:0, Input:"7
-labexam
-9
-pqrstuvwp", ExpOutput:"16", Output:"16"
-Verdict:WRONG_ANSWER, Visibility:0, Input:"7
-hellohi
-9
-lhoeidear", ExpOutput:"6", Output:"10"
-*/
 #include <stdio.h>
 #include <stdlib.h>
 
-int makeEqual(char * s1, int n1, char * s2, int n2)
-{ int count=0;
-   for(int i=0;i<n1;i++)
-   { int flag=1;
-       for(int j=0;j<n2;j++)
-       {
-           if((*(s1+i) == *(s2+j)) && (*(s1+i) != '0') && (*(s2+j) != '0'))
-           {
-               flag=0;
-               *(s1+i) ='0'; *(s2+j) ='0';
-               break;
-           }
-       }
-       if(flag==1)
-       {
-           count++;
-       }
-   }
-   for(int i=0;i<n2;i++)
-   { int flag=1;
-       for(int j=0;j<n1;j++)
-       {
-           if((*(s2+i) == *(s1+j)) && (*(s1+i) != '0') && (*(s2+j) != '0'))
-           {
-               flag=0;
-               *(s2+i) ='0'; *(s1+j) = '0';
-               break;
-           }
-       }
-       if(flag==1)
-       {
-           count++;
-       }
-   }
-   return count;
+int makeEqual(char *var__0, int var__1, char *var__2, int var__3) {
+  int var__4[26] = {0}, var__5[26] = {-3}, var__6, var__7 = 0;
+  if (0) {
+  } else {
+    var__6 = 0;
+    while ((*(&((*(&(var__6)))))) < (*(&((*(&(var__1))))))) {
+      if (0) {
+      } else {
+        *((*(&(var__4))) +
+          *((*(&((*(&((*(&(var__0))))))))) + (*(&((*(&((*(&(var__6)))))))))) -
+          'a') += 1;
+      };
+      (*(&((*(&(var__6))))))++;
+    }
+  }
+  if (1) {
+    var__6 = 0;
+    while ((*(&((*(&((*(&(var__6))))))))) < (*(&(var__3)))) {
+      *((*(&((*(&((*(&(var__5))))))))) +
+        *((*(&((*(&(var__2)))))) + (*(&((*(&((*(&(var__6)))))))))) - 'a') += 1;
+      ;
+      (*(&((*(&((*(&(var__6)))))))))++;
+    }
+  }
+  (*(&((*(&(var__6)))))) = 0;
+  while ((*(&((*(&(var__6)))))) < 26) {
+    if (0) {
+    } else {
+      (*(&(var__7))) = (*(&(var__7))) +
+                       (*(&((*(&(abs))))))(
+                           *((*(&((*(&(var__4)))))) + (*(&((*(&(var__6))))))) -
+                           *((*(&((*(&(var__5)))))) + (*(&(var__6)))));
+    };
+    (*(&(var__6)))++;
+  }
+  return var__7;
 }
-
-int main(){
-    int n1;
-    scanf("%d",&n1);
-    char *s1;
-    s1 = (char*)malloc(n1*sizeof(char));
-    scanf("%s",s1);
-    int n2;
-    scanf("%d",&n2);
-    char *s2;
-    s2 = (char*)malloc(n2*sizeof(char));
-    scanf("%s",s2);
-   printf("%d",makeEqual(s1,n1,s2,n2));
-    
-    
+int main() {
+  int var__1, var__3;
+  char *var__0, *var__2;
+  if (1) {
+    (*(&((*(&((*(&(scanf)))))))))("%d\n", &(*(&((*(&((*(&(var__1))))))))));
+  }
+  (*(&((*(&((*(&(var__0))))))))) =
+      (char *)(*(&((*(&(malloc))))))((*(&(var__1))) * sizeof(char));
+  if (0) {
+  } else {
+    int var__6 = 0;
+    while (var__6 < var__1) {
+      if (0) {
+      } else {
+        (*(&((*(&((*(&(scanf)))))))))("%c", (var__0 + (*(&(var__6)))));
+      };
+      (*(&((*(&(var__6))))))++;
+    }
+  }
+  (*(&((*(&(scanf))))))("\n%d\n", &var__3);
+  (*(&(var__2))) =
+      (char *)(*(&((*(&(malloc))))))((*(&(var__3))) * sizeof(char));
+  if (1) {
+    int var__6 = 0;
+    while ((*(&(var__6))) < (*(&(var__3)))) {
+      if (1) {
+        (*(&((*(&((*(&(scanf)))))))))(
+            "%c", ((*(&(var__2))) + (*(&((*(&((*(&(var__6)))))))))));
+      };
+      (*(&((*(&((*(&(var__6)))))))))++;
+    }
+  }
+  if (0) {
+  } else {
+    (*(&((*(&(printf))))))("%d", (*(&((*(&((*(&(makeEqual)))))))))(
+                                     var__0, (*(&((*(&((*(&(var__1))))))))),
+                                     (*(&(var__2))), (*(&(var__3)))));
+  }
+  if (0) {
+  } else {
     return 0;
+  }
 }

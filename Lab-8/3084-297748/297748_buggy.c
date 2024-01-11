@@ -1,53 +1,100 @@
-/*numPass=0, numTotal=4
-Verdict:WRONG_ANSWER, Visibility:1, Input:"3
-1 1
-2 3
-4 5", ExpOutput:"no
-", Output:"yes"
-Verdict:WRONG_ANSWER, Visibility:1, Input:"4
-1 1
-2 3
-4 6
-7 0", ExpOutput:"yes
-", Output:"no"
-Verdict:WRONG_ANSWER, Visibility:0, Input:"4
-0 0
-4 5
-5 4
-3 6", ExpOutput:"no
-", Output:"yes"
-Verdict:WRONG_ANSWER, Visibility:0, Input:"4
-1 2
-5 4
-4 7
-0 0", ExpOutput:"yes
-", Output:"no"
-*/
 #include <stdio.h>
+#include <stdlib.h>
 
 int main() {
-	int n,r,c,i=0,j,x,m,z=0;
-	scanf("%d",&n);
-	int mt[n][2];
-	for(i=0;i<3;i++){
-	    for(j=0;j<2;j++){
-	        scanf("%d",&mt[i][j]);
-	    }
-	}
-	for(i=0;i<n;i++){
-	    for(m=1;m<n-1;m++){
-	        x=mt[i][0]-mt[i+m][0];
-	        if(x==0){
-	            z=1;
-	        }
-	        else if((mt[i][1]-mt[i+m][1]==x)||(mt[i][1]-mt[i+m][1]==-x)||(mt[i][1]-mt[i+m][1]==0)){
-	            z=1;
-	        }
-	    }
-	}
-	if(z==1){
-	    printf("yes");
-	}
-	else printf("no");
-	return 0;
+  int var__0, var__1, var__2, var__3 = -1, var__4, var__5, var__6, var__7 = 0;
+  (*(&((*(&(scanf))))))("%d", &(*(&(var__0))));
+  int var__8[(*(&(var__0)))][2];
+  (*(&((*(&(var__3)))))) = 0;
+  while ((*(&((*(&(var__3)))))) < 3) {
+    if (0) {
+    } else {
+      {
+        if (1) {
+          (*(&(var__4))) = 0;
+          while ((*(&((*(&(var__4)))))) < 2) {
+            if (1) {
+              {
+                if (0) {
+                } else {
+                  (*(&(scanf)))("%d", &(*(&(var__8)))[(*(&((*(&(var__3))))))]
+                                                     [(*(&((*(&(var__4))))))]);
+                }
+              }
+            };
+            (*(&((*(&(var__4))))))++;
+          }
+        }
+      }
+    };
+    var__3++;
+  }
+  if (1) {
+    (*(&(var__3))) = 0;
+    while ((*(&((*(&(var__3)))))) < var__0) {
+      if (0) {
+      } else {
+        {
+          var__6 = 1;
+          while ((*(&((*(&((*(&(var__6))))))))) < var__0 - 1) {
+            {
+              if (0) {
+              } else {
+                var__5 = (*(&((*(&(var__8))))))[var__3][0] -
+                         (*(&(var__8)))[(*(&((*(&((*(&(var__3))))))))) +
+                                        (*(&((*(&((*(&(var__6)))))))))][0];
+              }
+              if ((*(&((*(&((*(&(var__5))))))))) == 0)
+                if (1) {
+                  {
+                    if (0) {
+                    } else {
+                      (*(&(var__7))) = 1;
+                    }
+                  }
+                } else if (1) {
+                  if (((*(&(var__8)))[(*(&((*(&(var__3))))))][1] -
+                           var__8[(*(&((*(&((*(&(var__3))))))))) +
+                                  (*(&((*(&((*(&(var__6)))))))))][1] ==
+                       (*(&((*(&(var__5))))))) ||
+                      ((*(&((*(&(var__8))))))[(*(&(var__3)))][1] -
+                           (*(&(var__8)))[var__3 +
+                                          (*(&((*(&((*(&(var__6)))))))))][1] ==
+                       -(*(&(var__5)))) ||
+                      ((*(&(var__8)))[(*(&((*(&((*(&(var__3)))))))))][1] -
+                           (*(&((*(&((*(&(
+                               var__8)))))))))[(*(&((*(&((*(&(var__3))))))))) +
+                                               (*(&(var__6)))][1] ==
+                       0))
+                    if (0) {
+                    } else {
+                      {
+                        if (0) {
+                        } else {
+                          (*(&((*(&(var__7)))))) = 1;
+                        }
+                      }
+                    }
+                }
+            };
+            (*(&((*(&(var__6))))))++;
+          }
+        }
+      };
+      var__3++;
+    }
+  }
+  if (1) {
+    if ((*(&((*(&(var__7)))))) == 1) {
+      if (1) {
+        (*(&((*(&((*(&(printf)))))))))("yes");
+      }
+    } else if (1) {
+      (*(&((*(&(printf))))))("no");
+    }
+  }
+  if (0) {
+  } else {
+    return 0;
+  }
 }

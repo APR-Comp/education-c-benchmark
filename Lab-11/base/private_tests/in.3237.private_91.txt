@@ -1,0 +1,9 @@
+3 
+10582271791259195402 Business
+11 persuasion
+11 intelligent
+246 bussiness
+247 business
+11 persuation
+1 inteligent
+-1

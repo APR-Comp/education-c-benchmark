@@ -11,7 +11,7 @@ Verdict:ACCEPTED, Visibility:1, Input:"9 42
 10 10 10 10 10 2 1 1 2", ExpOutput:"YES
 ", Output:"YES
 "
-Verdict:ACCEPTED, Visibility:1, Input:"4 10 
+Verdict:ACCEPTED, Visibility:1, Input:"4 10
 3 5 7 1", ExpOutput:"YES
 ", Output:"YES
 "
@@ -24,7 +24,8 @@ Verdict:ACCEPTED, Visibility:0, Input:"25 83
 ", Output:"YES
 "
 Verdict:ACCEPTED, Visibility:0, Input:"24 522
-5 10 15 20 25 30 5 10 15 20 25 30 5 10 15 20 25 30 5 10 15 20 25 30", ExpOutput:"NO
+5 10 15 20 25 30 5 10 15 20 25 30 5 10 15 20 25 30 5 10 15 20 25 30",
+ExpOutput:"NO
 ", Output:"NO
 "
 Verdict:ACCEPTED, Visibility:0, Input:"15 186
@@ -40,27 +41,23 @@ Verdict:ACCEPTED, Visibility:0, Input:"20 5455
 
 int N, T, array[30]; // N won't be larger than 30
 
-int groupSum(int len_covered, int partial_sum)
-{   
-    if(partial_sum==T)  //base  case
-      return 1;
-    else if(len_covered==N)
-      return 0;
-    else 
-    return groupSum(len_covered+1,partial_sum)||groupSum(len_covered+1            ,partial_sum+array[len_covered]);
-    
-  
+int groupSum(int len_covered, int partial_sum) {
+  if (partial_sum == T) // base  case
+    return 1;
+  else if (len_covered == N)
+    return 0;
+  else
+    return groupSum(len_covered + 1, partial_sum) ||
+           groupSum(len_covered + 1, partial_sum + array[len_covered]);
 }
 
-int main()
-{
-	int i;
-	scanf("%d %d\n",&N,&T);
-	for(i=0;i<N;i++)
-	{ 
-	   scanf("%d ",&array[i]);  
-	}
-	
-	printf("%s\n", groupSum(0, 0)==1?"YES":"NO");
-	return 0;
+int main() {
+  int i;
+  scanf("%d %d\n", &N, &T);
+  for (i = 0; i < N; i++) {
+    scanf("%d ", &array[i]);
+  }
+
+  printf("%s\n", groupSum(0, 0) == 1 ? "YES" : "NO");
+  return 0;
 }

@@ -1,0 +1,98 @@
+--- Lab-9/3105-300019//300019_buggy.c	2023-11-27 20:53:21.295794370 +0200
++++ Lab-9/3105-300019//Main.c	2023-11-27 20:53:21.295794370 +0200
+@@ -1,45 +1,56 @@
+-/*numPass=0, numTotal=4
+-Verdict:WRONG_ANSWER, Visibility:1, Input:"12
+-Hello World", ExpOutput:"dlroW olleH
+-
+-", Output:"Hello World"
+-Verdict:WRONG_ANSWER, Visibility:1, Input:"14
+-baL noisruceR", ExpOutput:"Recursion Lab
+-
+-", Output:"baL noisruceR"
+-Verdict:WRONG_ANSWER, Visibility:0, Input:"44
+-The quick brown fox jumps over the lazy dog", ExpOutput:"god yzal eht revo spmuj
+-xof nworb kciuq ehT
+-
+-", Output:"The quick brown fox jumps over the lazy dog"
+-Verdict:WRONG_ANSWER, Visibility:0, Input:"65
+-esuoh sybstaG rof yaw edam dah taht seert eht seert dehsinav stI",
+-ExpOutput:"Its vanished trees the trees that had made way for Gatsbys house
+-
+-", Output:"esuoh sybstaG rof yaw edam dah taht seert eht seert dehsinav stIf"
++/*
++Up to 20% marks will be allotted for good programming practice. These include
++ - Comments: for nontrivial code
++ - Indentation: align your code properly
++ - Function use and modular programming
++ - Do not include anything in the header other than what is already given in the
++template.
++
++- You have to solve this problem using recursion
++- Some marks are reserved for writing correct base case and recursive step
++-------------------------------------------------------------------------------------------
++
++Write a recursive C function to reverse a given string and then print it. The
++input consists of 2 lines: First line gives the length of the string; Second
++lines gives the string. The length of the string would not exceed 100
++characters.
++
++For Example:
++Input:
++6
++Hello
++Output:
++olleH
++
++Input:
++14
++baL noisruceR
++Output:
++Recursion Lab
+ */
+ #include <stdio.h>
+ #include <string.h>
+-int swap(int len, char arr[]) {
+-  if (len < 0)
+-    return 0;
+-  printf("%c", arr[len]);
+-  return swap(len - 1, arr);
+-}
+ 
++void reverse(char[], int, int);
+ int main() {
+-  int n, i, p = 0;
+-  char ar[100];
+-  scanf("%d\n", &n);
+-  for (i = 0; i < n - 1; i++) {
+-    scanf("%c", &ar[p]);
+-    if (ar[p] == '\0') {
+-      break;
+-    } else
+-      p++;
+-  }
+-
+-  printf("%s", ar);
+-
++  char str[100];
++  int size, i;
++  scanf("%d", &size);
++  for (i = 0; i < size; i++)
++    scanf("%c", &str[i]);
++  str[size] = '\0';
++  reverse(str, 0, size - 1);
++  printf("%s\n", str);
+   return 0;
++}
++
++void reverse(char str1[], int index, int size) {
++  char temp;
++  temp = str1[index];
++  str1[index] = str1[size - index];
++  str1[size - index] = temp;
++  if (index == size / 2) {
++    return;
++  }
++  reverse(str1, index + 1, size);
+ }
+\ No newline at end of file

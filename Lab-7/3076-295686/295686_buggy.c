@@ -1,44 +1,79 @@
-/*numPass=1, numTotal=9
-Verdict:WRONG_ANSWER, Visibility:1, Input:"abcdef", ExpOutput:"defabc", Output:"abc"
-Verdict:WRONG_ANSWER, Visibility:1, Input:"programming", ExpOutput:"mmingaprogr", Output:"aprogr"
-Verdict:WRONG_ANSWER, Visibility:1, Input:"hello-@programmer", ExpOutput:"ogrammerrhello-@p", Output:"rhello-@p"
-Verdict:WRONG_ANSWER, Visibility:1, Input:"abab", ExpOutput:"abab", Output:"ab"
-Verdict:WRONG_ANSWER, Visibility:0, Input:"hellodear", ExpOutput:"dearohell", Output:"`Johell"
-Verdict:WRONG_ANSWER, Visibility:0, Input:"progamming", ExpOutput:"mmingproga", Output:"Jproga"
-Verdict:WRONG_ANSWER, Visibility:0, Input:"abcdz", ExpOutput:"dzcab", Output:"cab"
-Verdict:WRONG_ANSWER, Visibility:0, Input:"abc", ExpOutput:"cba", Output:"ba"
-Verdict:ACCEPTED, Visibility:0, Input:"a", ExpOutput:"a", Output:"a"
-*/
 #include <stdio.h>
+#include <stdlib.h>
 
 int main() {
-    char str[100], laststr[100];
-    int c=getchar();
-    int m=0,x;
-    for(m=0;c!=-1;m++)
+  char var__0[100], var__1[100];
+  int var__2 = (*(&(getchar)))();
+  int var__4 = 0, var__5;
+  (*(&(var__4))) = 0;
+  while ((*(&((*(&(var__2)))))) != -1) {
     {
-        str[m]=c;
-        c=getchar();
-    }
-    int n;
-    for(n=0;n<((m+1)/2);n++)
+      if (0) {
+      } else {
+        (*(&((*(&(var__0))))))[(*(&((*(&(var__4))))))] =
+            (*(&((*(&((*(&(var__2)))))))));
+      }
+      if (0) {
+      } else {
+        (*(&((*(&((*(&(var__2))))))))) = (*(&((*(&(getchar))))))();
+      }
+    };
+    (*(&((*(&((*(&(var__4)))))))))++;
+  }
+  int var__6;
+  (*(&((*(&(var__6)))))) = 0;
+  while (var__6 < (((*(&((*(&(var__4)))))) + 1) / 2)) {
     {
-        x=n+((m+1/2));
-        laststr[n]=str[x];
-    }if(m%2!=0){
-        laststr[n-1]=str[n-1];
-        
+      if (1) {
+        (*(&((*(&(var__5)))))) = (*(&((*(&((*(&(var__6))))))))) +
+                                 (((*(&((*(&((*(&(var__4))))))))) + 1 / 2));
+      }
+      if (1) {
+        (*(&((*(&(var__1))))))[(*(&(var__6)))] =
+            (*(&((*(&((*(&(var__0)))))))))[var__5];
+      }
+    };
+    var__6++;
+  }
+  if (1) {
+    if (!(*(&(var__4))) % 2 != 0) {
+    } else {
+      {
+        (*(&((*(&(var__1))))))[(*(&(var__6))) - 1] =
+            var__0[(*(&((*(&((*(&(var__6))))))))) - 1];
+      }
     }
-    for(;(n<m);n++){
-        
-        x=n-((m+1)/2);
-        laststr[n]=str[x];
-        
+  }
+  if (1) {
+    while ((var__6 < (*(&((*(&(var__4)))))))) {
+      {
+        (*(&((*(&((*(&(var__5))))))))) =
+            (*(&((*(&(var__6)))))) - ((var__4 + 1) / 2);
+        if (0) {
+        } else {
+          (*(&(var__1)))[(*(&(var__6)))] =
+              (*(&((*(&((*(&(var__0)))))))))[(*(&((*(&(var__5))))))];
+        }
+      };
+      (*(&((*(&(var__6))))))++;
     }
-        
-     for(int l=0;l<m;l++)
-     {
-         printf("%c",laststr[l]);
+  }
+  if (1) {
+    int var__7 = 0;
+    while ((*(&((*(&((*(&(var__7))))))))) < (*(&((*(&((*(&(var__4)))))))))) {
+      if (1) {
+        {
+          if (0) {
+          } else {
+            (*(&((*(&((*(&(printf)))))))))(
+                "%c", (*(&((*(&(var__1))))))[(*(&(var__7)))]);
+          }
+        }
+      };
+      (*(&(var__7)))++;
     }
-	return 0;
+  }
+  if (1) {
+    return 0;
+  }
 }

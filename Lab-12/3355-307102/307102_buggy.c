@@ -1,51 +1,47 @@
-/*numPass=5, numTotal=9
-Verdict:ACCEPTED, Visibility:1, Input:"4 10
--1 6", ExpOutput:"YES
-", Output:"YES"
-Verdict:ACCEPTED, Visibility:1, Input:"4 10
--1 3", ExpOutput:"NO
-", Output:"NO"
-Verdict:WRONG_ANSWER, Visibility:1, Input:"10 20
-20 50", ExpOutput:"YES
-", Output:"NO"
-Verdict:WRONG_ANSWER, Visibility:1, Input:"0 0
--1 0", ExpOutput:"YES
-", Output:"NO"
-Verdict:WRONG_ANSWER, Visibility:0, Input:"-1 -5
--6 9", ExpOutput:"YES
-", Output:"NO"
-Verdict:WRONG_ANSWER, Visibility:0, Input:"0 1
-1 10", ExpOutput:"YES
-", Output:"NO"
-Verdict:ACCEPTED, Visibility:0, Input:"7 9
-2 3", ExpOutput:"NO
-", Output:"NO"
-Verdict:ACCEPTED, Visibility:0, Input:"1 10
-5 7", ExpOutput:"YES
-", Output:"YES"
-Verdict:ACCEPTED, Visibility:0, Input:"8 10
-5 7", ExpOutput:"NO
-", Output:"NO"
-*/
 #include <stdio.h>
-struct index{
-    int x;
-    int y;
+#include <stdlib.h>
+
+struct var__0 {
+  int var__1;
+  int var__2;
 };
-struct interval{
-    struct index left;
-    struct index right;
+struct var__3 {
+  struct var__0 var__4;
+  struct var__0 var__5;
 };
-struct interval pt;
+struct var__3 var__6;
 int main() {
-    int x,y;
-    scanf("%d%d%d%d",&pt.left.x,&pt.left.y,&pt.right.x,&pt.right.y);
-    if(pt.right.x>=pt.left.x && pt.right.x<=pt.left.y){
-        printf("YES");
-    } 
-    else if(pt.right.y>=pt.left.x &&pt.right.y<=pt.left.y){
-        printf("YES");
+  int var__1, var__2;
+  (*(&((*(&(scanf))))))("%d%d%d%d", &var__6.var__4.var__1,
+                        &var__6.var__4.var__2, &var__6.var__5.var__1,
+                        &(*(&((*(&(var__6)))))).var__5.var__2);
+  if (!(*(&(var__6))).var__5.var__1 >= (*(&((*(&(var__6)))))).var__4.var__1 &&
+      (*(&(var__6))).var__5.var__1 <= var__6.var__4.var__2) {
+    if (0) {
+    } else {
+      if (!(*(&(var__6))).var__5.var__2 >=
+              (*(&((*(&(var__6)))))).var__4.var__1 &&
+          (*(&((*(&(var__6)))))).var__5.var__2 <= var__6.var__4.var__2) {
+        (*(&(printf)))("NO");
+      } else {
+        if (1) {
+          {
+            (*(&((*(&((*(&(printf)))))))))("YES");
+          }
+        }
+      }
     }
-    else printf("NO");
+  } else {
+    if (1) {
+      {
+        if (0) {
+        } else {
+          (*(&(printf)))("YES");
+        }
+      }
+    }
+  }
+  if (1) {
     return 0;
+  }
 }

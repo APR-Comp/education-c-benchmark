@@ -1,14 +1,15 @@
 /*
 --------------------------------------------
-Up to 20% marks will be allotted for good programming practice. These include 
- - Comments: for non-trivial code 
- - Indentation: align your code properly 
- - Function use and modular programming 
- - Do not include anything in the header other than what is already given in the template. 
-TAs: Recursive algorithm is required.
+Up to 20% marks will be allotted for good programming practice. These include
+ - Comments: for non-trivial code
+ - Indentation: align your code properly
+ - Function use and modular programming
+ - Do not include anything in the header other than what is already given in the
+template. TAs: Recursive algorithm is required.
  ---------------------------------------------
 
-Given a positive number n, you need to give as an output the following pattern. You need to use recursion. No marks if loops are used.
+Given a positive number n, you need to give as an output the following pattern.
+You need to use recursion. No marks if loops are used.
 
 Example 1
 Input:
@@ -26,22 +27,20 @@ Output
 */
 #include <stdio.h>
 
-void pattern(n){
-	if(n<=0){
-		printf("%d ",n);
-		return;
-	}	
-	else{
-		printf("%d ",n);
-		pattern(n-5);
-		printf("%d ",n);
-	}
+void pattern(n) {
+  if (n <= 0) {
+    printf("%d ", n);
+    return;
+  } else {
+    printf("%d ", n);
+    pattern(n - 5);
+    printf("%d ", n);
+  }
 }
 
-int main(){
-	int n;
-	scanf("%d",&n);
-	pattern(n);
-	return 0;
+int main() {
+  int n;
+  scanf("%d", &n);
+  pattern(n);
+  return 0;
 }
-

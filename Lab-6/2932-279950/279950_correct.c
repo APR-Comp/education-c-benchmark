@@ -22,30 +22,30 @@ Verdict:ACCEPTED, Visibility:0, Input:"20 30
 ", Output:"-341"
 */
 #include <stdio.h>
-int main(){
-    int d;
-    scanf("%d ", &d);
-    int N;
-    scanf("%d\n", &N);
-    int i;
-    int b[20];
-    for(i=0; i<d; i=i+1)
-        scanf("%d", &b[i]);
-    int a[30];
-    for(i=0; i>=0&&i<d; i=i+1){
-        a[i]=b[i];
-    }
-    //printf("%d\n",a[3]);
-    for(i=d; i<=N; i=i+1){
-      int sum;
-      sum=0;
-      int c;
-      c=i-d;
-      int j;
-      for(j=i-1;j>=c;j--)
-        sum=sum+a[j];
-      a[i]=sum;
-    }
-    printf("%d", a[N]);
-	return 0;
+int main() {
+  int d;
+  scanf("%d ", &d);
+  int N;
+  scanf("%d\n", &N);
+  int i;
+  int b[20];
+  for (i = 0; i < d; i = i + 1)
+    scanf("%d", &b[i]);
+  int a[30];
+  for (i = 0; i >= 0 && i < d; i = i + 1) {
+    a[i] = b[i];
+  }
+  // printf("%d\n",a[3]);
+  for (i = d; i <= N; i = i + 1) {
+    int sum;
+    sum = 0;
+    int c;
+    c = i - d;
+    int j;
+    for (j = i - 1; j >= c; j--)
+      sum = sum + a[j];
+    a[i] = sum;
+  }
+  printf("%d", a[N]);
+  return 0;
 }

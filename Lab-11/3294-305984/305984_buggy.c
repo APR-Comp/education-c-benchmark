@@ -1,36 +1,88 @@
-/*numPass=0, numTotal=4
-Verdict:WRONG_ANSWER, Visibility:1, Input:"2", ExpOutput:"2 -3 2 ", Output:"12 -3 2 "
-Verdict:WRONG_ANSWER, Visibility:1, Input:"20", ExpOutput:"20 15 10 5 0 5 10 15 20 ", Output:"420 15 10 5 0 5 10 15 20 "
-Verdict:WRONG_ANSWER, Visibility:1, Input:"4", ExpOutput:"4 -1 4 ", Output:"14 -1 4 "
-Verdict:WRONG_ANSWER, Visibility:0, Input:"16", ExpOutput:"16 11 6 1 -4 1 6 11 16 ", Output:"416 11 6 1 -4 1 6 11 16 "
-*/
 #include <stdio.h>
-int n,count=0,*array,k;
-int get_size(int n) {//function te get size of array in which thw sequence is to be stored.
-    if (n<=0) return count;        //base case.
-    else {                        //recursive step.
-        count++;
-        get_size(n-5);
-        return count;
+#include <stdlib.h>
+
+int var__0, var__1 = 0, *var__2, var__3;
+int get_size(int var__0) {
+  if (!(*(&((*(&(var__0)))))) <= 0) {
+    if (0) {
+    } else {
+      {
+        if (1) {
+          (*(&((*(&((*(&(var__1)))))))))++;
+        }
+        if (0) {
+        } else {
+          (*(&((*(&((*(&(get_size)))))))))((*(&((*(&((*(&(var__0))))))))) - 5);
+        }
+        return (*(&((*(&(var__1))))));
+      }
     }
+  } else {
+    return (*(&((*(&(var__1))))));
+  }
 }
-void fill_pattern(int n,int index) {//fuction to fill the array and print it.
-    if ((index==(2*k+1)/2)||n<=0) {
-        array[index]=n;
-    } 
-    else {
-        array[index]=n;array[(2*k+1)-1-index]=n;
-        fill_pattern(n-5,index+1);
+void fill_pattern(int var__0, int var__4) {
+  if (0) {
+  } else {
+    if (!(var__4 == (2 * (*(&((*(&(var__3)))))) + 1) / 2) ||
+        (*(&((*(&((*(&(var__0))))))))) <= 0) {
+      if (0) {
+      } else {
+        {
+          if (0) {
+          } else {
+            var__2[(*(&(var__4)))] = (*(&((*(&((*(&(var__0)))))))));
+          }
+          (*(&((*(&(var__2))))))[(2 * (*(&((*(&((*(&(var__3))))))))) + 1) - 1 -
+                                 (*(&(var__4)))] = (*(&(var__0)));
+          if (0) {
+          } else {
+            (*(&(fill_pattern)))((*(&((*(&(var__0)))))) - 5,
+                                 (*(&((*(&(var__4)))))) + 1);
+          }
+        }
+      }
+    } else {
+      {
+        if (1) {
+          (*(&((*(&((*(&(var__2)))))))))[(*(&(var__4)))] =
+              (*(&((*(&(var__0))))));
+        }
+      }
     }
+  }
 }
-int main(){
-    int i;
-    scanf("%d",&n);
-    k=get_size(n);printf("%d",k);
-    array=(int *)malloc((2*k+1)*sizeof(int));
-    fill_pattern(n,0);
-    for (i=0;i<2*k+1;i++) {
-        printf("%d ",array[i]);
+int main() {
+  int var__5;
+  (*(&((*(&((*(&(scanf)))))))))("%d", &var__0);
+  if (1) {
+    (*(&((*(&((*(&(var__3))))))))) = get_size((*(&((*(&((*(&(var__0))))))))));
+  }
+  if (1) {
+    printf("%d", (*(&(var__3))));
+  }
+  if (1) {
+    (*(&(var__2))) =
+        (int *)(*(&((*(&(malloc))))))((2 * (*(&(var__3))) + 1) * sizeof(int));
+  }
+  if (1) {
+    (*(&((*(&((*(&(fill_pattern)))))))))(var__0, 0);
+  }
+  if (0) {
+  } else {
+    (*(&((*(&(var__5)))))) = 0;
+    while (var__5 < 2 * (*(&((*(&((*(&(var__3))))))))) + 1) {
+      if (1) {
+        {
+          if (0) {
+          } else {
+            (*(&(printf)))("%d ",
+                           (*(&((*(&(var__2))))))[(*(&((*(&(var__5))))))]);
+          }
+        }
+      };
+      (*(&((*(&((*(&(var__5)))))))))++;
     }
-	return 0;
+  }
+  return 0;
 }

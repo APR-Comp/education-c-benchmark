@@ -1,0 +1,108 @@
+--- Lab-6/2932-279950//279950_buggy.c	2023-11-27 20:53:21.285794269 +0200
++++ Lab-6/2932-279950//Main.c	2023-11-27 20:53:21.285794269 +0200
+@@ -1,51 +1,62 @@
+-/*numPass=1, numTotal=7
+-Verdict:WRONG_ANSWER, Visibility:1, Input:"4 4
+-1 2 3 4", ExpOutput:"10
+-", Output:"6"
+-Verdict:ACCEPTED, Visibility:1, Input:"5 0
+-55 32 56 12 83", ExpOutput:"55
+-", Output:"55"
+-Verdict:WRONG_ANSWER, Visibility:1, Input:"20 30
+-1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1", ExpOutput:"19457
+-", Output:"18433"
+-Verdict:WRONG_ANSWER, Visibility:1, Input:"20 30
+-1 -1 1 -1 1 -1 1 -1 1 -1 1 -1 1 -1 1 -1 1 -1 1 -2", ExpOutput:"-1365
+-", Output:"683"
+-Verdict:WRONG_ANSWER, Visibility:1, Input:"2 5
+-1 1", ExpOutput:"8
+-", Output:"3"
+-Verdict:WRONG_ANSWER, Visibility:0, Input:"10 30
+-1 2 3 4 5 6 7 8 9 10", ExpOutput:"55312397
+-", Output:"44888077"
+-Verdict:WRONG_ANSWER, Visibility:0, Input:"20 30
+-1 -1 1 -1 1 -1 1 -1 1 -1 1 -1 1 -1 1 -1 1 -1 1 -1", ExpOutput:"-341
+-", Output:"683"
++/*
++ANNOUNCEMENT: Up to 20% marks will be allotted for good programming practice.
++These include
++- Comments for non trivial code
++- Indentation: align your code properly
++- Function use and modular programming
++
++<b>[NEW]: One hidden test case updated. </b>
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
++
++A d-order recurrence relation for a sequence {a} is defined as,
++a[i] = b[i]   ; for 0 <= i  < d
++a[i] = a[i-1] + a[i-2] + .... + a[i-d]
++
++Given d, b[0...d-1], N, find the value of a[N].
++
++Input format :
++1st line contains the number d and N (separated by space).
++2nd line contains d space-separated numbers, representing b[0...d-1]
++
++Constraints :
++Every 'number' means an integer in [-1000, 1000]
++0 <= N <= 30
++1 <= d <= 20
++The output will fit in an int variable.
++
++Example:
++Input:
++4 4
++1 2 3 4
++
++Here, a[4] = a[3]+a[2]+a[1]+a[0] = 1+2+3+4 = 10. So, output:
++10
++
++Input:
++5 0
++55 32 56 12 83
++
++Output:
++55
++
+ */
+ #include <stdio.h>
++#define MAXN 31
++#define MAXD 21
++
+ int main() {
+-  int d;
+-  scanf("%d ", &d);
+-  int N;
+-  scanf("%d\n", &N);
+-  int i;
+-  int b[20];
+-  for (i = 0; i < d - 1; i = i + 1)
++  int N, d;
++  scanf("%d\n%d", &d, &N);
++  int a[MAXN], b[MAXD];
++  for (int i = 0; i < d; ++i) {
+     scanf("%d", &b[i]);
+-  int a[30];
+-  for (i = 0; i >= 0 && i < d; i = i + 1) {
+     a[i] = b[i];
+   }
+-  // printf("%d\n",a[3]);
+-  for (i = d; i <= N; i = i + 1) {
+-    int sum;
+-    sum = 0;
+-    int c;
+-    c = i - d;
+-    int j;
+-    for (j = i - 1; j >= c; j--)
+-      sum = sum + a[j];
+-    a[i] = sum;
++  for (int i = d; i <= N; ++i) {
++    a[i] = 0;
++    for (int j = 1; j <= d; ++j)
++      a[i] += a[i - j];
+   }
+-  printf("%d", a[N]);
++  printf("%d\n", a[N]);
+   return 0;
+ }
+\ No newline at end of file

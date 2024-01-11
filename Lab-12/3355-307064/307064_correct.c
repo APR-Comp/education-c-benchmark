@@ -30,27 +30,38 @@ Verdict:ACCEPTED, Visibility:0, Input:"8 10
 #include <stdio.h>
 
 struct range {
-    int s;
-    int e;
+  int s;
+  int e;
 };
 
-int chk (struct range r1, struct range r2) {
-    int flag=0;
-    if (r1.s<=r2.e && r1.s>=r2.s) {flag++;}
-    if (r2.s<=r1.e && r2.s>=r1.s) {flag++;}
-    if (r1.e<=r2.e && r1.e>=r2.s) {flag++;}
-    if (r2.e<=r1.e && r2.e>=r1.s) {flag++;}
-    return flag;
+int chk(struct range r1, struct range r2) {
+  int flag = 0;
+  if (r1.s <= r2.e && r1.s >= r2.s) {
+    flag++;
+  }
+  if (r2.s <= r1.e && r2.s >= r1.s) {
+    flag++;
+  }
+  if (r1.e <= r2.e && r1.e >= r2.s) {
+    flag++;
+  }
+  if (r2.e <= r1.e && r2.e >= r1.s) {
+    flag++;
+  }
+  return flag;
 }
 
 int main() {
-    struct range r1;
-    struct range r2;
-    scanf("%d",&r1.s);
-    scanf("%d",&r1.e);
-    scanf("%d",&r2.s);
-    scanf("%d",&r2.e);
-    if (chk(r1,r2)) {printf("YES");}
-    else {printf("NO");}
-    return 0;
+  struct range r1;
+  struct range r2;
+  scanf("%d", &r1.s);
+  scanf("%d", &r1.e);
+  scanf("%d", &r2.s);
+  scanf("%d", &r2.e);
+  if (chk(r1, r2)) {
+    printf("YES");
+  } else {
+    printf("NO");
+  }
+  return 0;
 }

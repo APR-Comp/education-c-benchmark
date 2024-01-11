@@ -28,36 +28,34 @@ Verdict:ACCEPTED, Visibility:0, Input:"8 10
 ", Output:"NO"
 */
 #include <stdio.h>
-struct interval{
-        int left;
-        int right;
-    };
+struct interval {
+  int left;
+  int right;
+};
 
 int main() {
-    struct interval first;
-    struct interval second;
-    
-    scanf("%d %d %d %d",&(first.left),&(first.right),&(second.left),&(second.right));
-    
-    if(first.left>second.left)
-    {
-        if(second.right>=first.left)
-        printf("YES");
-        else
-        printf("NO");
-    }
-    
-    if(first.left<second.left)
-    {
-        if(first.right>=second.left)
-        printf("YES");
-        else
-        printf("NO");
-    }
-    
-    if(first.left==second.left)
+  struct interval first;
+  struct interval second;
+
+  scanf("%d %d %d %d", &(first.left), &(first.right), &(second.left),
+        &(second.right));
+
+  if (first.left > second.left) {
+    if (second.right >= first.left)
+      printf("YES");
+    else
+      printf("NO");
+  }
+
+  if (first.left < second.left) {
+    if (first.right >= second.left)
+      printf("YES");
+    else
+      printf("NO");
+  }
+
+  if (first.left == second.left)
     printf("YES");
-    
-    
-    return 0;
+
+  return 0;
 }
