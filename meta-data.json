@@ -7,7 +7,7 @@
         "source_file": "303406_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "2",
             "public_14",
             "public_15",
@@ -16,7 +16,7 @@
             "public_19",
             "public_20"
         ],
-        "passing_test": [
+        "passing_test_identifiers": [
             "1",
             "3",
             "public_10",
@@ -32,7 +32,7 @@
         ],
         "count_neg": 7,
         "count_pos": 12,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.3237.1.txt",
             "test/in.3237.2.txt",
@@ -60,7 +60,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-10/3237-303406/src",
+            "entrypoint": {
+                "file": "303406_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 2,
@@ -70,7 +78,7 @@
         "source_file": "303624_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -92,10 +100,10 @@
             "public_8",
             "public_9"
         ],
-        "passing_test": [],
+        "passing_test_identifiers": [],
         "count_neg": 20,
         "count_pos": 0,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.3238.1.txt",
             "test/in.3238.2.txt",
@@ -124,7 +132,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-10/3238-303624/src",
+            "entrypoint": {
+                "file": "303624_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 3,
@@ -134,7 +150,7 @@
         "source_file": "303722_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -156,10 +172,10 @@
             "public_8",
             "public_9"
         ],
-        "passing_test": [],
+        "passing_test_identifiers": [],
         "count_neg": 20,
         "count_pos": 0,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.3238.1.txt",
             "test/in.3238.2.txt",
@@ -188,7 +204,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-10/3238-303722/src",
+            "entrypoint": {
+                "file": "303722_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 4,
@@ -198,7 +222,7 @@
         "source_file": "303888_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -215,13 +239,13 @@
             "public_18",
             "public_19"
         ],
-        "passing_test": [
+        "passing_test_identifiers": [
             "public_10",
             "public_15"
         ],
         "count_neg": 15,
         "count_pos": 2,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.3239.1.txt",
             "test/in.3239.2.txt",
@@ -247,7 +271,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-10/3239-303888/src",
+            "entrypoint": {
+                "file": "303888_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 5,
@@ -257,7 +289,7 @@
         "source_file": "303919_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "2",
             "5",
             "6",
@@ -270,7 +302,7 @@
             "public_18",
             "public_19"
         ],
-        "passing_test": [
+        "passing_test_identifiers": [
             "1",
             "3",
             "4",
@@ -280,7 +312,7 @@
         ],
         "count_neg": 11,
         "count_pos": 6,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.3239.1.txt",
             "test/in.3239.2.txt",
@@ -309,7 +341,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-10/3239-303919/src",
+            "entrypoint": {
+                "file": "303919_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 6,
@@ -319,7 +359,7 @@
         "source_file": "303947_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "2",
             "5",
             "6",
@@ -330,7 +370,7 @@
             "public_18",
             "public_19"
         ],
-        "passing_test": [
+        "passing_test_identifiers": [
             "1",
             "3",
             "4",
@@ -342,7 +382,7 @@
         ],
         "count_neg": 9,
         "count_pos": 8,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.3239.1.txt",
             "test/in.3239.2.txt",
@@ -368,7 +408,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-10/3239-303947/src",
+            "entrypoint": {
+                "file": "303947_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 7,
@@ -378,7 +426,7 @@
         "source_file": "304151_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -393,10 +441,10 @@
             "public_16",
             "public_20"
         ],
-        "passing_test": [],
+        "passing_test_identifiers": [],
         "count_neg": 13,
         "count_pos": 0,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.3240.1.txt",
             "test/in.3240.2.txt",
@@ -418,7 +466,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-10/3240-304151/src",
+            "entrypoint": {
+                "file": "304151_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 8,
@@ -428,7 +484,7 @@
         "source_file": "304171_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -443,10 +499,10 @@
             "public_16",
             "public_20"
         ],
-        "passing_test": [],
+        "passing_test_identifiers": [],
         "count_neg": 13,
         "count_pos": 0,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.3240.1.txt",
             "test/in.3240.2.txt",
@@ -468,7 +524,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-10/3240-304171/src",
+            "entrypoint": {
+                "file": "304171_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 9,
@@ -478,7 +542,7 @@
         "source_file": "304221_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -493,10 +557,10 @@
             "public_16",
             "public_20"
         ],
-        "passing_test": [],
+        "passing_test_identifiers": [],
         "count_neg": 13,
         "count_pos": 0,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.3240.1.txt",
             "test/in.3240.2.txt",
@@ -518,7 +582,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-10/3240-304221/src",
+            "entrypoint": {
+                "file": "304221_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 10,
@@ -528,7 +600,7 @@
         "source_file": "303500_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "5",
@@ -548,13 +620,13 @@
             "public_8",
             "public_9"
         ],
-        "passing_test": [
+        "passing_test_identifiers": [
             "3",
             "4"
         ],
         "count_neg": 18,
         "count_pos": 2,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.3241.1.txt",
             "test/in.3241.2.txt",
@@ -583,7 +655,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-10/3241-303500/src",
+            "entrypoint": {
+                "file": "303500_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 11,
@@ -593,7 +673,7 @@
         "source_file": "305271_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -610,7 +690,7 @@
             "public_7",
             "public_9"
         ],
-        "passing_test": [
+        "passing_test_identifiers": [
             "public_11",
             "public_12",
             "public_15",
@@ -619,7 +699,7 @@
         ],
         "count_neg": 15,
         "count_pos": 5,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.3291.1.txt",
             "test/in.3291.2.txt",
@@ -648,7 +728,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-11/3291-305271/src",
+            "entrypoint": {
+                "file": "305271_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 12,
@@ -658,7 +746,7 @@
         "source_file": "305284_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -680,10 +768,10 @@
             "public_8",
             "public_9"
         ],
-        "passing_test": [],
+        "passing_test_identifiers": [],
         "count_neg": 20,
         "count_pos": 0,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.3291.1.txt",
             "test/in.3291.2.txt",
@@ -712,7 +800,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-11/3291-305284/src",
+            "entrypoint": {
+                "file": "305284_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 13,
@@ -722,7 +818,7 @@
         "source_file": "305756_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -744,10 +840,10 @@
             "public_8",
             "public_9"
         ],
-        "passing_test": [],
+        "passing_test_identifiers": [],
         "count_neg": 20,
         "count_pos": 0,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.3293.1.txt",
             "test/in.3293.2.txt",
@@ -776,7 +872,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-11/3293-305756/src",
+            "entrypoint": {
+                "file": "305756_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 14,
@@ -786,7 +890,7 @@
         "source_file": "305783_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -808,10 +912,10 @@
             "public_8",
             "public_9"
         ],
-        "passing_test": [],
+        "passing_test_identifiers": [],
         "count_neg": 20,
         "count_pos": 0,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.3293.1.txt",
             "test/in.3293.2.txt",
@@ -840,7 +944,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-11/3293-305783/src",
+            "entrypoint": {
+                "file": "305783_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 15,
@@ -850,7 +962,7 @@
         "source_file": "305975_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -865,10 +977,10 @@
             "public_8",
             "public_9"
         ],
-        "passing_test": [],
+        "passing_test_identifiers": [],
         "count_neg": 13,
         "count_pos": 0,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.3294.1.txt",
             "test/in.3294.2.txt",
@@ -897,7 +1009,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-11/3294-305975/src",
+            "entrypoint": {
+                "file": "305975_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 16,
@@ -907,7 +1027,7 @@
         "source_file": "305984_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -922,10 +1042,10 @@
             "public_8",
             "public_9"
         ],
-        "passing_test": [],
+        "passing_test_identifiers": [],
         "count_neg": 13,
         "count_pos": 0,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.3294.1.txt",
             "test/in.3294.2.txt",
@@ -954,7 +1074,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-11/3294-305984/src",
+            "entrypoint": {
+                "file": "305984_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 17,
@@ -964,7 +1092,7 @@
         "source_file": "305996_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -978,12 +1106,12 @@
             "public_8",
             "public_9"
         ],
-        "passing_test": [
+        "passing_test_identifiers": [
             "public_12"
         ],
         "count_neg": 12,
         "count_pos": 1,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.3294.1.txt",
             "test/in.3294.2.txt",
@@ -1011,7 +1139,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-11/3294-305996/src",
+            "entrypoint": {
+                "file": "305996_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 18,
@@ -1021,7 +1157,7 @@
         "source_file": "306033_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -1036,10 +1172,10 @@
             "public_8",
             "public_9"
         ],
-        "passing_test": [],
+        "passing_test_identifiers": [],
         "count_neg": 13,
         "count_pos": 0,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.3294.1.txt",
             "test/in.3294.2.txt",
@@ -1068,7 +1204,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-11/3294-306033/src",
+            "entrypoint": {
+                "file": "306033_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 19,
@@ -1078,7 +1222,7 @@
         "source_file": "306056_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -1093,10 +1237,10 @@
             "public_8",
             "public_9"
         ],
-        "passing_test": [],
+        "passing_test_identifiers": [],
         "count_neg": 13,
         "count_pos": 0,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.3294.1.txt",
             "test/in.3294.2.txt",
@@ -1125,7 +1269,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-11/3294-306056/src",
+            "entrypoint": {
+                "file": "306056_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 20,
@@ -1135,7 +1287,7 @@
         "source_file": "305374_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -1156,10 +1308,10 @@
             "public_8",
             "public_9"
         ],
-        "passing_test": [],
+        "passing_test_identifiers": [],
         "count_neg": 19,
         "count_pos": 0,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.3295.1.txt",
             "test/in.3295.2.txt",
@@ -1187,7 +1339,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-11/3295-305374/src",
+            "entrypoint": {
+                "file": "305374_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 21,
@@ -1197,7 +1357,7 @@
         "source_file": "307020_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -1219,10 +1379,10 @@
             "public_19",
             "public_20"
         ],
-        "passing_test": [],
+        "passing_test_identifiers": [],
         "count_neg": 20,
         "count_pos": 0,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.3355.1.txt",
             "test/in.3355.2.txt",
@@ -1251,7 +1411,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-12/3355-307020/src",
+            "entrypoint": {
+                "file": "307020_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 22,
@@ -1261,7 +1429,7 @@
         "source_file": "307064_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -1283,10 +1451,10 @@
             "public_19",
             "public_20"
         ],
-        "passing_test": [],
+        "passing_test_identifiers": [],
         "count_neg": 20,
         "count_pos": 0,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.3355.1.txt",
             "test/in.3355.2.txt",
@@ -1315,7 +1483,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-12/3355-307064/src",
+            "entrypoint": {
+                "file": "307064_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 23,
@@ -1325,7 +1501,7 @@
         "source_file": "307083_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -1347,10 +1523,10 @@
             "public_19",
             "public_20"
         ],
-        "passing_test": [],
+        "passing_test_identifiers": [],
         "count_neg": 20,
         "count_pos": 0,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.3355.1.txt",
             "test/in.3355.2.txt",
@@ -1379,7 +1555,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-12/3355-307083/src",
+            "entrypoint": {
+                "file": "307083_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 24,
@@ -1389,7 +1573,7 @@
         "source_file": "307102_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -1411,10 +1595,10 @@
             "public_19",
             "public_20"
         ],
-        "passing_test": [],
+        "passing_test_identifiers": [],
         "count_neg": 20,
         "count_pos": 0,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.3355.1.txt",
             "test/in.3355.2.txt",
@@ -1443,7 +1627,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-12/3355-307102/src",
+            "entrypoint": {
+                "file": "307102_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 25,
@@ -1453,7 +1645,7 @@
         "source_file": "307281_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -1475,10 +1667,10 @@
             "public_8",
             "public_9"
         ],
-        "passing_test": [],
+        "passing_test_identifiers": [],
         "count_neg": 20,
         "count_pos": 0,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.3356.1.txt",
             "test/in.3356.2.txt",
@@ -1507,7 +1699,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-12/3356-307281/src",
+            "entrypoint": {
+                "file": "307281_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 26,
@@ -1517,7 +1717,7 @@
         "source_file": "307320_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -1539,10 +1739,10 @@
             "public_8",
             "public_9"
         ],
-        "passing_test": [],
+        "passing_test_identifiers": [],
         "count_neg": 20,
         "count_pos": 0,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.3356.1.txt",
             "test/in.3356.2.txt",
@@ -1571,7 +1771,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-12/3356-307320/src",
+            "entrypoint": {
+                "file": "307320_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 27,
@@ -1581,7 +1789,7 @@
         "source_file": "307361_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "4",
@@ -1593,7 +1801,7 @@
             "public_20",
             "public_8"
         ],
-        "passing_test": [
+        "passing_test_identifiers": [
             "3",
             "5",
             "6",
@@ -1607,7 +1815,7 @@
         ],
         "count_neg": 10,
         "count_pos": 10,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.3356.1.txt",
             "test/in.3356.2.txt",
@@ -1636,7 +1844,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-12/3356-307361/src",
+            "entrypoint": {
+                "file": "307361_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 28,
@@ -1646,14 +1862,14 @@
         "source_file": "307516_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "2",
             "4",
             "6",
             "public_12",
             "public_8"
         ],
-        "passing_test": [
+        "passing_test_identifiers": [
             "1",
             "3",
             "5",
@@ -1672,7 +1888,7 @@
         ],
         "count_neg": 5,
         "count_pos": 15,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.3357.1.txt",
             "test/in.3357.2.txt",
@@ -1701,7 +1917,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-12/3357-307516/src",
+            "entrypoint": {
+                "file": "307516_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 29,
@@ -1711,7 +1935,7 @@
         "source_file": "307562_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -1733,10 +1957,10 @@
             "public_8",
             "public_9"
         ],
-        "passing_test": [],
+        "passing_test_identifiers": [],
         "count_neg": 20,
         "count_pos": 0,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.3357.1.txt",
             "test/in.3357.2.txt",
@@ -1765,7 +1989,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-12/3357-307562/src",
+            "entrypoint": {
+                "file": "307562_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 30,
@@ -1775,7 +2007,7 @@
         "source_file": "307777_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -1797,10 +2029,10 @@
             "public_8",
             "public_9"
         ],
-        "passing_test": [],
+        "passing_test_identifiers": [],
         "count_neg": 20,
         "count_pos": 0,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.3358.1.txt",
             "test/in.3358.2.txt",
@@ -1829,7 +2061,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-12/3358-307777/src",
+            "entrypoint": {
+                "file": "307777_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 31,
@@ -1839,7 +2079,7 @@
         "source_file": "270011_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -1860,10 +2100,10 @@
             "public_8",
             "public_9"
         ],
-        "passing_test": [],
+        "passing_test_identifiers": [],
         "count_neg": 19,
         "count_pos": 0,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.2810.1.txt",
             "test/in.2810.2.txt",
@@ -1891,7 +2131,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-3/2810-270011/src",
+            "entrypoint": {
+                "file": "270011_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 32,
@@ -1901,7 +2149,7 @@
         "source_file": "270048_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -1922,10 +2170,10 @@
             "public_8",
             "public_9"
         ],
-        "passing_test": [],
+        "passing_test_identifiers": [],
         "count_neg": 19,
         "count_pos": 0,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.2810.1.txt",
             "test/in.2810.2.txt",
@@ -1953,7 +2201,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-3/2810-270048/src",
+            "entrypoint": {
+                "file": "270048_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 33,
@@ -1963,7 +2219,7 @@
         "source_file": "270054_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -1984,10 +2240,10 @@
             "public_8",
             "public_9"
         ],
-        "passing_test": [],
+        "passing_test_identifiers": [],
         "count_neg": 19,
         "count_pos": 0,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.2810.1.txt",
             "test/in.2810.2.txt",
@@ -2015,7 +2271,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-3/2810-270054/src",
+            "entrypoint": {
+                "file": "270054_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 34,
@@ -2025,7 +2289,7 @@
         "source_file": "270081_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -2046,10 +2310,10 @@
             "public_8",
             "public_9"
         ],
-        "passing_test": [],
+        "passing_test_identifiers": [],
         "count_neg": 19,
         "count_pos": 0,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.2810.1.txt",
             "test/in.2810.2.txt",
@@ -2077,7 +2341,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-3/2810-270081/src",
+            "entrypoint": {
+                "file": "270081_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 35,
@@ -2087,7 +2359,7 @@
         "source_file": "270090_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -2108,10 +2380,10 @@
             "public_8",
             "public_9"
         ],
-        "passing_test": [],
+        "passing_test_identifiers": [],
         "count_neg": 19,
         "count_pos": 0,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.2810.1.txt",
             "test/in.2810.2.txt",
@@ -2139,7 +2411,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-3/2810-270090/src",
+            "entrypoint": {
+                "file": "270090_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 36,
@@ -2149,7 +2429,7 @@
         "source_file": "270138_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -2169,10 +2449,10 @@
             "public_8",
             "public_9"
         ],
-        "passing_test": [],
+        "passing_test_identifiers": [],
         "count_neg": 19,
         "count_pos": 0,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.2811.1.txt",
             "test/in.2811.2.txt",
@@ -2199,7 +2479,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-3/2811-270138/src",
+            "entrypoint": {
+                "file": "270138_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 37,
@@ -2209,13 +2497,13 @@
         "source_file": "270151_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "4",
             "6",
             "public_15",
             "public_8"
         ],
-        "passing_test": [
+        "passing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -2233,7 +2521,7 @@
         ],
         "count_neg": 4,
         "count_pos": 15,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.2811.1.txt",
             "test/in.2811.2.txt",
@@ -2260,7 +2548,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-3/2811-270151/src",
+            "entrypoint": {
+                "file": "270151_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 38,
@@ -2270,7 +2566,7 @@
         "source_file": "270194_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "3",
             "4",
@@ -2285,7 +2581,7 @@
             "public_8",
             "public_9"
         ],
-        "passing_test": [
+        "passing_test_identifiers": [
             "2",
             "5",
             "public_11",
@@ -2294,7 +2590,7 @@
         ],
         "count_neg": 13,
         "count_pos": 6,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.2811.1.txt",
             "test/in.2811.2.txt",
@@ -2321,7 +2617,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-3/2811-270194/src",
+            "entrypoint": {
+                "file": "270194_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 39,
@@ -2331,7 +2635,7 @@
         "source_file": "270220_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -2351,10 +2655,10 @@
             "public_8",
             "public_9"
         ],
-        "passing_test": [],
+        "passing_test_identifiers": [],
         "count_neg": 19,
         "count_pos": 0,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.2811.1.txt",
             "test/in.2811.2.txt",
@@ -2381,7 +2685,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-3/2811-270220/src",
+            "entrypoint": {
+                "file": "270220_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 40,
@@ -2391,12 +2703,12 @@
         "source_file": "270276_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "3",
             "6",
             "public_15"
         ],
-        "passing_test": [
+        "passing_test_identifiers": [
             "1",
             "2",
             "4",
@@ -2417,7 +2729,7 @@
         ],
         "count_neg": 3,
         "count_pos": 17,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.2812.1.txt",
             "test/in.2812.2.txt",
@@ -2446,7 +2758,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-3/2812-270276/src",
+            "entrypoint": {
+                "file": "270276_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 41,
@@ -2456,12 +2776,12 @@
         "source_file": "271039_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "5",
             "6",
             "7"
         ],
-        "passing_test": [
+        "passing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -2482,7 +2802,7 @@
         ],
         "count_neg": 3,
         "count_pos": 17,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.2824.1.txt",
             "test/in.2824.2.txt",
@@ -2511,7 +2831,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-4/2824-271039/src",
+            "entrypoint": {
+                "file": "271039_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 42,
@@ -2521,12 +2849,12 @@
         "source_file": "271080_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "5",
             "6",
             "7"
         ],
-        "passing_test": [
+        "passing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -2547,7 +2875,7 @@
         ],
         "count_neg": 3,
         "count_pos": 17,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.2824.1.txt",
             "test/in.2824.2.txt",
@@ -2576,7 +2904,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-4/2824-271080/src",
+            "entrypoint": {
+                "file": "271080_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 43,
@@ -2586,14 +2922,14 @@
         "source_file": "271084_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "3",
             "public_10",
             "public_15",
             "public_19"
         ],
-        "passing_test": [
+        "passing_test_identifiers": [
             "2",
             "4",
             "5",
@@ -2612,7 +2948,7 @@
         ],
         "count_neg": 5,
         "count_pos": 15,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.2824.1.txt",
             "test/in.2824.2.txt",
@@ -2641,7 +2977,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-4/2824-271084/src",
+            "entrypoint": {
+                "file": "271084_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 44,
@@ -2651,7 +2995,7 @@
         "source_file": "271095_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "3",
             "8",
@@ -2659,7 +3003,7 @@
             "public_15",
             "public_19"
         ],
-        "passing_test": [
+        "passing_test_identifiers": [
             "2",
             "4",
             "5",
@@ -2677,7 +3021,7 @@
         ],
         "count_neg": 6,
         "count_pos": 14,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.2824.1.txt",
             "test/in.2824.2.txt",
@@ -2706,7 +3050,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-4/2824-271095/src",
+            "entrypoint": {
+                "file": "271095_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 45,
@@ -2716,7 +3068,7 @@
         "source_file": "271116_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "2",
             "4",
             "5",
@@ -2733,7 +3085,7 @@
             "public_20",
             "public_9"
         ],
-        "passing_test": [
+        "passing_test_identifiers": [
             "1",
             "3",
             "public_10",
@@ -2742,7 +3094,7 @@
         ],
         "count_neg": 15,
         "count_pos": 5,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.2824.1.txt",
             "test/in.2824.2.txt",
@@ -2771,7 +3123,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-4/2824-271116/src",
+            "entrypoint": {
+                "file": "271116_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 46,
@@ -2781,7 +3141,7 @@
         "source_file": "271154_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -2802,10 +3162,10 @@
             "public_8",
             "public_9"
         ],
-        "passing_test": [],
+        "passing_test_identifiers": [],
         "count_neg": 20,
         "count_pos": 0,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.2825.1.txt",
             "test/in.2825.2.txt",
@@ -2833,7 +3193,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-4/2825-271154/src",
+            "entrypoint": {
+                "file": "271154_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 47,
@@ -2843,7 +3211,7 @@
         "source_file": "271188_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -2861,14 +3229,14 @@
             "public_8",
             "public_9"
         ],
-        "passing_test": [
+        "passing_test_identifiers": [
             "4",
             "5",
             "public_10"
         ],
         "count_neg": 17,
         "count_pos": 3,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.2825.1.txt",
             "test/in.2825.2.txt",
@@ -2896,7 +3264,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-4/2825-271188/src",
+            "entrypoint": {
+                "file": "271188_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 48,
@@ -2906,7 +3282,7 @@
         "source_file": "271203_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -2924,14 +3300,14 @@
             "public_8",
             "public_9"
         ],
-        "passing_test": [
+        "passing_test_identifiers": [
             "4",
             "5",
             "public_10"
         ],
         "count_neg": 17,
         "count_pos": 3,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.2825.1.txt",
             "test/in.2825.2.txt",
@@ -2959,7 +3335,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-4/2825-271203/src",
+            "entrypoint": {
+                "file": "271203_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 49,
@@ -2969,7 +3353,7 @@
         "source_file": "271209_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -2990,10 +3374,10 @@
             "public_8",
             "public_9"
         ],
-        "passing_test": [],
+        "passing_test_identifiers": [],
         "count_neg": 20,
         "count_pos": 0,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.2825.1.txt",
             "test/in.2825.2.txt",
@@ -3021,7 +3405,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-4/2825-271209/src",
+            "entrypoint": {
+                "file": "271209_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 50,
@@ -3031,12 +3423,12 @@
         "source_file": "271216_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "3",
             "6",
             "public_11"
         ],
-        "passing_test": [
+        "passing_test_identifiers": [
             "1",
             "2",
             "4",
@@ -3056,7 +3448,7 @@
         ],
         "count_neg": 3,
         "count_pos": 17,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.2825.1.txt",
             "test/in.2825.2.txt",
@@ -3084,7 +3476,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-4/2825-271216/src",
+            "entrypoint": {
+                "file": "271216_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 51,
@@ -3094,7 +3494,7 @@
         "source_file": "277519_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "3",
             "public_13",
             "public_14",
@@ -3102,7 +3502,7 @@
             "public_18",
             "public_8"
         ],
-        "passing_test": [
+        "passing_test_identifiers": [
             "1",
             "2",
             "4",
@@ -3117,7 +3517,7 @@
         ],
         "count_neg": 6,
         "count_pos": 11,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.2864.1.txt",
             "test/in.2864.2.txt",
@@ -3143,7 +3543,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-5/2864-277519/src",
+            "entrypoint": {
+                "file": "277519_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 52,
@@ -3153,7 +3561,7 @@
         "source_file": "277528_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "3",
             "public_13",
             "public_14",
@@ -3161,7 +3569,7 @@
             "public_18",
             "public_8"
         ],
-        "passing_test": [
+        "passing_test_identifiers": [
             "1",
             "2",
             "4",
@@ -3176,7 +3584,7 @@
         ],
         "count_neg": 6,
         "count_pos": 11,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.2864.1.txt",
             "test/in.2864.2.txt",
@@ -3202,7 +3610,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-5/2864-277528/src",
+            "entrypoint": {
+                "file": "277528_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 53,
@@ -3212,7 +3628,7 @@
         "source_file": "277571_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -3231,10 +3647,10 @@
             "public_7",
             "public_8"
         ],
-        "passing_test": [],
+        "passing_test_identifiers": [],
         "count_neg": 17,
         "count_pos": 0,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.2864.1.txt",
             "test/in.2864.2.txt",
@@ -3260,7 +3676,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-5/2864-277571/src",
+            "entrypoint": {
+                "file": "277571_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 54,
@@ -3270,7 +3694,7 @@
         "source_file": "277580_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -3289,10 +3713,10 @@
             "public_7",
             "public_8"
         ],
-        "passing_test": [],
+        "passing_test_identifiers": [],
         "count_neg": 17,
         "count_pos": 0,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.2864.1.txt",
             "test/in.2864.2.txt",
@@ -3318,7 +3742,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-5/2864-277580/src",
+            "entrypoint": {
+                "file": "277580_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 55,
@@ -3328,7 +3760,7 @@
         "source_file": "277591_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -3346,12 +3778,12 @@
             "public_6",
             "public_8"
         ],
-        "passing_test": [
+        "passing_test_identifiers": [
             "public_7"
         ],
         "count_neg": 16,
         "count_pos": 1,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.2864.1.txt",
             "test/in.2864.2.txt",
@@ -3377,7 +3809,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-5/2864-277591/src",
+            "entrypoint": {
+                "file": "277591_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 56,
@@ -3387,7 +3827,7 @@
         "source_file": "277637_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -3409,10 +3849,10 @@
             "public_8",
             "public_9"
         ],
-        "passing_test": [],
+        "passing_test_identifiers": [],
         "count_neg": 20,
         "count_pos": 0,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.2865.1.txt",
             "test/in.2865.2.txt",
@@ -3441,7 +3881,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-5/2865-277637/src",
+            "entrypoint": {
+                "file": "277637_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 57,
@@ -3451,7 +3899,7 @@
         "source_file": "277685_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -3468,7 +3916,7 @@
             "public_7",
             "public_9"
         ],
-        "passing_test": [
+        "passing_test_identifiers": [
             "4",
             "public_11",
             "public_20",
@@ -3477,7 +3925,7 @@
         ],
         "count_neg": 15,
         "count_pos": 5,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.2865.1.txt",
             "test/in.2865.2.txt",
@@ -3506,7 +3954,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-5/2865-277685/src",
+            "entrypoint": {
+                "file": "277685_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 58,
@@ -3516,7 +3972,7 @@
         "source_file": "277711_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -3538,10 +3994,10 @@
             "public_8",
             "public_9"
         ],
-        "passing_test": [],
+        "passing_test_identifiers": [],
         "count_neg": 20,
         "count_pos": 0,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.2865.1.txt",
             "test/in.2865.2.txt",
@@ -3570,7 +4026,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-5/2865-277711/src",
+            "entrypoint": {
+                "file": "277711_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 59,
@@ -3580,7 +4044,7 @@
         "source_file": "277780_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -3602,10 +4066,10 @@
             "public_19",
             "public_20"
         ],
-        "passing_test": [],
+        "passing_test_identifiers": [],
         "count_neg": 20,
         "count_pos": 0,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.2866.1.txt",
             "test/in.2866.2.txt",
@@ -3634,7 +4098,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-5/2866-277780/src",
+            "entrypoint": {
+                "file": "277780_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 60,
@@ -3644,7 +4116,7 @@
         "source_file": "277802_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -3666,10 +4138,10 @@
             "public_19",
             "public_20"
         ],
-        "passing_test": [],
+        "passing_test_identifiers": [],
         "count_neg": 20,
         "count_pos": 0,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.2866.1.txt",
             "test/in.2866.2.txt",
@@ -3698,7 +4170,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-5/2866-277802/src",
+            "entrypoint": {
+                "file": "277802_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 61,
@@ -3708,7 +4188,7 @@
         "source_file": "279950_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -3729,10 +4209,10 @@
             "public_20",
             "public_8"
         ],
-        "passing_test": [],
+        "passing_test_identifiers": [],
         "count_neg": 19,
         "count_pos": 0,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.2932.1.txt",
             "test/in.2932.2.txt",
@@ -3760,7 +4240,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-6/2932-279950/src",
+            "entrypoint": {
+                "file": "279950_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 62,
@@ -3770,7 +4258,7 @@
         "source_file": "279986_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -3791,10 +4279,10 @@
             "public_20",
             "public_8"
         ],
-        "passing_test": [],
+        "passing_test_identifiers": [],
         "count_neg": 19,
         "count_pos": 0,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.2932.1.txt",
             "test/in.2932.2.txt",
@@ -3822,7 +4310,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-6/2932-279986/src",
+            "entrypoint": {
+                "file": "279986_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 63,
@@ -3832,7 +4328,7 @@
         "source_file": "280004_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -3853,10 +4349,10 @@
             "public_20",
             "public_8"
         ],
-        "passing_test": [],
+        "passing_test_identifiers": [],
         "count_neg": 19,
         "count_pos": 0,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.2932.1.txt",
             "test/in.2932.2.txt",
@@ -3884,7 +4380,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-6/2932-280004/src",
+            "entrypoint": {
+                "file": "280004_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 64,
@@ -3894,7 +4398,7 @@
         "source_file": "280017_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -3915,10 +4419,10 @@
             "public_20",
             "public_8"
         ],
-        "passing_test": [],
+        "passing_test_identifiers": [],
         "count_neg": 19,
         "count_pos": 0,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.2932.1.txt",
             "test/in.2932.2.txt",
@@ -3946,7 +4450,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-6/2932-280017/src",
+            "entrypoint": {
+                "file": "280017_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 65,
@@ -3956,7 +4468,7 @@
         "source_file": "280079_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -3976,10 +4488,10 @@
             "public_8",
             "public_9"
         ],
-        "passing_test": [],
+        "passing_test_identifiers": [],
         "count_neg": 18,
         "count_pos": 0,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.2933.1.txt",
             "test/in.2933.2.txt",
@@ -4006,7 +4518,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-6/2933-280079/src",
+            "entrypoint": {
+                "file": "280079_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 66,
@@ -4016,7 +4536,7 @@
         "source_file": "280127_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "2",
             "3",
             "4",
@@ -4026,7 +4546,7 @@
             "public_17",
             "public_8"
         ],
-        "passing_test": [
+        "passing_test_identifiers": [
             "1",
             "5",
             "public_12",
@@ -4040,7 +4560,7 @@
         ],
         "count_neg": 8,
         "count_pos": 10,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.2933.1.txt",
             "test/in.2933.2.txt",
@@ -4067,7 +4587,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-6/2933-280127/src",
+            "entrypoint": {
+                "file": "280127_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 67,
@@ -4077,7 +4605,7 @@
         "source_file": "280208_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -4097,10 +4625,10 @@
             "public_8",
             "public_9"
         ],
-        "passing_test": [],
+        "passing_test_identifiers": [],
         "count_neg": 18,
         "count_pos": 0,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.2934.1.txt",
             "test/in.2934.2.txt",
@@ -4127,7 +4655,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-6/2934-280208/src",
+            "entrypoint": {
+                "file": "280208_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 68,
@@ -4137,7 +4673,7 @@
         "source_file": "280226_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -4157,10 +4693,10 @@
             "public_8",
             "public_9"
         ],
-        "passing_test": [],
+        "passing_test_identifiers": [],
         "count_neg": 18,
         "count_pos": 0,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.2934.1.txt",
             "test/in.2934.2.txt",
@@ -4187,7 +4723,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-6/2934-280226/src",
+            "entrypoint": {
+                "file": "280226_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 69,
@@ -4197,7 +4741,7 @@
         "source_file": "280238_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -4217,10 +4761,10 @@
             "public_8",
             "public_9"
         ],
-        "passing_test": [],
+        "passing_test_identifiers": [],
         "count_neg": 18,
         "count_pos": 0,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.2934.1.txt",
             "test/in.2934.2.txt",
@@ -4247,7 +4791,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-6/2934-280238/src",
+            "entrypoint": {
+                "file": "280238_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 70,
@@ -4257,7 +4809,7 @@
         "source_file": "280333_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -4275,14 +4827,14 @@
             "public_8",
             "public_9"
         ],
-        "passing_test": [
+        "passing_test_identifiers": [
             "public_12",
             "public_6",
             "public_7"
         ],
         "count_neg": 16,
         "count_pos": 3,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.2935.1.txt",
             "test/in.2935.2.txt",
@@ -4310,7 +4862,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-6/2935-280333/src",
+            "entrypoint": {
+                "file": "280333_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 71,
@@ -4320,14 +4880,14 @@
         "source_file": "295416_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "7",
             "public_13",
             "public_14",
             "public_15",
             "public_16"
         ],
-        "passing_test": [
+        "passing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -4344,7 +4904,7 @@
         ],
         "count_neg": 5,
         "count_pos": 13,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.3075.1.txt",
             "test/in.3075.2.txt",
@@ -4371,7 +4931,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-7/3075-295416/src",
+            "entrypoint": {
+                "file": "295416_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 72,
@@ -4381,14 +4949,14 @@
         "source_file": "295450_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "7",
             "public_13",
             "public_14",
             "public_15",
             "public_16"
         ],
-        "passing_test": [
+        "passing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -4405,7 +4973,7 @@
         ],
         "count_neg": 5,
         "count_pos": 13,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.3075.1.txt",
             "test/in.3075.2.txt",
@@ -4432,7 +5000,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-7/3075-295450/src",
+            "entrypoint": {
+                "file": "295450_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 73,
@@ -4442,14 +5018,14 @@
         "source_file": "295460_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "7",
             "public_13",
             "public_14",
             "public_15",
             "public_16"
         ],
-        "passing_test": [
+        "passing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -4466,7 +5042,7 @@
         ],
         "count_neg": 5,
         "count_pos": 13,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.3075.1.txt",
             "test/in.3075.2.txt",
@@ -4493,7 +5069,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-7/3075-295460/src",
+            "entrypoint": {
+                "file": "295460_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 74,
@@ -4503,7 +5087,7 @@
         "source_file": "295675_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -4525,10 +5109,10 @@
             "public_19",
             "public_20"
         ],
-        "passing_test": [],
+        "passing_test_identifiers": [],
         "count_neg": 20,
         "count_pos": 0,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.3076.1.txt",
             "test/in.3076.2.txt",
@@ -4557,7 +5141,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-7/3076-295675/src",
+            "entrypoint": {
+                "file": "295675_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 75,
@@ -4567,7 +5159,7 @@
         "source_file": "295686_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -4588,12 +5180,12 @@
             "public_19",
             "public_20"
         ],
-        "passing_test": [
+        "passing_test_identifiers": [
             "9"
         ],
         "count_neg": 19,
         "count_pos": 1,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.3076.1.txt",
             "test/in.3076.2.txt",
@@ -4622,7 +5214,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-7/3076-295686/src",
+            "entrypoint": {
+                "file": "295686_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 76,
@@ -4632,7 +5232,7 @@
         "source_file": "295698_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -4653,12 +5253,12 @@
             "public_19",
             "public_20"
         ],
-        "passing_test": [
+        "passing_test_identifiers": [
             "9"
         ],
         "count_neg": 19,
         "count_pos": 1,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.3076.1.txt",
             "test/in.3076.2.txt",
@@ -4687,7 +5287,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-7/3076-295698/src",
+            "entrypoint": {
+                "file": "295698_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 77,
@@ -4697,10 +5305,10 @@
         "source_file": "295738_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "9"
         ],
-        "passing_test": [
+        "passing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -4723,7 +5331,7 @@
         ],
         "count_neg": 1,
         "count_pos": 19,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.3076.1.txt",
             "test/in.3076.2.txt",
@@ -4752,7 +5360,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-7/3076-295738/src",
+            "entrypoint": {
+                "file": "295738_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 78,
@@ -4762,7 +5378,7 @@
         "source_file": "295929_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -4784,10 +5400,10 @@
             "public_20",
             "public_9"
         ],
-        "passing_test": [],
+        "passing_test_identifiers": [],
         "count_neg": 20,
         "count_pos": 0,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.3077.1.txt",
             "test/in.3077.2.txt",
@@ -4816,7 +5432,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-7/3077-295929/src",
+            "entrypoint": {
+                "file": "295929_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 79,
@@ -4826,7 +5450,7 @@
         "source_file": "295949_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -4848,10 +5472,10 @@
             "public_20",
             "public_9"
         ],
-        "passing_test": [],
+        "passing_test_identifiers": [],
         "count_neg": 20,
         "count_pos": 0,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.3077.1.txt",
             "test/in.3077.2.txt",
@@ -4880,7 +5504,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-7/3077-295949/src",
+            "entrypoint": {
+                "file": "295949_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 80,
@@ -4890,7 +5522,7 @@
         "source_file": "295971_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -4912,10 +5544,10 @@
             "public_20",
             "public_9"
         ],
-        "passing_test": [],
+        "passing_test_identifiers": [],
         "count_neg": 20,
         "count_pos": 0,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.3077.1.txt",
             "test/in.3077.2.txt",
@@ -4944,7 +5576,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-7/3077-295971/src",
+            "entrypoint": {
+                "file": "295971_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 81,
@@ -4954,7 +5594,7 @@
         "source_file": "297318_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -4975,10 +5615,10 @@
             "public_20",
             "public_9"
         ],
-        "passing_test": [],
+        "passing_test_identifiers": [],
         "count_neg": 20,
         "count_pos": 0,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.3081.1.txt",
             "test/in.3081.2.txt",
@@ -5006,7 +5646,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-8/3081-297318/src",
+            "entrypoint": {
+                "file": "297318_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 82,
@@ -5016,7 +5664,7 @@
         "source_file": "297349_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -5037,10 +5685,10 @@
             "public_20",
             "public_9"
         ],
-        "passing_test": [],
+        "passing_test_identifiers": [],
         "count_neg": 20,
         "count_pos": 0,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.3081.1.txt",
             "test/in.3081.2.txt",
@@ -5068,7 +5716,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-8/3081-297349/src",
+            "entrypoint": {
+                "file": "297349_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 83,
@@ -5078,7 +5734,7 @@
         "source_file": "297430_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -5098,10 +5754,10 @@
             "public_7",
             "public_9"
         ],
-        "passing_test": [],
+        "passing_test_identifiers": [],
         "count_neg": 20,
         "count_pos": 0,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.3082.1.txt",
             "test/in.3082.2.txt",
@@ -5128,7 +5784,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-8/3082-297430/src",
+            "entrypoint": {
+                "file": "297430_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 84,
@@ -5138,7 +5802,7 @@
         "source_file": "297453_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -5158,10 +5822,10 @@
             "public_7",
             "public_9"
         ],
-        "passing_test": [],
+        "passing_test_identifiers": [],
         "count_neg": 20,
         "count_pos": 0,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.3082.1.txt",
             "test/in.3082.2.txt",
@@ -5188,7 +5852,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-8/3082-297453/src",
+            "entrypoint": {
+                "file": "297453_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 85,
@@ -5198,7 +5870,7 @@
         "source_file": "297466_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -5218,10 +5890,10 @@
             "public_7",
             "public_9"
         ],
-        "passing_test": [],
+        "passing_test_identifiers": [],
         "count_neg": 20,
         "count_pos": 0,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.3082.1.txt",
             "test/in.3082.2.txt",
@@ -5248,7 +5920,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-8/3082-297466/src",
+            "entrypoint": {
+                "file": "297466_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 86,
@@ -5258,7 +5938,7 @@
         "source_file": "297563_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -5278,10 +5958,10 @@
             "public_20",
             "public_9"
         ],
-        "passing_test": [],
+        "passing_test_identifiers": [],
         "count_neg": 18,
         "count_pos": 0,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.3083.1.txt",
             "test/in.3083.2.txt",
@@ -5308,7 +5988,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-8/3083-297563/src",
+            "entrypoint": {
+                "file": "297563_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 87,
@@ -5318,12 +6006,12 @@
         "source_file": "297672_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "3",
             "public_17",
             "public_20"
         ],
-        "passing_test": [
+        "passing_test_identifiers": [
             "1",
             "2",
             "4",
@@ -5344,7 +6032,7 @@
         ],
         "count_neg": 3,
         "count_pos": 17,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.3084.1.txt",
             "test/in.3084.2.txt",
@@ -5373,7 +6061,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-8/3084-297672/src",
+            "entrypoint": {
+                "file": "297672_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 88,
@@ -5383,12 +6079,12 @@
         "source_file": "297698_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "3",
             "public_17",
             "public_20"
         ],
-        "passing_test": [
+        "passing_test_identifiers": [
             "1",
             "2",
             "4",
@@ -5409,7 +6105,7 @@
         ],
         "count_neg": 3,
         "count_pos": 17,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.3084.1.txt",
             "test/in.3084.2.txt",
@@ -5438,7 +6134,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-8/3084-297698/src",
+            "entrypoint": {
+                "file": "297698_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 89,
@@ -5448,7 +6152,7 @@
         "source_file": "297732_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -5470,10 +6174,10 @@
             "public_8",
             "public_9"
         ],
-        "passing_test": [],
+        "passing_test_identifiers": [],
         "count_neg": 20,
         "count_pos": 0,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.3084.1.txt",
             "test/in.3084.2.txt",
@@ -5502,7 +6206,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-8/3084-297732/src",
+            "entrypoint": {
+                "file": "297732_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 90,
@@ -5512,7 +6224,7 @@
         "source_file": "297748_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -5534,10 +6246,10 @@
             "public_8",
             "public_9"
         ],
-        "passing_test": [],
+        "passing_test_identifiers": [],
         "count_neg": 20,
         "count_pos": 0,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.3084.1.txt",
             "test/in.3084.2.txt",
@@ -5566,7 +6278,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-8/3084-297748/src",
+            "entrypoint": {
+                "file": "297748_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 91,
@@ -5576,7 +6296,7 @@
         "source_file": "300001_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -5590,10 +6310,10 @@
             "public_8",
             "public_9"
         ],
-        "passing_test": [],
+        "passing_test_identifiers": [],
         "count_neg": 12,
         "count_pos": 0,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.3105.1.txt",
             "test/in.3105.2.txt",
@@ -5614,7 +6334,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-9/3105-300001/src",
+            "entrypoint": {
+                "file": "300001_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 92,
@@ -5624,7 +6352,7 @@
         "source_file": "300019_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -5638,10 +6366,10 @@
             "public_8",
             "public_9"
         ],
-        "passing_test": [],
+        "passing_test_identifiers": [],
         "count_neg": 12,
         "count_pos": 0,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.3105.1.txt",
             "test/in.3105.2.txt",
@@ -5662,7 +6390,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-9/3105-300019/src",
+            "entrypoint": {
+                "file": "300019_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 93,
@@ -5672,7 +6408,7 @@
         "source_file": "300058_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -5686,10 +6422,10 @@
             "public_8",
             "public_9"
         ],
-        "passing_test": [],
+        "passing_test_identifiers": [],
         "count_neg": 12,
         "count_pos": 0,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.3105.1.txt",
             "test/in.3105.2.txt",
@@ -5710,7 +6446,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-9/3105-300058/src",
+            "entrypoint": {
+                "file": "300058_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 94,
@@ -5720,7 +6464,7 @@
         "source_file": "300255_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -5741,10 +6485,10 @@
             "public_8",
             "public_9"
         ],
-        "passing_test": [],
+        "passing_test_identifiers": [],
         "count_neg": 20,
         "count_pos": 0,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.3106.1.txt",
             "test/in.3106.2.txt",
@@ -5772,7 +6516,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-9/3106-300255/src",
+            "entrypoint": {
+                "file": "300255_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 95,
@@ -5782,7 +6534,7 @@
         "source_file": "300294_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -5803,10 +6555,10 @@
             "public_8",
             "public_9"
         ],
-        "passing_test": [],
+        "passing_test_identifiers": [],
         "count_neg": 20,
         "count_pos": 0,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.3106.1.txt",
             "test/in.3106.2.txt",
@@ -5834,7 +6586,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-9/3106-300294/src",
+            "entrypoint": {
+                "file": "300294_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 96,
@@ -5844,7 +6604,7 @@
         "source_file": "300324_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -5865,10 +6625,10 @@
             "public_8",
             "public_9"
         ],
-        "passing_test": [],
+        "passing_test_identifiers": [],
         "count_neg": 20,
         "count_pos": 0,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.3106.1.txt",
             "test/in.3106.2.txt",
@@ -5896,7 +6656,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-9/3106-300324/src",
+            "entrypoint": {
+                "file": "300324_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 97,
@@ -5906,7 +6674,7 @@
         "source_file": "300501_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "2",
             "3",
             "4",
@@ -5916,7 +6684,7 @@
             "public_17",
             "public_19"
         ],
-        "passing_test": [
+        "passing_test_identifiers": [
             "1",
             "5",
             "7",
@@ -5932,7 +6700,7 @@
         ],
         "count_neg": 8,
         "count_pos": 12,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.3107.1.txt",
             "test/in.3107.2.txt",
@@ -5961,7 +6729,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-9/3107-300501/src",
+            "entrypoint": {
+                "file": "300501_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 98,
@@ -5971,7 +6747,7 @@
         "source_file": "300536_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "2",
             "3",
             "4",
@@ -5981,7 +6757,7 @@
             "public_17",
             "public_20"
         ],
-        "passing_test": [
+        "passing_test_identifiers": [
             "1",
             "5",
             "7",
@@ -5997,7 +6773,7 @@
         ],
         "count_neg": 8,
         "count_pos": 12,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.3107.1.txt",
             "test/in.3107.2.txt",
@@ -6026,7 +6802,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-9/3107-300536/src",
+            "entrypoint": {
+                "file": "300536_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 99,
@@ -6036,7 +6820,7 @@
         "source_file": "300579_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "2",
             "3",
             "4",
@@ -6045,7 +6829,7 @@
             "public_16",
             "public_17"
         ],
-        "passing_test": [
+        "passing_test_identifiers": [
             "1",
             "5",
             "7",
@@ -6062,7 +6846,7 @@
         ],
         "count_neg": 7,
         "count_pos": 13,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.3107.1.txt",
             "test/in.3107.2.txt",
@@ -6091,7 +6875,15 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-9/3107-300579/src",
+            "entrypoint": {
+                "file": "300579_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     },
     {
         "id": 100,
@@ -6101,7 +6893,7 @@
         "source_file": "300755_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [
+        "failing_test_identifiers": [
             "1",
             "2",
             "3",
@@ -6119,7 +6911,7 @@
             "public_19",
             "public_20"
         ],
-        "passing_test": [
+        "passing_test_identifiers": [
             "public_10",
             "public_13",
             "public_8",
@@ -6127,7 +6919,7 @@
         ],
         "count_neg": 16,
         "count_pos": 4,
-        "crash_input": "",
+        "binary_args": "",
         "exploit_file_list": [
             "test/in.3108.1.txt",
             "test/in.3108.2.txt",
@@ -6156,6 +6948,14 @@
         "config_script": "config_subject",
         "build_script": "build_subject",
         "test_script": "run_test",
-        "pvt_test_script": "run_private_tests.sh"
+        "pvt_test_script": "run_private_tests.sh",
+        "src": {
+            "root_abspath": "/experiment/Lab-9/3108-300755/src",
+            "entrypoint": {
+                "file": "300755_buggy.c",
+                "function": "main"
+            }
+        },
+        "output_dir_abspath": "/output"
     }
 ]

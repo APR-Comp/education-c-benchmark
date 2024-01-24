@@ -44,8 +44,8 @@ def write_entry(file, id, tests, lab, problem_id):
     os.chdir(dst)
     os.system("./build_subject") 
     
-    passing_tests =[]
-    failing_tests =[]
+    passing_test_identifiers =[]
+    failing_test_identifiers =[]
 
     filtered_tests = []
     
@@ -53,10 +53,10 @@ def write_entry(file, id, tests, lab, problem_id):
         x = os.system("./run_test {}".format(test))
         print("Response is {}".format(x))
         if x == 0:
-            passing_tests.append(test)
+            passing_test_identifiers.append(test)
             filtered_tests.append(test_file)
         elif x == 0x300:
-            failing_tests.append(test)
+            failing_test_identifiers.append(test)
             filtered_tests.append(test_file)
         elif x == 0x200:
             print("Gotta remove test {}.{}".format(problem_id,test))
@@ -89,7 +89,7 @@ def write_entry(file, id, tests, lab, problem_id):
     shutil.copy("run_private_tests.sh", dst)
     #input()
 
-    #print(failing_tests,passing_tests)
+    #print(failing_test_identifiers,passing_test_identifiers)
     data = """
     {{
         "id":{id},
@@ -99,11 +99,11 @@ def write_entry(file, id, tests, lab, problem_id):
         "source_file": "{bug_id}_buggy.c",
         "reference_file": "Main.c",
         "line_numbers": [],
-        "failing_test": [{failing_tests}],
-        "passing_test": [{passing_tests}],
-        "count_neg": {failing_test_count},
-        "count_pos": {passing_test_count},
-        "crash_input": "",
+        "failing_test_identifiers": [{failing_test_identifiers}],
+        "passing_test_identifiers": [{passing_test_identifiers}],
+        "count_neg": {failing_test_identifiers_count},
+        "count_pos": {passing_test_identifiers_count},
+        "binary_args": "",
         "exploit_file_list": [{inputs}],
         "test_timeout": 5,
         "bug_type": "Test Failure",
@@ -121,10 +121,10 @@ def write_entry(file, id, tests, lab, problem_id):
         bug_id=bug_id,
         correct_file=name+"_correct.c",
         inputs=",".join(test_input_list),
-        passing_test_count=len(passing_tests),
-        failing_test_count=len(failing_tests),
-        failing_tests=','.join(failing_tests),
-        passing_tests=','.join(passing_tests),
+        passing_test_identifiers_count=len(passing_test_identifiers),
+        failing_test_identifiers_count=len(failing_test_identifiers),
+        failing_test_identifiers=','.join(failing_test_identifiers),
+        passing_test_identifiers=','.join(passing_test_identifiers),
         tests=','.join(filtered_tests)
     )
     #print(data)
