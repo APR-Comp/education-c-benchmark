@@ -62,7 +62,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-10/3237-303406/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-10/3237-303406/src",
             "entrypoint": {
                 "file": "303406_buggy.c",
                 "function": "main"
@@ -134,7 +134,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-10/3238-303624/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-10/3238-303624/src",
             "entrypoint": {
                 "file": "303624_buggy.c",
                 "function": "main"
@@ -206,7 +206,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-10/3238-303722/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-10/3238-303722/src",
             "entrypoint": {
                 "file": "303722_buggy.c",
                 "function": "main"
@@ -273,7 +273,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-10/3239-303888/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-10/3239-303888/src",
             "entrypoint": {
                 "file": "303888_buggy.c",
                 "function": "main"
@@ -343,7 +343,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-10/3239-303919/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-10/3239-303919/src",
             "entrypoint": {
                 "file": "303919_buggy.c",
                 "function": "main"
@@ -410,7 +410,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-10/3239-303947/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-10/3239-303947/src",
             "entrypoint": {
                 "file": "303947_buggy.c",
                 "function": "main"
@@ -468,7 +468,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-10/3240-304151/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-10/3240-304151/src",
             "entrypoint": {
                 "file": "304151_buggy.c",
                 "function": "main"
@@ -526,7 +526,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-10/3240-304171/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-10/3240-304171/src",
             "entrypoint": {
                 "file": "304171_buggy.c",
                 "function": "main"
@@ -584,7 +584,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-10/3240-304221/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-10/3240-304221/src",
             "entrypoint": {
                 "file": "304221_buggy.c",
                 "function": "main"
@@ -657,7 +657,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-10/3241-303500/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-10/3241-303500/src",
             "entrypoint": {
                 "file": "303500_buggy.c",
                 "function": "main"
@@ -730,7 +730,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-11/3291-305271/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-11/3291-305271/src",
             "entrypoint": {
                 "file": "305271_buggy.c",
                 "function": "main"
@@ -802,7 +802,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-11/3291-305284/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-11/3291-305284/src",
             "entrypoint": {
                 "file": "305284_buggy.c",
                 "function": "main"
@@ -874,7 +874,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-11/3293-305756/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-11/3293-305756/src",
             "entrypoint": {
                 "file": "305756_buggy.c",
                 "function": "main"
@@ -946,7 +946,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-11/3293-305783/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-11/3293-305783/src",
             "entrypoint": {
                 "file": "305783_buggy.c",
                 "function": "main"
@@ -1011,7 +1011,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-11/3294-305975/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-11/3294-305975/src",
             "entrypoint": {
                 "file": "305975_buggy.c",
                 "function": "main"
@@ -1076,7 +1076,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-11/3294-305984/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-11/3294-305984/src",
             "entrypoint": {
                 "file": "305984_buggy.c",
                 "function": "main"
@@ -1141,7 +1141,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-11/3294-305996/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-11/3294-305996/src",
             "entrypoint": {
                 "file": "305996_buggy.c",
                 "function": "main"
@@ -1206,7 +1206,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-11/3294-306033/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-11/3294-306033/src",
             "entrypoint": {
                 "file": "306033_buggy.c",
                 "function": "main"
@@ -1271,7 +1271,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-11/3294-306056/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-11/3294-306056/src",
             "entrypoint": {
                 "file": "306056_buggy.c",
                 "function": "main"
@@ -1341,7 +1341,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-11/3295-305374/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-11/3295-305374/src",
             "entrypoint": {
                 "file": "305374_buggy.c",
                 "function": "main"
@@ -1413,7 +1413,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-12/3355-307020/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-12/3355-307020/src",
             "entrypoint": {
                 "file": "307020_buggy.c",
                 "function": "main"
@@ -1485,7 +1485,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-12/3355-307064/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-12/3355-307064/src",
             "entrypoint": {
                 "file": "307064_buggy.c",
                 "function": "main"
@@ -1557,7 +1557,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-12/3355-307083/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-12/3355-307083/src",
             "entrypoint": {
                 "file": "307083_buggy.c",
                 "function": "main"
@@ -1629,7 +1629,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-12/3355-307102/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-12/3355-307102/src",
             "entrypoint": {
                 "file": "307102_buggy.c",
                 "function": "main"
@@ -1701,7 +1701,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-12/3356-307281/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-12/3356-307281/src",
             "entrypoint": {
                 "file": "307281_buggy.c",
                 "function": "main"
@@ -1773,7 +1773,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-12/3356-307320/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-12/3356-307320/src",
             "entrypoint": {
                 "file": "307320_buggy.c",
                 "function": "main"
@@ -1846,7 +1846,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-12/3356-307361/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-12/3356-307361/src",
             "entrypoint": {
                 "file": "307361_buggy.c",
                 "function": "main"
@@ -1919,7 +1919,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-12/3357-307516/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-12/3357-307516/src",
             "entrypoint": {
                 "file": "307516_buggy.c",
                 "function": "main"
@@ -1991,7 +1991,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-12/3357-307562/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-12/3357-307562/src",
             "entrypoint": {
                 "file": "307562_buggy.c",
                 "function": "main"
@@ -2063,7 +2063,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-12/3358-307777/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-12/3358-307777/src",
             "entrypoint": {
                 "file": "307777_buggy.c",
                 "function": "main"
@@ -2133,7 +2133,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-3/2810-270011/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-3/2810-270011/src",
             "entrypoint": {
                 "file": "270011_buggy.c",
                 "function": "main"
@@ -2203,7 +2203,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-3/2810-270048/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-3/2810-270048/src",
             "entrypoint": {
                 "file": "270048_buggy.c",
                 "function": "main"
@@ -2273,7 +2273,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-3/2810-270054/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-3/2810-270054/src",
             "entrypoint": {
                 "file": "270054_buggy.c",
                 "function": "main"
@@ -2343,7 +2343,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-3/2810-270081/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-3/2810-270081/src",
             "entrypoint": {
                 "file": "270081_buggy.c",
                 "function": "main"
@@ -2413,7 +2413,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-3/2810-270090/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-3/2810-270090/src",
             "entrypoint": {
                 "file": "270090_buggy.c",
                 "function": "main"
@@ -2481,7 +2481,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-3/2811-270138/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-3/2811-270138/src",
             "entrypoint": {
                 "file": "270138_buggy.c",
                 "function": "main"
@@ -2550,7 +2550,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-3/2811-270151/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-3/2811-270151/src",
             "entrypoint": {
                 "file": "270151_buggy.c",
                 "function": "main"
@@ -2619,7 +2619,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-3/2811-270194/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-3/2811-270194/src",
             "entrypoint": {
                 "file": "270194_buggy.c",
                 "function": "main"
@@ -2687,7 +2687,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-3/2811-270220/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-3/2811-270220/src",
             "entrypoint": {
                 "file": "270220_buggy.c",
                 "function": "main"
@@ -2760,7 +2760,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-3/2812-270276/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-3/2812-270276/src",
             "entrypoint": {
                 "file": "270276_buggy.c",
                 "function": "main"
@@ -2833,7 +2833,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-4/2824-271039/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-4/2824-271039/src",
             "entrypoint": {
                 "file": "271039_buggy.c",
                 "function": "main"
@@ -2906,7 +2906,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-4/2824-271080/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-4/2824-271080/src",
             "entrypoint": {
                 "file": "271080_buggy.c",
                 "function": "main"
@@ -2979,7 +2979,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-4/2824-271084/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-4/2824-271084/src",
             "entrypoint": {
                 "file": "271084_buggy.c",
                 "function": "main"
@@ -3052,7 +3052,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-4/2824-271095/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-4/2824-271095/src",
             "entrypoint": {
                 "file": "271095_buggy.c",
                 "function": "main"
@@ -3125,7 +3125,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-4/2824-271116/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-4/2824-271116/src",
             "entrypoint": {
                 "file": "271116_buggy.c",
                 "function": "main"
@@ -3195,7 +3195,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-4/2825-271154/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-4/2825-271154/src",
             "entrypoint": {
                 "file": "271154_buggy.c",
                 "function": "main"
@@ -3266,7 +3266,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-4/2825-271188/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-4/2825-271188/src",
             "entrypoint": {
                 "file": "271188_buggy.c",
                 "function": "main"
@@ -3337,7 +3337,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-4/2825-271203/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-4/2825-271203/src",
             "entrypoint": {
                 "file": "271203_buggy.c",
                 "function": "main"
@@ -3407,7 +3407,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-4/2825-271209/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-4/2825-271209/src",
             "entrypoint": {
                 "file": "271209_buggy.c",
                 "function": "main"
@@ -3478,7 +3478,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-4/2825-271216/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-4/2825-271216/src",
             "entrypoint": {
                 "file": "271216_buggy.c",
                 "function": "main"
@@ -3545,7 +3545,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-5/2864-277519/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-5/2864-277519/src",
             "entrypoint": {
                 "file": "277519_buggy.c",
                 "function": "main"
@@ -3612,7 +3612,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-5/2864-277528/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-5/2864-277528/src",
             "entrypoint": {
                 "file": "277528_buggy.c",
                 "function": "main"
@@ -3678,7 +3678,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-5/2864-277571/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-5/2864-277571/src",
             "entrypoint": {
                 "file": "277571_buggy.c",
                 "function": "main"
@@ -3744,7 +3744,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-5/2864-277580/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-5/2864-277580/src",
             "entrypoint": {
                 "file": "277580_buggy.c",
                 "function": "main"
@@ -3811,7 +3811,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-5/2864-277591/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-5/2864-277591/src",
             "entrypoint": {
                 "file": "277591_buggy.c",
                 "function": "main"
@@ -3883,7 +3883,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-5/2865-277637/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-5/2865-277637/src",
             "entrypoint": {
                 "file": "277637_buggy.c",
                 "function": "main"
@@ -3956,7 +3956,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-5/2865-277685/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-5/2865-277685/src",
             "entrypoint": {
                 "file": "277685_buggy.c",
                 "function": "main"
@@ -4028,7 +4028,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-5/2865-277711/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-5/2865-277711/src",
             "entrypoint": {
                 "file": "277711_buggy.c",
                 "function": "main"
@@ -4100,7 +4100,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-5/2866-277780/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-5/2866-277780/src",
             "entrypoint": {
                 "file": "277780_buggy.c",
                 "function": "main"
@@ -4172,7 +4172,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-5/2866-277802/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-5/2866-277802/src",
             "entrypoint": {
                 "file": "277802_buggy.c",
                 "function": "main"
@@ -4242,7 +4242,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-6/2932-279950/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-6/2932-279950/src",
             "entrypoint": {
                 "file": "279950_buggy.c",
                 "function": "main"
@@ -4312,7 +4312,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-6/2932-279986/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-6/2932-279986/src",
             "entrypoint": {
                 "file": "279986_buggy.c",
                 "function": "main"
@@ -4382,7 +4382,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-6/2932-280004/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-6/2932-280004/src",
             "entrypoint": {
                 "file": "280004_buggy.c",
                 "function": "main"
@@ -4452,7 +4452,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-6/2932-280017/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-6/2932-280017/src",
             "entrypoint": {
                 "file": "280017_buggy.c",
                 "function": "main"
@@ -4520,7 +4520,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-6/2933-280079/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-6/2933-280079/src",
             "entrypoint": {
                 "file": "280079_buggy.c",
                 "function": "main"
@@ -4589,7 +4589,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-6/2933-280127/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-6/2933-280127/src",
             "entrypoint": {
                 "file": "280127_buggy.c",
                 "function": "main"
@@ -4657,7 +4657,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-6/2934-280208/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-6/2934-280208/src",
             "entrypoint": {
                 "file": "280208_buggy.c",
                 "function": "main"
@@ -4725,7 +4725,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-6/2934-280226/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-6/2934-280226/src",
             "entrypoint": {
                 "file": "280226_buggy.c",
                 "function": "main"
@@ -4793,7 +4793,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-6/2934-280238/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-6/2934-280238/src",
             "entrypoint": {
                 "file": "280238_buggy.c",
                 "function": "main"
@@ -4864,7 +4864,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-6/2935-280333/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-6/2935-280333/src",
             "entrypoint": {
                 "file": "280333_buggy.c",
                 "function": "main"
@@ -4933,7 +4933,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-7/3075-295416/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-7/3075-295416/src",
             "entrypoint": {
                 "file": "295416_buggy.c",
                 "function": "main"
@@ -5002,7 +5002,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-7/3075-295450/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-7/3075-295450/src",
             "entrypoint": {
                 "file": "295450_buggy.c",
                 "function": "main"
@@ -5071,7 +5071,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-7/3075-295460/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-7/3075-295460/src",
             "entrypoint": {
                 "file": "295460_buggy.c",
                 "function": "main"
@@ -5143,7 +5143,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-7/3076-295675/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-7/3076-295675/src",
             "entrypoint": {
                 "file": "295675_buggy.c",
                 "function": "main"
@@ -5216,7 +5216,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-7/3076-295686/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-7/3076-295686/src",
             "entrypoint": {
                 "file": "295686_buggy.c",
                 "function": "main"
@@ -5289,7 +5289,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-7/3076-295698/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-7/3076-295698/src",
             "entrypoint": {
                 "file": "295698_buggy.c",
                 "function": "main"
@@ -5362,7 +5362,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-7/3076-295738/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-7/3076-295738/src",
             "entrypoint": {
                 "file": "295738_buggy.c",
                 "function": "main"
@@ -5434,7 +5434,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-7/3077-295929/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-7/3077-295929/src",
             "entrypoint": {
                 "file": "295929_buggy.c",
                 "function": "main"
@@ -5506,7 +5506,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-7/3077-295949/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-7/3077-295949/src",
             "entrypoint": {
                 "file": "295949_buggy.c",
                 "function": "main"
@@ -5578,7 +5578,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-7/3077-295971/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-7/3077-295971/src",
             "entrypoint": {
                 "file": "295971_buggy.c",
                 "function": "main"
@@ -5648,7 +5648,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-8/3081-297318/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-8/3081-297318/src",
             "entrypoint": {
                 "file": "297318_buggy.c",
                 "function": "main"
@@ -5718,7 +5718,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-8/3081-297349/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-8/3081-297349/src",
             "entrypoint": {
                 "file": "297349_buggy.c",
                 "function": "main"
@@ -5786,7 +5786,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-8/3082-297430/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-8/3082-297430/src",
             "entrypoint": {
                 "file": "297430_buggy.c",
                 "function": "main"
@@ -5854,7 +5854,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-8/3082-297453/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-8/3082-297453/src",
             "entrypoint": {
                 "file": "297453_buggy.c",
                 "function": "main"
@@ -5922,7 +5922,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-8/3082-297466/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-8/3082-297466/src",
             "entrypoint": {
                 "file": "297466_buggy.c",
                 "function": "main"
@@ -5990,7 +5990,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-8/3083-297563/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-8/3083-297563/src",
             "entrypoint": {
                 "file": "297563_buggy.c",
                 "function": "main"
@@ -6063,7 +6063,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-8/3084-297672/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-8/3084-297672/src",
             "entrypoint": {
                 "file": "297672_buggy.c",
                 "function": "main"
@@ -6136,7 +6136,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-8/3084-297698/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-8/3084-297698/src",
             "entrypoint": {
                 "file": "297698_buggy.c",
                 "function": "main"
@@ -6208,7 +6208,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-8/3084-297732/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-8/3084-297732/src",
             "entrypoint": {
                 "file": "297732_buggy.c",
                 "function": "main"
@@ -6280,7 +6280,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-8/3084-297748/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-8/3084-297748/src",
             "entrypoint": {
                 "file": "297748_buggy.c",
                 "function": "main"
@@ -6336,7 +6336,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-9/3105-300001/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-9/3105-300001/src",
             "entrypoint": {
                 "file": "300001_buggy.c",
                 "function": "main"
@@ -6392,7 +6392,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-9/3105-300019/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-9/3105-300019/src",
             "entrypoint": {
                 "file": "300019_buggy.c",
                 "function": "main"
@@ -6448,7 +6448,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-9/3105-300058/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-9/3105-300058/src",
             "entrypoint": {
                 "file": "300058_buggy.c",
                 "function": "main"
@@ -6518,7 +6518,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-9/3106-300255/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-9/3106-300255/src",
             "entrypoint": {
                 "file": "300255_buggy.c",
                 "function": "main"
@@ -6588,7 +6588,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-9/3106-300294/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-9/3106-300294/src",
             "entrypoint": {
                 "file": "300294_buggy.c",
                 "function": "main"
@@ -6658,7 +6658,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-9/3106-300324/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-9/3106-300324/src",
             "entrypoint": {
                 "file": "300324_buggy.c",
                 "function": "main"
@@ -6731,7 +6731,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-9/3107-300501/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-9/3107-300501/src",
             "entrypoint": {
                 "file": "300501_buggy.c",
                 "function": "main"
@@ -6804,7 +6804,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-9/3107-300536/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-9/3107-300536/src",
             "entrypoint": {
                 "file": "300536_buggy.c",
                 "function": "main"
@@ -6877,7 +6877,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-9/3107-300579/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-9/3107-300579/src",
             "entrypoint": {
                 "file": "300579_buggy.c",
                 "function": "main"
@@ -6950,7 +6950,7 @@
         "test_script": "run_test",
         "pvt_test_script": "run_private_tests.sh",
         "src": {
-            "root_abspath": "/experiment/Lab-9/3108-300755/src",
+            "root_abspath": "/experiment/aprcompeduc/Lab-9/3108-300755/src",
             "entrypoint": {
                 "file": "300755_buggy.c",
                 "function": "main"
